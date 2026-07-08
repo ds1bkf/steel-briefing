@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>접속 로그 대시보드 - 지난 밤 철강 뉴스</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; padding:20px 12px; background:#e9ebee; font-family:'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif; color:#1f2937; }
+  .wrap { max-width:680px; margin:0 auto; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,0.12); }
+  header.masthead { background:#1a2530; color:#ffffff; padding:26px 24px 20px; text-align:center; }
+  header.masthead .kicker { font-size:11px; letter-spacing:3px; color:#9fb3c8; text-transform:uppercase; }
+  header.masthead h1 { margin:8px 0 6px; font-size:21px; font-weight:700; }
+  header.masthead .meta { font-size:12.5px; color:#c7d2dc; }
+  .toolbar { background:#eef1f4; border-bottom:1px solid #e2e5e9; padding:9px 24px; font-size:12px; color:#6b7280; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .toolbar button { font-size:12px; border:1px solid #94a3b8; background:#fff; color:#334155; border-radius:6px; padding:5px 12px; cursor:pointer; }
+  .toolbar button:active { background:#e2e8f0; }
+  .section { padding:20px 24px 4px; }
+  .cards { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+  .card { background:#f8fafc; border:1px solid #94a3b8; border-radius:8px; padding:14px 12px; text-align:center; }
+  .card .clabel { font-size:11.5px; color:#6b7280; margin-bottom:8px; }
+  .card .cval { font-size:26px; font-weight:800; color:#1a2530; line-height:1.1; }
+  .card .cval.blue { color:#2563eb; }
+  .card .cval.orange { color:#ea580c; }
+  .sub { font-size:10.5px; color:#94a3b8; margin-top:6px; }
+  .block-title { font-size:14px; font-weight:700; margin:22px 0 12px; padding-bottom:8px; border-bottom:3px solid #2563eb; color:#1f2937; }
+  .chart-box { position:relative; height:230px; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:8px 10px; text-align:left; border-bottom:1px solid #eef1f4; }
+  th { color:#6b7280; font-weight:700; font-size:11.5px; background:#f8fafc; }
+  td.num { text-align:right; font-weight:700; font-variant-numeric:tabular-nums; }
+  tr.today td { background:#fff7ed; }
+  .note { font-size:11px; color:#8a8f98; line-height:1.7; padding:16px 24px 8px; }
+  footer.disclaimer { padding:14px 24px 26px; font-size:11px; color:#8a8f98; text-align:center; line-height:1.7; border-top:1px solid #e2e5e9; margin-top:10px; }
+  a.home { color:#2563eb; text-decoration:none; }
+  .loading { color:#94a3b8; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">ACCESS LOG DASHBOARD</div>
+    <h1>접속 로그 대시보드</h1>
+    <div class="meta">지난 밤 철강 뉴스 · <a class="home" href="../" style="color:#c7d2dc;text-decoration:underline;">브리핑 바로가기</a></div>
+  </header>
+  <div class="toolbar">
+    <span id="asof">불러오는 중…</span>
+    <button onclick="location.reload()">새로고침</button>
+  </div>
+
+  <div class="section">
+    <div class="cards">
+      <div class="card"><div class="clabel">누적 총 방문</div><div class="cval" id="v-total">–</div><div class="sub">전체 기간</div></div>
+      <div class="card"><div class="clabel">오늘 방문</div><div class="cval blue" id="v-today">–</div><div class="sub" id="today-label">KST 기준</div></div>
+      <div class="card"><div class="clabel">최근 7일</div><div class="cval orange" id="v-7d">–</div><div class="sub">합계</div></div>
+    </div>
+
+    <div class="block-title">최근 30일 일별 방문</div>
+    <div class="chart-box"><canvas id="chart"></canvas></div>
+
+    <div class="block-title">일자별 상세</div>
+    <table>
+      <thead><tr><th>날짜 (KST)</th><th style="text-align:right;">방문수</th></tr></thead>
+      <tbody id="tbody"><tr><td colspan="2" class="loading">불러오는 중…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    ※ 이 카운터는 <b>브리핑 페이지(index.html)가 열린 횟수</b>를 집계합니다. 방문할 때마다 총 카운터와 그날(KST) 카운터가 1씩 올라갑니다.<br>
+    ※ 정적 호스팅(GitHub Pages) 특성상 <b>방문자 IP·정확한 위치·개인정보는 수집하지 않으며</b>, 순수 방문 횟수만 익명으로 기록됩니다. 같은 사람이 여러 번 열면 그만큼 카운트됩니다.<br>
+    ※ 카운트 저장소: abacus.jasoncameron.dev (무료 공개 카운터 API).
+  </div>
+
+  <footer class="disclaimer">
+    진흥철강(주) 엄정호 이사
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+(function () {
+  var NS = "steelbriefing-ds1bkf";
+  var GET = "https://abacus.jasoncameron.dev/get/" + NS + "/";
+  var DAYS = 30;
+
+  function kstNow() {
+    var n = new Date();
+    return new Date(n.getTime() + n.getTimezoneOffset() * 60000 + 9 * 3600000);
+  }
+  function fmt(d) {
+    var m = String(d.getMonth() + 1).padStart(2, "0");
+    var day = String(d.getDate()).padStart(2, "0");
+    return d.getFullYear() + "-" + m + "-" + day;
+  }
+  function getVal(key) {
+    return fetch(GET + key, { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { return j && typeof j.value === "number" ? j.value : 0; })
+      .catch(function () { return 0; });
+  }
+
+  var today = kstNow();
+  var todayStr = fmt(today);
+  document.getElementById("today-label").textContent = todayStr + " (KST)";
+
+  // 최근 30일 날짜 목록 (과거→오늘)
+  var dates = [];
+  for (var i = DAYS - 1; i >= 0; i--) {
+    var d = new Date(today.getTime() - i * 86400000);
+    dates.push(fmt(d));
+  }
+
+  var jobs = [getVal("total")].concat(dates.map(function (ds) { return getVal("d-" + ds); }));
+
+  Promise.all(jobs).then(function (res) {
+    var total = res[0];
+    var counts = res.slice(1);
+    var byDate = {};
+    dates.forEach(function (ds, idx) { byDate[ds] = counts[idx]; });
+
+    document.getElementById("v-total").textContent = total.toLocaleString();
+    document.getElementById("v-today").textContent = (byDate[todayStr] || 0).toLocaleString();
+
+    var last7 = 0;
+    for (var k = dates.length - 7; k < dates.length; k++) { if (k >= 0) last7 += counts[k]; }
+    document.getElementById("v-7d").textContent = last7.toLocaleString();
+
+    var now = new Date();
+    document.getElementById("asof").textContent = "기준: " + now.toLocaleString("ko-KR");
+
+    // 차트
+    var labels = dates.map(function (ds) { return ds.slice(5); }); // MM-DD
+    new Chart(document.getElementById("chart"), {
+      type: "bar",
+      data: { labels: labels, datasets: [{ label: "일별 방문", data: counts, backgroundColor: "#2563eb", borderRadius: 3, maxBarThickness: 18 }] },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true, ticks: { precision: 0 } }, x: { ticks: { maxRotation: 90, minRotation: 45, font: { size: 9 } } } }
+      }
+    });
+
+    // 표 (최신 날짜부터)
+    var rows = "";
+    for (var j = dates.length - 1; j >= 0; j--) {
+      var ds = dates[j];
+      var cls = ds === todayStr ? ' class="today"' : "";
+      rows += "<tr" + cls + "><td>" + ds + (ds === todayStr ? " (오늘)" : "") + "</td><td class='num'>" + counts[j].toLocaleString() + "</td></tr>";
+    }
+    document.getElementById("tbody").innerHTML = rows;
+  }).catch(function () {
+    document.getElementById("asof").textContent = "데이터를 불러오지 못했습니다.";
+    document.getElementById("tbody").innerHTML = "<tr><td colspan='2' class='loading'>카운터 서버 응답이 없어 데이터를 표시할 수 없습니다.</td></tr>";
+  });
+})();
+</script>
+</body>
+</html>
