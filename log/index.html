@@ -76,7 +76,7 @@
   <div class="note">
     ※ 이 카운터는 <b>브리핑 페이지(index.html)가 열린 횟수</b>를 집계합니다. 방문할 때마다 총 카운터와 그날(KST) 카운터가 1씩 올라갑니다.<br>
     ※ 정적 호스팅(GitHub Pages) 특성상 <b>방문자 IP·정확한 위치·개인정보는 수집하지 않으며</b>, 순수 방문 횟수만 익명으로 기록됩니다. 같은 사람이 여러 번 열면 그만큼 카운트됩니다.<br>
-    ※ 카운트 저장소: abacus.jasoncameron.dev (무료 공개 카운터 API). 일시적 응답 지연 시 마지막으로 정상 수신한 값(브라우저에 캐시)을 <span style="color:#b45309;">주황색</span>으로 표시합니다.
+    ※ 카운트 저장소: abacus.jasoncameron.dev (무료 공개 카운터 API). 서버 부하·요청 제한을 줄이기 위해 <b>지나간 날짜의 확정 방문수는 브라우저에 저장해 재조회하지 않고, 누적·오늘 방문만 매번 갱신</b>합니다. 일시적 응답 지연 시 마지막 정상값(브라우저 캐시)을 <span style="color:#b45309;">주황색</span>으로 표시합니다.
   </div>
 
   <footer class="disclaimer">
@@ -105,12 +105,24 @@
     var day = String(d.getDate()).padStart(2, "0");
     return d.getFullYear() + "-" + m + "-" + day;
   }
+  // 캐시 형식: { key: { v:number, final:bool } }  (final=true면 확정되어 재조회 안 함)
   function loadCache() {
-    try { return JSON.parse(localStorage.getItem(CACHE_KEY)) || {}; } catch (e) { return {}; }
+    var raw;
+    try { raw = JSON.parse(localStorage.getItem(CACHE_KEY)) || {}; } catch (e) { raw = {}; }
+    var c = {};
+    Object.keys(raw).forEach(function (k) {
+      var e = raw[k];
+      if (typeof e === "number") c[k] = { v: e, final: false };            // 구버전(숫자) 마이그레이션
+      else if (e && typeof e.v === "number") c[k] = { v: e.v, final: !!e.final };
+    });
+    return c;
   }
   function saveCache(c) {
     try { localStorage.setItem(CACHE_KEY, JSON.stringify(c)); } catch (e) {}
   }
+  function cval(c, k) { return (c[k] && typeof c[k].v === "number") ? c[k].v : null; }
+  // 확정된 과거일 캐시가 있으면 재조회 대상에서 제외(누적/total은 항상 조회)
+  function isFinalCached(c, k) { return k !== "total" && c[k] && c[k].final === true; }
   function delay(ms) { return new Promise(function (res) { setTimeout(res, ms); }); }
 
   // 한 키 조회: 성공 시 {ok:true,value:n} (404=방문0), 실패 시 {ok:false} (재시도 후에도 실패)
@@ -215,45 +227,17 @@
     document.getElementById("asof").textContent = "불러오는 중…";
     var cache = loadCache();
 
-    // 캐시가 있으면 즉시 이전 정상값으로 화면을 먼저 채움(빈 화면 방지)
+    // 캐시가 있으면 즉시 이전 값으로 화면을 먼저 채움(빈 화면 방지)
     var seeded = {};
     var hasSeed = false;
     allKeys.forEach(function (k) {
-      if (cache[k] != null) { seeded[k] = { value: cache[k], stale: true }; hasSeed = true; }
+      var v = cval(cache, k);
+      if (v != null) { seeded[k] = { value: v, stale: !(cache[k] && cache[k].final) }; hasSeed = true; }
       else { seeded[k] = { value: null, stale: true }; }
     });
     if (hasSeed) { render(seeded, 0); document.getElementById("banner").style.display = "none"; }
 
-    return runLimited(allKeys, CONCURRENCY).then(function (results) {
-      var failures = 0;
-      var resolved = {};
-      allKeys.forEach(function (k) {
-        var r = results[k];
-        if (r && r.ok) {
-          resolved[k] = { value: r.value, stale: false };
-          cache[k] = r.value;                          // 성공값만 캐시 갱신
-        } else if (cache[k] != null) {
-          resolved[k] = { value: cache[k], stale: true };  // 실패 → 마지막 정상값
-          failures++;
-        } else {
-          resolved[k] = { value: null, stale: true };      // 값 없음 → ―
-          failures++;
-        }
-      });
-      saveCache(cache);
-      render(resolved, failures);
-    }).catch(function () {
-      document.getElementById("asof").textContent = "데이터를 불러오지 못했습니다.";
-    }).then(function () {
-      reloadBtn.disabled = false;
-    });
-  }
+    // 확정된 과거일은 재조회하지 않음 → 누적/오늘/미확정일만 실제 요청
+    var keysToFetch = allKeys.filter(function (k) { return !isFinalCached(cache, k); });
 
-  // 새로고침 버튼: 페이지 리로드 대신 데이터만 다시 불러옴(더 빠르고 안정적)
-  reloadBtn.addEventListener("click", loadAll);
-
-  loadAll();
-})();
-</script>
-</body>
-</html>
+    retu
