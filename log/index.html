@@ -90,8 +90,8 @@
   var NS = "steelbrief-ds1bkf-live";
   var GET = "https://abacus.jasoncameron.dev/get/" + NS + "/";
   var DAYS = 30;
-  var CONCURRENCY = 4;     // 동시 요청 수 제한(폭주 방지)
-  var MAX_RETRY = 2;       // 실패 시 재시도 횟수
+  var CONCURRENCY = 4;
+  var MAX_RETRY = 2;
   var CACHE_KEY = "steellog-cache-" + NS;
 
   var chartRef = null;
@@ -105,14 +105,14 @@
     var day = String(d.getDate()).padStart(2, "0");
     return d.getFullYear() + "-" + m + "-" + day;
   }
-  // 캐시 형식: { key: { v:number, final:bool } }  (final=true면 확정되어 재조회 안 함)
+
   function loadCache() {
     var raw;
     try { raw = JSON.parse(localStorage.getItem(CACHE_KEY)) || {}; } catch (e) { raw = {}; }
     var c = {};
     Object.keys(raw).forEach(function (k) {
       var e = raw[k];
-      if (typeof e === "number") c[k] = { v: e, final: false };            // 구버전(숫자) 마이그레이션
+      if (typeof e === "number") c[k] = { v: e, final: false };
       else if (e && typeof e.v === "number") c[k] = { v: e.v, final: !!e.final };
     });
     return c;
@@ -121,17 +121,16 @@
     try { localStorage.setItem(CACHE_KEY, JSON.stringify(c)); } catch (e) {}
   }
   function cval(c, k) { return (c[k] && typeof c[k].v === "number") ? c[k].v : null; }
-  // 확정된 과거일 캐시가 있으면 재조회 대상에서 제외(누적/total은 항상 조회)
   function isFinalCached(c, k) { return k !== "total" && c[k] && c[k].final === true; }
+
   function delay(ms) { return new Promise(function (res) { setTimeout(res, ms); }); }
 
-  // 한 키 조회: 성공 시 {ok:true,value:n} (404=방문0), 실패 시 {ok:false} (재시도 후에도 실패)
   function fetchKey(key, tries) {
     tries = tries || 0;
     return fetch(GET + key, { cache: "no-store" })
       .then(function (r) {
-        if (r.status === 404) return { ok: true, value: 0 };       // 키 없음 = 방문 0
-        if (!r.ok) throw new Error("http " + r.status);            // 429/5xx 등 = 재시도 대상
+        if (r.status === 404) return { ok: true, value: 0 };
+        if (!r.ok) throw new Error("http " + r.status);
         return r.json().then(function (j) {
           return { ok: true, value: (j && typeof j.value === "number") ? j.value : 0 };
         });
@@ -140,11 +139,10 @@
         if (tries < MAX_RETRY) {
           return delay(400 + tries * 600).then(function () { return fetchKey(key, tries + 1); });
         }
-        return { ok: false };                                      // 최종 실패(0으로 뭉개지 않음)
+        return { ok: false };
       });
   }
 
-  // 동시 요청 수를 CONCURRENCY로 제한해 순차 처리
   function runLimited(keys, limit) {
     var results = {};
     var idx = 0;
@@ -169,7 +167,6 @@
   }
   var allKeys = ["total"].concat(dates.map(function (ds) { return "d-" + ds; }));
 
-  // 렌더링: resolved[key] = {value:number|null, stale:bool}
   function render(resolved, failures) {
     function val(k) { return resolved[k] ? resolved[k].value : null; }
     function num(k) { var v = val(k); return (typeof v === "number") ? v : 0; }
@@ -227,7 +224,6 @@
     document.getElementById("asof").textContent = "불러오는 중…";
     var cache = loadCache();
 
-    // 캐시가 있으면 즉시 이전 값으로 화면을 먼저 채움(빈 화면 방지)
     var seeded = {};
     var hasSeed = false;
     allKeys.forEach(function (k) {
@@ -237,7 +233,44 @@
     });
     if (hasSeed) { render(seeded, 0); document.getElementById("banner").style.display = "none"; }
 
-    // 확정된 과거일은 재조회하지 않음 → 누적/오늘/미확정일만 실제 요청
     var keysToFetch = allKeys.filter(function (k) { return !isFinalCached(cache, k); });
 
-    retu
+    return runLimited(keysToFetch, CONCURRENCY).then(function (results) {
+      var failures = 0;
+      var resolved = {};
+      allKeys.forEach(function (k) {
+        if (isFinalCached(cache, k)) {
+          resolved[k] = { value: cache[k].v, stale: false };
+          return;
+        }
+        var r = results[k];
+        if (r && r.ok) {
+          resolved[k] = { value: r.value, stale: false };
+          var fin = (k !== "total") && (k.slice(2) < todayStr);
+          cache[k] = { v: r.value, final: fin };
+        } else if (cval(cache, k) != null) {
+          resolved[k] = { value: cache[k].v, stale: true };
+          failures++;
+        } else {
+          resolved[k] = { value: null, stale: true };
+          failures++;
+        }
+      });
+      var keep = {};
+      allKeys.forEach(function (k) { if (cache[k]) keep[k] = cache[k]; });
+      saveCache(keep);
+      render(resolved, failures);
+    }).catch(function () {
+      document.getElementById("asof").textContent = "데이터를 불러오지 못했습니다.";
+    }).then(function () {
+      reloadBtn.disabled = false;
+    });
+  }
+
+  reloadBtn.addEventListener("click", loadAll);
+
+  loadAll();
+})();
+</script>
+</body>
+</html>
