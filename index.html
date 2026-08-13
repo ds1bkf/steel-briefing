@@ -28,7 +28,10 @@
   .sector--steel .badge { background:#ea580c; }
   .sector--domestic .badge { background:#dc2626; }
   .sector--summary .badge { background:#0d9488; }
-  .summary-box { background:#f0fdfa; border:1px solid #0d9488; border-left:5px solid #0d9488; border-radius:8px; padding:15px 17px; margin-bottom:14px; font-size:13.5px; line-height:1.75; color:#134e4a; }
+  .summary-box { background:#f0fdfa; border:1px solid #0d9488; border-left:5px solid #0d9488; border-radius:8px; padding:15px 17px; margin-bottom:14px; font-size:13.5px; line-height:1.6; color:#134e4a; }
+  .summary-box .s-line { padding-left:15px; text-indent:-15px; margin-bottom:7px; }
+  .summary-box .s-line:last-of-type { margin-bottom:0; }
+  .summary-box .s-take { margin-top:11px; padding:9px 0 0 15px; text-indent:-15px; border-top:1px dashed #5eead4; font-weight:700; color:#0f766e; }
   .indicators { background:#f8fafc; border:1px solid #94a3b8; border-radius:8px; padding:14px 16px; margin-bottom:16px; }
   .indicators-title { font-size:11.5px; font-weight:800; color:#475569; margin-bottom:10px; letter-spacing:.3px; }
   .indicator-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px 16px; }
@@ -202,7 +205,15 @@
 
   <section class="sector sector--summary">
     <div class="sector-title"><span class="badge">SECTOR 4</span>지난 밤 뉴스 한 문장 요약</div>
-    <div class="summary-box">美 7월 생산자물가가 보합에 그쳐 9월 연준 금리 인상 관측이 후퇴하고 국제유가도 호르무즈 물량 확대 발언에 2%대 하락하면서 원가·물류 압력은 한숨 돌렸지만, 원/달러가 1,420원대로 되오르고 씨티가 한은의 이달 27일 기준금리 3.00% 인상을 전망해 수입 결제와 운전자금 조달 부담은 오히려 무거워질 수 있습니다. 철강은 7월 대미 수출 186% 급증에 영호남 전기료 최대 10% 인하·생산세액공제 편입 추진까지 원가 호재가 겹쳤으나, 백악관이 한국을 중국산 환적 위험국으로 지목하며 철강 덤핑을 직접 거론해 대미 물량의 규제 리스크가 커졌고 8·13 대책의 수도권 23만호 공급도 실제 착공 시점이 관건이어서, 당장은 재고를 늘리기보다 매입을 분할해 저가 구간에 대응하는 편이 안전해 보입니다.</div>
+    <div class="summary-box">
+      <div class="s-line">· 美 7월 생산자물가 보합 → 9월 연준 금리 인상 관측 후퇴</div>
+      <div class="s-line">· 국제유가 2%대 하락(WTI 81.25달러) → 원가·물류비 압력 완화</div>
+      <div class="s-line">· 원/달러 1,420원대 반등 + 한은 27일 인상 전망 → 수입 결제·운전자금 부담 가중</div>
+      <div class="s-line">· 백악관, 韓 '중국산 환적 위험국' 지목·철강 덤핑 거론 → 대미 수출 규제 리스크</div>
+      <div class="s-line">· 전기료 최대 10% 인하·생산세액공제 편입 추진 → 제조원가 호재</div>
+      <div class="s-line">· 7월 대미 철강수출 186% 급증, 8·13 대책 23만호 공급 → 수요는 개선 방향, 착공 시점이 관건</div>
+      <div class="s-take">▶ 재고를 늘리기보다 분할 매입으로 저가 구간에 대응하는 편이 안전해 보입니다.</div>
+    </div>
   </section>
 
   <footer class="disclaimer">
