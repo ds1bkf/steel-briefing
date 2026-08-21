@@ -10,6 +10,7 @@
   if (!box || !bar) return;
 
   var elPlay  = document.getElementById('tts-play');
+  var elPause = document.getElementById('tts-pause');
   var elStop  = document.getElementById('tts-stop');
   var elRate  = document.getElementById('tts-rate');
   var elSecs  = document.getElementById('tts-sections');
@@ -121,12 +122,13 @@
   }
 
   function render() {
-    if (playing && !paused) {
-      elPlay.innerHTML = '<span aria-hidden="true">&#10074;&#10074;</span> 일시정지';
-    } else if (playing && paused) {
-      elPlay.innerHTML = '<span aria-hidden="true">&#9654;</span> 이어 듣기';
-    } else {
-      elPlay.innerHTML = '<span aria-hidden="true">&#9654;</span> 음성으로 듣기';
+    // 정지 상태에서는 시작 버튼만, 재생 중에는 패널(일시정지·정지·배속이 한 줄)만 보인다
+    elPlay.hidden = playing;
+    if (!playing) elPlay.innerHTML = '<span aria-hidden="true">&#9654;</span> 음성으로 듣기';
+    if (elPause) {
+      elPause.innerHTML = paused
+        ? '<span aria-hidden="true">&#9654;</span> 이어 듣기'
+        : '<span aria-hidden="true">&#10074;&#10074;</span> 일시정지';
     }
     if (elPanel) elPanel.hidden = !playing;
     if (elHint) elHint.hidden = playing;
@@ -226,9 +228,14 @@
   // ── 이벤트 ─────────────────────────────────────────────
   elPlay.addEventListener('click', function () {
     if (!playing) play(0, chunks.length, null);
-    else if (paused) resume();
-    else pause();
   });
+
+  if (elPause) {
+    elPause.addEventListener('click', function () {
+      if (!playing) return;
+      if (paused) resume(); else pause();
+    });
+  }
 
   elStop.addEventListener('click', finish);
 
@@ -243,13 +250,12 @@
   });
 
   if (elSecs) {
+    // 섹터 버튼은 '시작 지점 지정'이다. 그 섹터부터 시작해 뒤 섹터와 닫는 말까지 이어서 읽는다.
     elSecs.addEventListener('click', function (e) {
       var btn = e.target.closest ? e.target.closest('button[data-group]') : null;
       if (!btn) return;
-      var g = btn.getAttribute('data-group');
-      if (playing && curGroup === g && !paused) { finish(); return; }  // 선택 구간을 다시 누르면 정지
-      var r = rangeOf(g);
-      if (r) play(r[0], r[1], g);
+      var r = rangeOf(btn.getAttribute('data-group'));
+      if (r) play(r[0], chunks.length, btn.getAttribute('data-group'));
     });
   }
 
