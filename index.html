@@ -57,24 +57,34 @@
   .ref-list a { color:#2563eb; text-decoration:none; }
   footer.disclaimer { padding:18px 24px 26px; font-size:11px; color:#8a8f98; text-align:center; line-height:1.7; border-top:1px solid #e2e5e9; margin-top:8px; }
   /* 음성 재생 바 */
-  .tts-bar { margin-top:16px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.14); display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:7px; }
+  .tts-bar { margin-top:16px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.14); display:flex; flex-direction:column; align-items:center; gap:8px; }
   .tts-btn { font-family:inherit; font-size:12.5px; font-weight:700; color:#e6edf3; background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.22); border-radius:16px; padding:7px 14px; cursor:pointer; line-height:1.2; }
   .tts-btn:hover { background:rgba(255,255,255,0.18); }
   .tts-btn:disabled { opacity:.5; cursor:default; }
   .tts-btn.tts-main { background:#2563eb; border-color:#2563eb; padding:8px 18px; font-size:13.5px; }
   .tts-btn.tts-main:hover { background:#1d4ed8; }
-  #tts-rate { display:inline-flex; gap:4px; }
-  #tts-rate[hidden] { display:none; }   /* display 지정이 hidden 속성을 덮는 것을 막는다 */
-  .tts-sections[hidden] { display:none; }
-  .tts-sections { width:100%; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:5px; margin-top:3px; }
-  .tts-sec-label { font-size:10.5px; color:#8fa3b8; margin-right:2px; }
-  .tts-btn.tts-sec { padding:5px 11px; font-size:11.5px; font-weight:600; background:transparent; border-color:rgba(255,255,255,0.28); }
-  .tts-btn.tts-sec:hover { background:rgba(255,255,255,0.14); }
-  .tts-btn.tts-sec.is-on { background:#e6edf3; color:#1a2530; border-color:#e6edf3; }
-  #tts-rate .tts-btn { padding:6px 10px; font-size:11.5px; font-weight:600; }
-  #tts-rate .tts-btn.is-on { background:#e6edf3; color:#1a2530; border-color:#e6edf3; }
-  .tts-status, .tts-hint { width:100%; text-align:center; font-size:11px; color:#9fb3c8; margin-top:2px; }
-  .tts-status:empty { display:none; }
+  .tts-hint { font-size:11px; color:#9fb3c8; }
+  .tts-hint[hidden] { display:none; }
+  .tts-panel { width:100%; max-width:430px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:12px; padding:12px 14px 13px; display:flex; flex-direction:column; gap:10px; }
+  .tts-panel[hidden] { display:none; }
+  .tts-now { display:flex; align-items:center; justify-content:center; gap:7px; font-size:13.5px; color:#ffffff; font-weight:700; line-height:1.4; }
+  .tts-now .tts-dot { width:9px; height:9px; border-radius:50%; background:#9fb3c8; flex:none; }
+  .tts-now .tts-pct { font-size:11px; font-weight:600; color:#9fb3c8; }
+  .tts-progress { width:100%; height:4px; background:rgba(255,255,255,0.12); border-radius:2px; overflow:hidden; }
+  .tts-progress-fill { height:100%; width:0%; background:#9fb3c8; border-radius:2px; transition:width .3s ease; }
+  .tts-seg { display:inline-flex; border:1px solid rgba(255,255,255,0.22); border-radius:16px; overflow:hidden; }
+  .tts-seg button { font-family:inherit; font-size:11.5px; font-weight:600; color:#c7d2dc; background:transparent; border:none; border-left:1px solid rgba(255,255,255,0.14); padding:6px 12px; cursor:pointer; line-height:1.2; }
+  .tts-seg button:first-child { border-left:none; }
+  .tts-seg button:hover { background:rgba(255,255,255,0.10); }
+  .tts-seg button.is-on { background:#e6edf3; color:#1a2530; }
+  .tts-sections { width:100%; }
+  .tts-sections button { flex:1; padding:7px 4px; font-size:12px; }
+  .tts-sections button.is-live { color:#fff; font-weight:700; }
+  .tts-sections button[data-group="weather"].is-live { background:#0891b2; }
+  .tts-sections button[data-group="global"].is-live { background:#2563eb; }
+  .tts-sections button[data-group="steel"].is-live { background:#ea580c; }
+  .tts-sections button[data-group="domestic"].is-live { background:#dc2626; }
+  .tts-row { display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap:wrap; }
 </style>
 </head>
 <body>
@@ -85,21 +95,25 @@
     <div class="meta">2026-08-21 (금) · 발행 05:35</div>
     <div class="tts-bar" id="tts-bar">
       <button type="button" class="tts-btn tts-main" id="tts-play"><span aria-hidden="true">&#9654;</span> 음성으로 듣기</button>
-      <button type="button" class="tts-btn" id="tts-stop" hidden><span aria-hidden="true">&#9632;</span> 정지</button>
-      <span id="tts-rate" hidden>
-        <button type="button" class="tts-btn" data-rate="0.9">0.9배</button>
-        <button type="button" class="tts-btn is-on" data-rate="1">1.0배</button>
-        <button type="button" class="tts-btn" data-rate="1.2">1.2배</button>
-      </span>
-      <div class="tts-sections" id="tts-sections" hidden>
-        <span class="tts-sec-label">부분 듣기</span>
-        <button type="button" class="tts-btn tts-sec" data-group="weather">날씨·배차</button>
-        <button type="button" class="tts-btn tts-sec" data-group="global">세계</button>
-        <button type="button" class="tts-btn tts-sec" data-group="steel">철강</button>
-        <button type="button" class="tts-btn tts-sec" data-group="domestic">국내</button>
-      </div>
       <div class="tts-hint" id="tts-hint"></div>
-      <div class="tts-status" id="tts-status"></div>
+      <div class="tts-panel" id="tts-panel" hidden>
+        <div class="tts-now"><span class="tts-dot" id="tts-dot"></span><span id="tts-label"></span><span class="tts-pct" id="tts-pct"></span></div>
+        <div class="tts-progress"><div class="tts-progress-fill" id="tts-fill"></div></div>
+        <div class="tts-sections tts-seg" id="tts-sections">
+          <button type="button" data-group="weather">날씨·배차</button>
+          <button type="button" data-group="global">세계</button>
+          <button type="button" data-group="steel">철강</button>
+          <button type="button" data-group="domestic">국내</button>
+        </div>
+        <div class="tts-row">
+          <button type="button" class="tts-btn" id="tts-stop"><span aria-hidden="true">&#9632;</span> 정지</button>
+          <span class="tts-seg" id="tts-rate">
+            <button type="button" data-rate="0.9">0.9배</button>
+            <button type="button" data-rate="1" class="is-on">1.0배</button>
+            <button type="button" data-rate="1.2">1.2배</button>
+          </span>
+        </div>
+      </div>
     </div>
   </header>
   <div class="range-box">수집 기간: 08-20(목) 15:00 ~ 08-21(금) 05:30</div>
@@ -392,7 +406,7 @@
 }
 ]
 </script>
-<script src="player.js?v=20260821d" defer></script>
+<script src="player.js?v=20260821e" defer></script>
 <!-- 방문 집계 스크립트: 매 회차 반드시 유지(제거 금지). 저장소의 tracker.js를 불러와 /log/ 대시보드에 방문수를 집계한다. -->
 <script src="tracker.js" defer></script>
 </body>

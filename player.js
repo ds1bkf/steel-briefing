@@ -1,7 +1,7 @@
 /* 지난 밤 철강 뉴스 - 음성 재생기 (Web Speech API)
    index.html 안의 <script type="application/json" id="tts-script"> 대본을 읽어 재생한다.
-   각 단락의 group 값(weather / global / steel / domestic)으로 구간 재생을 지원한다.
-   외부 통신 없음, API 키 없음, 비용 없음. */
+   각 단락의 group 값(weather / global / steel / domestic)으로 구간 재생을 지원하고,
+   지금 읽고 있는 섹터를 색으로 강조한다. 외부 통신 없음, API 키 없음, 비용 없음. */
 (function () {
   'use strict';
 
@@ -9,18 +9,25 @@
   var bar = document.getElementById('tts-bar');
   if (!box || !bar) return;
 
-  var elPlay = document.getElementById('tts-play');
-  var elStop = document.getElementById('tts-stop');
-  var elRate = document.getElementById('tts-rate');
-  var elSecs = document.getElementById('tts-sections');
-  var elStatus = document.getElementById('tts-status');
-  var elHint = document.getElementById('tts-hint');
+  var elPlay  = document.getElementById('tts-play');
+  var elStop  = document.getElementById('tts-stop');
+  var elRate  = document.getElementById('tts-rate');
+  var elSecs  = document.getElementById('tts-sections');
+  var elPanel = document.getElementById('tts-panel');
+  var elHint  = document.getElementById('tts-hint');
+  var elDot   = document.getElementById('tts-dot');
+  var elLabel = document.getElementById('tts-label');
+  var elPct   = document.getElementById('tts-pct');
+  var elFill  = document.getElementById('tts-fill');
+
+  // 섹터별 강조색 — 본문 섹터 색과 동일하게 맞춘다
+  var GROUP_COLOR = { weather:'#0891b2', global:'#2563eb', steel:'#ea580c', domestic:'#dc2626', intro:'#9fb3c8', outro:'#9fb3c8' };
 
   // ── 미지원 브라우저 처리 ────────────────────────────────
   if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
     elPlay.disabled = true;
     elPlay.textContent = '음성 재생 미지원 브라우저';
-    if (elSecs) elSecs.hidden = true;
+    if (elPanel) elPanel.hidden = true;
     return;
   }
 
@@ -96,14 +103,6 @@
   var curGroup = null;         // null이면 전체 듣기
   var playing = false, paused = false, rate = 1.0, watchdog = null;
 
-  function markSection() {
-    if (!elSecs) return;
-    elSecs.hidden = !playing;   // 재생을 시작해야 부분 듣기 버튼이 나타난다
-    Array.prototype.forEach.call(elSecs.querySelectorAll('button[data-group]'), function (b) {
-      b.classList.toggle('is-on', playing && b.getAttribute('data-group') === curGroup);
-    });
-  }
-
   // ── 화면 꺼짐 방지 ─────────────────────────────────────
   // 휴대폰 화면이 꺼지면 브라우저가 페이지를 멈춰 음성도 끊긴다.
   // 재생 중에는 화면을 켜 둬서 끊김을 줄인다. (지원하지 않는 기기는 그냥 넘어간다)
@@ -129,17 +128,31 @@
     } else {
       elPlay.innerHTML = '<span aria-hidden="true">&#9654;</span> 음성으로 듣기';
     }
-    elStop.hidden = !playing;
-    elRate.hidden = !playing;
-    markSection();
+    if (elPanel) elPanel.hidden = !playing;
+    if (elHint) elHint.hidden = playing;
+    if (!playing) {
+      if (elSecs) Array.prototype.forEach.call(elSecs.querySelectorAll('button'), function (b) { b.classList.remove('is-live'); });
+      return;
+    }
 
-    if (playing) {
-      var seg = segments[chunks[Math.min(idx, endAt - 1)].seg];
-      var span = Math.max(1, endAt - startAt);
-      var pct = Math.round(((idx - startAt) / span) * 100);
-      elStatus.textContent = (paused ? '일시정지 · ' : '재생 중 · ') + seg.label + ' (' + pct + '%)';
-    } else {
-      elStatus.textContent = '';
+    // 지금 읽고 있는 단락과 섹터
+    var seg = segments[chunks[Math.min(idx, endAt - 1)].seg];
+    var g = seg.group;
+    var color = GROUP_COLOR[g] || '#9fb3c8';
+
+    if (elLabel) elLabel.textContent = seg.label;
+    if (elDot) elDot.style.background = color;
+
+    var span = Math.max(1, endAt - startAt);
+    var pct = Math.min(100, Math.round(((idx - startAt) / span) * 100));
+    if (elPct) elPct.textContent = paused ? '일시정지' : pct + '%';
+    if (elFill) { elFill.style.width = pct + '%'; elFill.style.background = color; }
+
+    // 현재 읽는 섹터의 탭을 그 섹터 색으로 강조 (전체 듣기 중에도 자동으로 이동)
+    if (elSecs) {
+      Array.prototype.forEach.call(elSecs.querySelectorAll('button[data-group]'), function (b) {
+        b.classList.toggle('is-live', b.getAttribute('data-group') === g);
+      });
     }
   }
 
@@ -234,7 +247,7 @@
       var btn = e.target.closest ? e.target.closest('button[data-group]') : null;
       if (!btn) return;
       var g = btn.getAttribute('data-group');
-      if (playing && curGroup === g && !paused) { finish(); return; }  // 같은 구간 다시 누르면 정지
+      if (playing && curGroup === g && !paused) { finish(); return; }  // 선택 구간을 다시 누르면 정지
       var r = rangeOf(g);
       if (r) play(r[0], r[1], g);
     });
