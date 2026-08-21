@@ -1,0 +1,128 @@
+[
+{
+"group": "intro",
+"label": "여는 말",
+"start": 0.0,
+"end": 6.58
+},
+{
+"group": "weather",
+"label": "오늘 날씨",
+"start": 7.18,
+"end": 44.04
+},
+{
+"group": "weather",
+"label": "오늘 배차 안내",
+"start": 44.54,
+"end": 79.08
+},
+{
+"group": "global",
+"label": "세계 - 밤사이 지표",
+"start": 79.58,
+"end": 102.64
+},
+{
+"group": "global",
+"label": "세계 - 미국 장기금리",
+"start": 103.14,
+"end": 151.16
+},
+{
+"group": "global",
+"label": "세계 - 미국 소비",
+"start": 151.66,
+"end": 187.16
+},
+{
+"group": "global",
+"label": "세계 - 유가와 호르무즈",
+"start": 187.66,
+"end": 219.12
+},
+{
+"group": "global",
+"label": "세계 - 한미 통상",
+"start": 219.62,
+"end": 250.87
+},
+{
+"group": "steel",
+"label": "철강 - 당진 고용위기 지정",
+"start": 251.37,
+"end": 297.74
+},
+{
+"group": "steel",
+"label": "철강 - 오늘 현대차 파업",
+"start": 298.24,
+"end": 342.45
+},
+{
+"group": "steel",
+"label": "철강 - 국내 유통가격",
+"start": 342.95,
+"end": 377.84
+},
+{
+"group": "steel",
+"label": "철강 - 국제 원료 시세",
+"start": 378.34,
+"end": 409.93
+},
+{
+"group": "steel",
+"label": "철강 - 철강 도시 침체",
+"start": 410.43,
+"end": 435.17
+},
+{
+"group": "steel",
+"label": "철강 - 북극항로",
+"start": 435.67,
+"end": 472.9
+},
+{
+"group": "domestic",
+"label": "국내 - 증시와 금리",
+"start": 473.4,
+"end": 494.78
+},
+{
+"group": "domestic",
+"label": "국내 - 가계대출",
+"start": 495.28,
+"end": 537.5
+},
+{
+"group": "domestic",
+"label": "국내 - 부동산",
+"start": 538.0,
+"end": 569.34
+},
+{
+"group": "domestic",
+"label": "국내 - 정부 민생 대응",
+"start": 569.84,
+"end": 605.1
+},
+{
+"group": "domestic",
+"label": "국내 - 공공 발주",
+"start": 605.6,
+"end": 636.58
+},
+{
+"group": "domestic",
+"label": "국내 - 7월 지역 수출",
+"start": 637.08,
+"end": 666.62
+},
+{
+"group": "outro",
+"label": "닫는 말",
+"start": 667.12,
+"end": 690.86
+}
+]
