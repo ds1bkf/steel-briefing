@@ -64,6 +64,7 @@
   .tts-btn.tts-main { background:#2563eb; border-color:#2563eb; padding:8px 18px; font-size:13.5px; }
   .tts-btn.tts-main:hover { background:#1d4ed8; }
   #tts-rate { display:inline-flex; gap:4px; }
+  #tts-rate[hidden] { display:none; }   /* display 지정이 hidden 속성을 덮는 것을 막는다 */
   #tts-rate .tts-btn { padding:6px 10px; font-size:11.5px; font-weight:600; }
   #tts-rate .tts-btn.is-on { background:#e6edf3; color:#1a2530; border-color:#e6edf3; }
   .tts-status, .tts-hint { width:100%; text-align:center; font-size:11px; color:#9fb3c8; margin-top:2px; }
