@@ -5,8 +5,8 @@ import base64, io, json, os, re, subprocess, sys, tempfile
 import urllib.request, urllib.parse
 
 VOICE = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Despina")
-RATE = float(os.environ.get("TTS_RATE", "1.0"))
-GAP = {"intro": 0.6, "weather": 0.5, "global": 0.5, "steel": 0.5, "domestic": 0.5, "outro": 0.6}
+RATE = float(os.environ.get("TTS_RATE", "1.08"))
+GAP = {"intro": 0.35, "weather": 0.3, "global": 0.3, "steel": 0.3, "domestic": 0.3, "outro": 0.35}
 API = "https://texttospeech.googleapis.com/v1/text:synthesize"
 
 
