@@ -34,7 +34,7 @@ jobs:
         env:
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
           TTS_VOICE: ko-KR-Chirp3-HD-Despina
-          TTS_RATE: '1.0'
+          TTS_RATE: '1.08'
         run: python tools/make_audio.py
 
       - name: 커밋
