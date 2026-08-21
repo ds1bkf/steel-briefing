@@ -98,9 +98,27 @@
 
   function markSection() {
     if (!elSecs) return;
+    elSecs.hidden = !playing;   // 재생을 시작해야 부분 듣기 버튼이 나타난다
     Array.prototype.forEach.call(elSecs.querySelectorAll('button[data-group]'), function (b) {
       b.classList.toggle('is-on', playing && b.getAttribute('data-group') === curGroup);
     });
+  }
+
+  // ── 화면 꺼짐 방지 ─────────────────────────────────────
+  // 휴대폰 화면이 꺼지면 브라우저가 페이지를 멈춰 음성도 끊긴다.
+  // 재생 중에는 화면을 켜 둬서 끊김을 줄인다. (지원하지 않는 기기는 그냥 넘어간다)
+  var wakeLock = null;
+  function acquireWakeLock() {
+    if (!('wakeLock' in navigator) || wakeLock) return;
+    try {
+      navigator.wakeLock.request('screen').then(function (l) {
+        wakeLock = l;
+        l.addEventListener('release', function () { wakeLock = null; });
+      })['catch'](function () { /* 거부되면 무시 */ });
+    } catch (e) { /* 무시 */ }
+  }
+  function releaseWakeLock() {
+    if (wakeLock) { try { wakeLock.release(); } catch (e) {} wakeLock = null; }
   }
 
   function render() {
@@ -161,6 +179,7 @@
     synth.cancel();
     startAt = from; endAt = to; idx = from; curGroup = group || null;
     playing = true; paused = false;
+    acquireWakeLock();
     startWatchdog();
     speakNext();
     render();
@@ -170,11 +189,13 @@
     paused = true;
     synth.cancel();   // pause()가 불안정한 브라우저가 있어 취소 후 위치를 기억한다
     stopWatchdog();
+    releaseWakeLock();
     render();
   }
 
   function resume() {
     paused = false;
+    acquireWakeLock();
     startWatchdog();
     speakNext();
     render();
@@ -185,6 +206,7 @@
     idx = startAt;
     synth.cancel();
     stopWatchdog();
+    releaseWakeLock();
     render();
   }
 
@@ -219,8 +241,11 @@
   }
 
   window.addEventListener('beforeunload', function () { synth.cancel(); });
+
+  // 다른 탭으로 갔다 돌아오면 화면 꺼짐 방지를 다시 건다.
+  // (PC 브라우저는 탭이 뒤로 가도 낭독이 이어진다. 휴대폰은 화면이 꺼지면 멈춘다.)
   document.addEventListener('visibilitychange', function () {
-    if (document.hidden && playing && !paused) pause();
+    if (!document.hidden && playing && !paused) acquireWakeLock();
   });
 
   // 예상 재생 시간 (한국어 TTS 대략 분당 330자 기준)

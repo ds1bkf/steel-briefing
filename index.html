@@ -65,6 +65,7 @@
   .tts-btn.tts-main:hover { background:#1d4ed8; }
   #tts-rate { display:inline-flex; gap:4px; }
   #tts-rate[hidden] { display:none; }   /* display 지정이 hidden 속성을 덮는 것을 막는다 */
+  .tts-sections[hidden] { display:none; }
   .tts-sections { width:100%; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:5px; margin-top:3px; }
   .tts-sec-label { font-size:10.5px; color:#8fa3b8; margin-right:2px; }
   .tts-btn.tts-sec { padding:5px 11px; font-size:11.5px; font-weight:600; background:transparent; border-color:rgba(255,255,255,0.28); }
@@ -90,7 +91,7 @@
         <button type="button" class="tts-btn is-on" data-rate="1">1.0배</button>
         <button type="button" class="tts-btn" data-rate="1.2">1.2배</button>
       </span>
-      <div class="tts-sections" id="tts-sections">
+      <div class="tts-sections" id="tts-sections" hidden>
         <span class="tts-sec-label">부분 듣기</span>
         <button type="button" class="tts-btn tts-sec" data-group="weather">날씨·배차</button>
         <button type="button" class="tts-btn tts-sec" data-group="global">세계</button>
@@ -391,7 +392,7 @@
 }
 ]
 </script>
-<script src="player.js?v=20260821c" defer></script>
+<script src="player.js?v=20260821d" defer></script>
 <!-- 방문 집계 스크립트: 매 회차 반드시 유지(제거 금지). 저장소의 tracker.js를 불러와 /log/ 대시보드에 방문수를 집계한다. -->
 <script src="tracker.js" defer></script>
 </body>
