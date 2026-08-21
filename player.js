@@ -1,7 +1,7 @@
-/* 지난 밤 철강 뉴스 - 음성 재생기 (Web Speech API)
-   index.html 안의 <script type="application/json" id="tts-script"> 대본을 읽어 재생한다.
-   각 단락의 group 값(weather / global / steel / domestic)으로 구간 재생을 지원하고,
-   지금 읽고 있는 섹터를 색으로 강조한다. 외부 통신 없음, API 키 없음, 비용 없음. */
+/* 지난 밤 철강 뉴스 - 음성 재생기
+   1순위: 새벽에 만들어 둔 audio.mp3 + chapters.json (구글 TTS, 자연스러운 음성)
+   2순위: MP3가 없으면 브라우저 내장 음성(Web Speech API)으로 자동 전환
+   두 방식 모두 지금 읽는 섹터를 색으로 강조한다. */
 (function () {
   'use strict';
 
@@ -20,289 +20,334 @@
   var elLabel = document.getElementById('tts-label');
   var elPct   = document.getElementById('tts-pct');
   var elFill  = document.getElementById('tts-fill');
+  var elProg  = elFill ? elFill.parentNode : null;
 
-  // 섹터별 강조색 — 본문 섹터 색과 동일하게 맞춘다
-  var GROUP_COLOR = { weather:'#0891b2', global:'#2563eb', steel:'#ea580c', domestic:'#dc2626', intro:'#9fb3c8', outro:'#9fb3c8' };
+  var GROUP_COLOR = { weather:'#0891b2', global:'#2563eb', steel:'#ea580c',
+                      domestic:'#dc2626', intro:'#9fb3c8', outro:'#9fb3c8' };
+  var VER = bar.getAttribute('data-audio-v') || '1';
 
-  // ── 미지원 브라우저 처리 ────────────────────────────────
-  if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
-    elPlay.disabled = true;
-    elPlay.textContent = '음성 재생 미지원 브라우저';
-    if (elPanel) elPanel.hidden = true;
-    return;
-  }
-
-  var synth = window.speechSynthesis;
   var segments;
   try { segments = JSON.parse(box.textContent); } catch (e) { return; }
   if (!segments || !segments.length) return;
 
-  // ── 대본을 문장 단위로 쪼갠다 ───────────────────────────
-  // 크롬은 긴 문장을 한 번에 넣으면 약 15초에서 끊기는 알려진 버그가 있어
-  // 문장 단위(최대 180자)로 나눠 큐로 넣는다.
-  var MAX = 180;
-  function splitToSentences(text) {
-    // 구형 사파리가 lookbehind 정규식을 못 읽으므로 쓰지 않는다
-    var raw = text.replace(/\s+/g, ' ').trim().match(/[^.?!]+[.?!]*\s*/g) || [text];
-    var out = [];
-    raw.forEach(function (s) {
-      s = s.trim();
-      if (!s) return;
-      while (s.length > MAX) {
-        var cut = s.lastIndexOf(', ', MAX);
-        if (cut < MAX * 0.4) cut = s.lastIndexOf(' ', MAX);
-        if (cut < MAX * 0.4) cut = MAX;
-        out.push(s.slice(0, cut).trim());
-        s = s.slice(cut).trim();
-      }
-      if (s) out.push(s);
-    });
-    return out;
-  }
-
-  var chunks = [];
-  segments.forEach(function (seg, si) {
-    splitToSentences(seg.text).forEach(function (s) {
-      chunks.push({ text: s, seg: si });
-    });
-  });
-
-  // 그룹 이름으로 청크 구간을 찾는다
-  function rangeOf(group) {
-    var from = -1, to = -1;
-    for (var i = 0; i < chunks.length; i++) {
-      if (segments[chunks[i].seg].group === group) {
-        if (from < 0) from = i;
-        to = i + 1;
-      }
-    }
-    return from < 0 ? null : [from, to];
-  }
-
-  // ── 한국어 음성 고르기 ─────────────────────────────────
-  var voice = null;
-  function pickVoice() {
-    var list = synth.getVoices() || [];
-    var ko = list.filter(function (v) { return /^ko/i.test(v.lang); });
-    if (!ko.length) return null;
-    var pref = ['Google', 'Yuna', 'Heami', 'Sora', 'Nuri'];
-    for (var i = 0; i < pref.length; i++) {
-      var hit = ko.filter(function (v) { return v.name.indexOf(pref[i]) !== -1; })[0];
-      if (hit) return hit;
-    }
-    return ko[0];
-  }
-  voice = pickVoice();
-  if (synth.onvoiceschanged !== undefined) {
-    synth.addEventListener('voiceschanged', function () { voice = pickVoice() || voice; });
-  }
-
-  // ── 상태 ───────────────────────────────────────────────
-  var idx = 0;                 // 현재 청크
-  var startAt = 0;             // 재생 구간 시작
-  var endAt = chunks.length;   // 재생 구간 끝(미포함)
-  var curGroup = null;         // null이면 전체 듣기
-  var playing = false, paused = false, rate = 1.0, watchdog = null;
-  var warmed = false;          // 음성 엔진 예열 여부
-  var preparing = false;       // 시작 전 대기 중
-  var pendingTimer = null;     // 시작 지연 타이머
-
-  // 첫 재생 때 브라우저가 음성 엔진을 그제서야 로딩하면서 첫 문장이 뭉개진다.
-  // 들리지 않는 발화를 먼저 흘려보내 엔진을 깨워 둔다.
-  function warmUp() {
-    try {
-      var w = new SpeechSynthesisUtterance('음성 안내를 준비하고 있습니다');
-      w.lang = 'ko-KR';
-      if (voice) w.voice = voice;
-      w.volume = 0;   // 무음
-      synth.speak(w);
-    } catch (e) { /* 무시 */ }
-  }
-  function clearPending() {
-    if (pendingTimer) { clearTimeout(pendingTimer); pendingTimer = null; }
-    preparing = false;
-  }
-
-  // ── 화면 꺼짐 방지 ─────────────────────────────────────
-  // 휴대폰 화면이 꺼지면 브라우저가 페이지를 멈춰 음성도 끊긴다.
-  // 재생 중에는 화면을 켜 둬서 끊김을 줄인다. (지원하지 않는 기기는 그냥 넘어간다)
-  var wakeLock = null;
-  function acquireWakeLock() {
-    if (!('wakeLock' in navigator) || wakeLock) return;
-    try {
-      navigator.wakeLock.request('screen').then(function (l) {
-        wakeLock = l;
-        l.addEventListener('release', function () { wakeLock = null; });
-      })['catch'](function () { /* 거부되면 무시 */ });
-    } catch (e) { /* 무시 */ }
-  }
-  function releaseWakeLock() {
-    if (wakeLock) { try { wakeLock.release(); } catch (e) {} wakeLock = null; }
-  }
-
-  function render() {
-    // 정지 상태에서는 시작 버튼만, 재생 중에는 패널(일시정지·정지·배속이 한 줄)만 보인다
-    elPlay.hidden = playing;
-    if (!playing) elPlay.innerHTML = '<span aria-hidden="true">&#9654;</span> 음성으로 듣기';
-    if (elPause) {
-      elPause.innerHTML = paused
-        ? '<span aria-hidden="true">&#9654;</span> 이어 듣기'
-        : '<span aria-hidden="true">&#10074;&#10074;</span> 일시정지';
-    }
-    if (elPanel) elPanel.hidden = !playing;
-    if (elHint) elHint.hidden = playing;
-    if (!playing) {
-      if (elSecs) Array.prototype.forEach.call(elSecs.querySelectorAll('button'), function (b) { b.classList.remove('is-live'); });
-      return;
-    }
-
-    // 지금 읽고 있는 단락과 섹터
-    var seg = segments[chunks[Math.min(idx, endAt - 1)].seg];
-    var g = seg.group;
-    var color = GROUP_COLOR[g] || '#9fb3c8';
-
-    if (elLabel) elLabel.textContent = seg.label;
+  // ── 공통 표시 도우미 ───────────────────────────────────
+  function paint(group, label, pct, note) {
+    var color = GROUP_COLOR[group] || '#9fb3c8';
+    if (elLabel) elLabel.textContent = label || '';
     if (elDot) elDot.style.background = color;
-
-    var span = Math.max(1, endAt - startAt);
-    var pct = Math.min(100, Math.round(((idx - startAt) / span) * 100));
-    if (elPct) elPct.textContent = paused ? '일시정지' : (preparing ? '잠시 후 시작' : pct + '%');
-    if (elFill) { elFill.style.width = pct + '%'; elFill.style.background = color; }
-
-    // 현재 읽는 섹터의 탭을 그 섹터 색으로 강조 (전체 듣기 중에도 자동으로 이동)
+    if (elPct) elPct.textContent = note || (Math.round(pct) + '%');
+    if (elFill) { elFill.style.width = Math.max(0, Math.min(100, pct)) + '%'; elFill.style.background = color; }
     if (elSecs) {
       Array.prototype.forEach.call(elSecs.querySelectorAll('button[data-group]'), function (b) {
-        b.classList.toggle('is-live', b.getAttribute('data-group') === g);
+        b.classList.toggle('is-live', b.getAttribute('data-group') === group);
       });
     }
   }
-
-  // 크롬이 장시간 재생 중 스스로 멈추는 것을 막는 감시 타이머
-  function startWatchdog() {
-    stopWatchdog();
-    watchdog = setInterval(function () {
-      if (playing && !paused && !synth.speaking) speakNext();
-    }, 1200);
+  function clearMarks() {
+    if (elSecs) Array.prototype.forEach.call(elSecs.querySelectorAll('button'), function (b) {
+      b.classList.remove('is-live');
+    });
   }
-  function stopWatchdog() { if (watchdog) { clearInterval(watchdog); watchdog = null; } }
-
-  function speakNext() {
-    if (!playing || paused) return;
-    if (idx >= endAt) { finish(); return; }
-    var u = new SpeechSynthesisUtterance(chunks[idx].text);
-    u.lang = 'ko-KR';
-    if (voice) u.voice = voice;
-    u.rate = rate;
-    u.pitch = 1.0;
-    u.onend = function () {
-      if (!playing || paused) return;
-      idx += 1;
-      render();
-      speakNext();
-    };
-    u.onerror = function (ev) {
-      if (ev && (ev.error === 'canceled' || ev.error === 'interrupted')) return;
-      idx += 1;
-      if (playing && !paused) speakNext();
-    };
-    synth.speak(u);
-    render();
+  function setButtons(playing, paused) {
+    elPlay.hidden = playing;
+    if (!playing) elPlay.innerHTML = '<span aria-hidden="true">&#9654;</span> 음성으로 듣기';
+    if (elPause) elPause.innerHTML = paused
+      ? '<span aria-hidden="true">&#9654;</span> 이어 듣기'
+      : '<span aria-hidden="true">&#10074;&#10074;</span> 일시정지';
+    if (elPanel) elPanel.hidden = !playing;
+    if (elHint) elHint.hidden = playing;
+    if (!playing) clearMarks();
+  }
+  function mmss(sec) {
+    if (!isFinite(sec)) return '';
+    var m = Math.floor(sec / 60), s = Math.floor(sec % 60);
+    return m + ':' + (s < 10 ? '0' : '') + s;
   }
 
-  function play(from, to, group) {
-    synth.cancel();
-    clearPending();
-    startAt = from; endAt = to; idx = from; curGroup = group || null;
-    playing = true; paused = false;
-    acquireWakeLock();
-    // 첫 시작은 1초 예열 후, 이후 시작은 짧게 쉬고 낭독을 시작한다
-    var delay = warmed ? 300 : 1000;
-    preparing = true;
-    if (!warmed) warmUp();
-    render();
-    pendingTimer = setTimeout(function () {
-      pendingTimer = null;
-      preparing = false;
-      warmed = true;
-      if (!playing || paused) return;
-      synth.cancel();          // 예열 발화가 남아 있으면 정리
-      startWatchdog();
-      speakNext();
-    }, delay);
-  }
+  // ══════════════════════════════════════════════════════
+  //  1순위 — MP3 재생 모드
+  // ══════════════════════════════════════════════════════
+  function initAudioMode(chapters) {
+    var audio = new Audio('audio.mp3?v=' + VER);
+    audio.preload = 'metadata';
 
-  function pause() {
-    paused = true;
-    clearPending();
-    synth.cancel();   // pause()가 불안정한 브라우저가 있어 취소 후 위치를 기억한다
-    stopWatchdog();
-    releaseWakeLock();
-    render();
-  }
+    var started = false;
 
-  function resume() {
-    paused = false;
-    acquireWakeLock();
-    startWatchdog();
-    speakNext();
-    render();
-  }
+    function current() {
+      var t = audio.currentTime;
+      for (var i = 0; i < chapters.length; i++) {
+        if (t < chapters[i].end) return chapters[i];
+      }
+      return chapters[chapters.length - 1];
+    }
 
-  function finish() {
-    playing = false; paused = false;
-    clearPending();
-    idx = startAt;
-    synth.cancel();
-    stopWatchdog();
-    releaseWakeLock();
-    render();
-  }
-
-  // ── 이벤트 ─────────────────────────────────────────────
-  elPlay.addEventListener('click', function () {
-    if (!playing) play(0, chunks.length, null);
-  });
-
-  if (elPause) {
-    elPause.addEventListener('click', function () {
+    function render() {
+      var playing = started;
+      setButtons(playing, playing && audio.paused);
       if (!playing) return;
-      if (paused) resume(); else pause();
+      var c = current();
+      var d = audio.duration || 0;
+      var pct = d ? (audio.currentTime / d) * 100 : 0;
+      paint(c.group, c.label,
+            pct,
+            audio.paused ? '일시정지' : mmss(audio.currentTime) + ' / ' + mmss(d));
+    }
+
+    audio.addEventListener('timeupdate', render);
+    audio.addEventListener('play', render);
+    audio.addEventListener('pause', render);
+    audio.addEventListener('ended', function () { started = false; audio.currentTime = 0; render(); });
+
+    elPlay.addEventListener('click', function () {
+      started = true;
+      audio.play();
+      render();
     });
-  }
-
-  elStop.addEventListener('click', finish);
-
-  elRate.addEventListener('click', function (e) {
-    var btn = e.target.closest ? e.target.closest('button[data-rate]') : null;
-    if (!btn) return;
-    rate = parseFloat(btn.getAttribute('data-rate'));
-    Array.prototype.forEach.call(elRate.querySelectorAll('button'), function (b) {
-      b.classList.toggle('is-on', b === btn);
+    if (elPause) elPause.addEventListener('click', function () {
+      if (!started) return;
+      if (audio.paused) audio.play(); else audio.pause();
     });
-    if (playing && !paused) { synth.cancel(); speakNext(); }   // 현재 문장부터 새 속도로
-  });
+    elStop.addEventListener('click', function () {
+      started = false; audio.pause(); audio.currentTime = 0; render();
+    });
 
-  if (elSecs) {
-    // 섹터 버튼은 '시작 지점 지정'이다. 그 섹터부터 시작해 뒤 섹터와 닫는 말까지 이어서 읽는다.
-    elSecs.addEventListener('click', function (e) {
+    elRate.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('button[data-rate]') : null;
+      if (!btn) return;
+      audio.playbackRate = parseFloat(btn.getAttribute('data-rate'));
+      Array.prototype.forEach.call(elRate.querySelectorAll('button'), function (b) {
+        b.classList.toggle('is-on', b === btn);
+      });
+    });
+
+    // 섹터 버튼 = 그 지점으로 이동해 끝까지 이어 듣기
+    if (elSecs) elSecs.addEventListener('click', function (e) {
       var btn = e.target.closest ? e.target.closest('button[data-group]') : null;
       if (!btn) return;
-      var r = rangeOf(btn.getAttribute('data-group'));
-      if (r) play(r[0], chunks.length, btn.getAttribute('data-group'));
+      var g = btn.getAttribute('data-group'), c = null;
+      for (var i = 0; i < chapters.length; i++) { if (chapters[i].group === g) { c = chapters[i]; break; } }
+      if (!c) return;
+      started = true;
+      audio.currentTime = c.start;
+      audio.play();
+      render();
     });
+
+    // 진행 바를 눌러 원하는 지점으로 이동
+    if (elProg) {
+      elProg.style.cursor = 'pointer';
+      elProg.addEventListener('click', function (e) {
+        if (!audio.duration) return;
+        var r = elProg.getBoundingClientRect();
+        audio.currentTime = ((e.clientX - r.left) / r.width) * audio.duration;
+        render();
+      });
+    }
+
+    // 잠금화면·이어폰·차량 버튼 연동
+    if ('mediaSession' in navigator) {
+      try {
+        navigator.mediaSession.metadata = new window.MediaMetadata({
+          title: '지난 밤 철강 뉴스',
+          artist: document.querySelector('header .meta') ? document.querySelector('header .meta').textContent : '',
+          album: '진흥철강 조간 브리핑'
+        });
+        navigator.mediaSession.setActionHandler('play', function () { started = true; audio.play(); });
+        navigator.mediaSession.setActionHandler('pause', function () { audio.pause(); });
+        navigator.mediaSession.setActionHandler('seekbackward', function () { audio.currentTime = Math.max(0, audio.currentTime - 15); });
+        navigator.mediaSession.setActionHandler('seekforward', function () { audio.currentTime = audio.currentTime + 15; });
+      } catch (e) { /* 미지원 브라우저는 무시 */ }
+    }
+
+    audio.addEventListener('loadedmetadata', function () {
+      if (elHint) elHint.textContent = '전체 ' + mmss(audio.duration);
+    });
+    if (elHint) elHint.textContent = '전체 ' + mmss(chapters[chapters.length - 1].end);
+    render();
   }
 
-  window.addEventListener('beforeunload', function () { synth.cancel(); });
+  // ══════════════════════════════════════════════════════
+  //  2순위 — 브라우저 내장 음성 (MP3가 없을 때)
+  // ══════════════════════════════════════════════════════
+  function initSpeechMode() {
+    if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+      elPlay.disabled = true;
+      elPlay.textContent = '음성 재생 미지원 브라우저';
+      if (elPanel) elPanel.hidden = true;
+      return;
+    }
+    var synth = window.speechSynthesis;
 
-  // 다른 탭으로 갔다 돌아오면 화면 꺼짐 방지를 다시 건다.
-  // (PC 브라우저는 탭이 뒤로 가도 낭독이 이어진다. 휴대폰은 화면이 꺼지면 멈춘다.)
-  document.addEventListener('visibilitychange', function () {
-    if (!document.hidden && playing && !paused) acquireWakeLock();
-  });
+    var MAX = 180;
+    function split(text) {
+      var raw = text.replace(/\s+/g, ' ').trim().match(/[^.?!]+[.?!]*\s*/g) || [text];
+      var out = [];
+      raw.forEach(function (s) {
+        s = s.trim();
+        if (!s) return;
+        while (s.length > MAX) {
+          var cut = s.lastIndexOf(', ', MAX);
+          if (cut < MAX * 0.4) cut = s.lastIndexOf(' ', MAX);
+          if (cut < MAX * 0.4) cut = MAX;
+          out.push(s.slice(0, cut).trim());
+          s = s.slice(cut).trim();
+        }
+        if (s) out.push(s);
+      });
+      return out;
+    }
+    var chunks = [];
+    segments.forEach(function (seg, si) {
+      split(seg.text).forEach(function (s) { chunks.push({ text: s, seg: si }); });
+    });
+    function rangeOf(group) {
+      for (var i = 0; i < chunks.length; i++) {
+        if (segments[chunks[i].seg].group === group) return i;
+      }
+      return -1;
+    }
 
-  // 예상 재생 시간 (한국어 TTS 대략 분당 330자 기준)
-  var total = segments.reduce(function (a, s) { return a + s.text.length; }, 0);
-  if (elHint) elHint.textContent = '전체 약 ' + Math.max(1, Math.round(total / 330)) + '분';
+    var voice = null;
+    function pickVoice() {
+      var ko = (synth.getVoices() || []).filter(function (v) { return /^ko/i.test(v.lang); });
+      if (!ko.length) return null;
+      var pref = ['Google', 'Yuna', 'Heami', 'Sora', 'Nuri'];
+      for (var i = 0; i < pref.length; i++) {
+        var hit = ko.filter(function (v) { return v.name.indexOf(pref[i]) !== -1; })[0];
+        if (hit) return hit;
+      }
+      return ko[0];
+    }
+    voice = pickVoice();
+    if (synth.onvoiceschanged !== undefined) {
+      synth.addEventListener('voiceschanged', function () { voice = pickVoice() || voice; });
+    }
 
-  render();
+    var idx = 0, startAt = 0, playing = false, paused = false, rate = 1.0;
+    var watchdog = null, warmed = false, preparing = false, pending = null, wakeLock = null;
+
+    function warmUp() {
+      try {
+        var w = new SpeechSynthesisUtterance('음성 안내를 준비하고 있습니다');
+        w.lang = 'ko-KR'; if (voice) w.voice = voice; w.volume = 0;
+        synth.speak(w);
+      } catch (e) {}
+    }
+    function clearPending() { if (pending) { clearTimeout(pending); pending = null; } preparing = false; }
+    function lockOn() {
+      if (!('wakeLock' in navigator) || wakeLock) return;
+      try {
+        navigator.wakeLock.request('screen').then(function (l) {
+          wakeLock = l; l.addEventListener('release', function () { wakeLock = null; });
+        })['catch'](function () {});
+      } catch (e) {}
+    }
+    function lockOff() { if (wakeLock) { try { wakeLock.release(); } catch (e) {} wakeLock = null; } }
+
+    function render() {
+      setButtons(playing, paused);
+      if (!playing) return;
+      var seg = segments[chunks[Math.min(idx, chunks.length - 1)].seg];
+      var pct = ((idx - startAt) / Math.max(1, chunks.length - startAt)) * 100;
+      paint(seg.group, seg.label, pct,
+            paused ? '일시정지' : (preparing ? '잠시 후 시작' : null));
+    }
+    function startWatchdog() {
+      stopWatchdog();
+      watchdog = setInterval(function () {
+        if (playing && !paused && !preparing && !synth.speaking) next();
+      }, 1200);
+    }
+    function stopWatchdog() { if (watchdog) { clearInterval(watchdog); watchdog = null; } }
+
+    function next() {
+      if (!playing || paused) return;
+      if (idx >= chunks.length) { stop(); return; }
+      var u = new SpeechSynthesisUtterance(chunks[idx].text);
+      u.lang = 'ko-KR'; if (voice) u.voice = voice; u.rate = rate; u.pitch = 1.0;
+      u.onend = function () { if (!playing || paused) return; idx += 1; render(); next(); };
+      u.onerror = function (ev) {
+        if (ev && (ev.error === 'canceled' || ev.error === 'interrupted')) return;
+        idx += 1; if (playing && !paused) next();
+      };
+      synth.speak(u);
+      render();
+    }
+    function play(from) {
+      synth.cancel(); clearPending();
+      startAt = from; idx = from; playing = true; paused = false;
+      lockOn();
+      var delay = warmed ? 300 : 1000;
+      preparing = true;
+      if (!warmed) warmUp();
+      render();
+      pending = setTimeout(function () {
+        pending = null; preparing = false; warmed = true;
+        if (!playing || paused) return;
+        synth.cancel(); startWatchdog(); next();
+      }, delay);
+    }
+    function stop() {
+      playing = false; paused = false; clearPending();
+      idx = startAt; synth.cancel(); stopWatchdog(); lockOff(); render();
+    }
+
+    elPlay.addEventListener('click', function () { if (!playing) play(0); });
+    if (elPause) elPause.addEventListener('click', function () {
+      if (!playing) return;
+      if (paused) { paused = false; lockOn(); startWatchdog(); next(); render(); }
+      else { paused = true; clearPending(); synth.cancel(); stopWatchdog(); lockOff(); render(); }
+    });
+    elStop.addEventListener('click', stop);
+    elRate.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('button[data-rate]') : null;
+      if (!btn) return;
+      rate = parseFloat(btn.getAttribute('data-rate'));
+      Array.prototype.forEach.call(elRate.querySelectorAll('button'), function (b) {
+        b.classList.toggle('is-on', b === btn);
+      });
+      if (playing && !paused) { synth.cancel(); next(); }
+    });
+    if (elSecs) elSecs.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('button[data-group]') : null;
+      if (!btn) return;
+      var i = rangeOf(btn.getAttribute('data-group'));
+      if (i >= 0) play(i);
+    });
+    window.addEventListener('beforeunload', function () { synth.cancel(); });
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden && playing && !paused) lockOn();
+    });
+
+    var total = segments.reduce(function (a, s) { return a + s.text.length; }, 0);
+    if (elHint) elHint.textContent = '전체 약 ' + Math.max(1, Math.round(total / 330)) + '분';
+    render();
+  }
+
+  // ── MP3가 있으면 그쪽, 없으면 브라우저 음성 ─────────────
+  var done = false;
+  function fallback() { if (!done) { done = true; initSpeechMode(); } }
+
+  if (window.fetch) {
+    fetch('chapters.json?v=' + VER, { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function (ch) {
+        if (!ch || !ch.length) throw 0;
+        // 실제로 재생 가능한지까지 확인한 뒤 확정한다
+        var probe = new Audio('audio.mp3?v=' + VER);
+        probe.preload = 'metadata';
+        var settled = false;
+        probe.addEventListener('loadedmetadata', function () {
+          if (settled) return; settled = true;
+          if (!done) { done = true; initAudioMode(ch); }
+        });
+        probe.addEventListener('error', function () {
+          if (settled) return; settled = true; fallback();
+        });
+        setTimeout(function () { if (!settled) { settled = true; fallback(); } }, 6000);
+      })
+      ['catch'](fallback);
+  } else {
+    fallback();
+  }
 })();
