@@ -103,6 +103,25 @@
   var endAt = chunks.length;   // 재생 구간 끝(미포함)
   var curGroup = null;         // null이면 전체 듣기
   var playing = false, paused = false, rate = 1.0, watchdog = null;
+  var warmed = false;          // 음성 엔진 예열 여부
+  var preparing = false;       // 시작 전 대기 중
+  var pendingTimer = null;     // 시작 지연 타이머
+
+  // 첫 재생 때 브라우저가 음성 엔진을 그제서야 로딩하면서 첫 문장이 뭉개진다.
+  // 들리지 않는 발화를 먼저 흘려보내 엔진을 깨워 둔다.
+  function warmUp() {
+    try {
+      var w = new SpeechSynthesisUtterance('음성 안내를 준비하고 있습니다');
+      w.lang = 'ko-KR';
+      if (voice) w.voice = voice;
+      w.volume = 0;   // 무음
+      synth.speak(w);
+    } catch (e) { /* 무시 */ }
+  }
+  function clearPending() {
+    if (pendingTimer) { clearTimeout(pendingTimer); pendingTimer = null; }
+    preparing = false;
+  }
 
   // ── 화면 꺼짐 방지 ─────────────────────────────────────
   // 휴대폰 화면이 꺼지면 브라우저가 페이지를 멈춰 음성도 끊긴다.
@@ -147,7 +166,7 @@
 
     var span = Math.max(1, endAt - startAt);
     var pct = Math.min(100, Math.round(((idx - startAt) / span) * 100));
-    if (elPct) elPct.textContent = paused ? '일시정지' : pct + '%';
+    if (elPct) elPct.textContent = paused ? '일시정지' : (preparing ? '잠시 후 시작' : pct + '%');
     if (elFill) { elFill.style.width = pct + '%'; elFill.style.background = color; }
 
     // 현재 읽는 섹터의 탭을 그 섹터 색으로 강조 (전체 듣기 중에도 자동으로 이동)
@@ -192,16 +211,29 @@
 
   function play(from, to, group) {
     synth.cancel();
+    clearPending();
     startAt = from; endAt = to; idx = from; curGroup = group || null;
     playing = true; paused = false;
     acquireWakeLock();
-    startWatchdog();
-    speakNext();
+    // 첫 시작은 2.5초 예열 후, 이후 시작은 짧게 쉬고 낭독을 시작한다
+    var delay = warmed ? 300 : 2500;
+    preparing = true;
+    if (!warmed) warmUp();
     render();
+    pendingTimer = setTimeout(function () {
+      pendingTimer = null;
+      preparing = false;
+      warmed = true;
+      if (!playing || paused) return;
+      synth.cancel();          // 예열 발화가 남아 있으면 정리
+      startWatchdog();
+      speakNext();
+    }, delay);
   }
 
   function pause() {
     paused = true;
+    clearPending();
     synth.cancel();   // pause()가 불안정한 브라우저가 있어 취소 후 위치를 기억한다
     stopWatchdog();
     releaseWakeLock();
@@ -218,6 +250,7 @@
 
   function finish() {
     playing = false; paused = false;
+    clearPending();
     idx = startAt;
     synth.cancel();
     stopWatchdog();
