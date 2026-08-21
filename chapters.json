@@ -3,126 +3,102 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.38
+"end": 6.06
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.38,
-"end": 45.66
+"start": 7.06,
+"end": 60.15
 },
 {
 "group": "weather",
 "label": "오늘 배차 안내",
-"start": 46.01,
-"end": 81.67
+"start": 60.5,
+"end": 91.25
 },
 {
 "group": "global",
 "label": "세계 - 밤사이 지표",
-"start": 82.67,
-"end": 104.56
+"start": 92.25,
+"end": 122.13
 },
 {
 "group": "global",
 "label": "세계 - 미국 장기금리",
-"start": 104.91,
-"end": 147.72
+"start": 122.48,
+"end": 166.92
 },
 {
 "group": "global",
-"label": "세계 - 미국 소비",
-"start": 148.07,
-"end": 185.44
+"label": "세계 - 국제유가",
+"start": 167.27,
+"end": 205.36
 },
 {
 "group": "global",
-"label": "세계 - 유가와 호르무즈",
-"start": 185.79,
-"end": 213.87
+"label": "세계 - 미국 경기 지표",
+"start": 205.71,
+"end": 240.99
 },
 {
 "group": "global",
-"label": "세계 - 한미 통상",
-"start": 214.22,
-"end": 247.63
+"label": "세계 - 다음 주 일정",
+"start": 241.34,
+"end": 277.41
 },
 {
 "group": "steel",
-"label": "철강 - 당진 고용위기 지정",
-"start": 248.63,
-"end": 291.45
+"label": "철강 - 하투 확산",
+"start": 278.41,
+"end": 328.26
 },
 {
 "group": "steel",
-"label": "철강 - 오늘 현대차 파업",
-"start": 291.8,
-"end": 335.6
+"label": "철강 - 전기요금 차등제",
+"start": 328.61,
+"end": 371.84
 },
 {
 "group": "steel",
-"label": "철강 - 국내 유통가격",
-"start": 335.95,
-"end": 372.52
+"label": "철강 - 포항세관 7월 실적",
+"start": 372.19,
+"end": 405.91
 },
 {
 "group": "steel",
-"label": "철강 - 국제 원료 시세",
-"start": 372.87,
-"end": 406.14
+"label": "철강 - 중국발 수출 공세",
+"start": 406.26,
+"end": 438.94
 },
 {
 "group": "steel",
-"label": "철강 - 철강 도시 침체",
-"start": 406.49,
-"end": 433.32
-},
-{
-"group": "steel",
-"label": "철강 - 북극항로",
-"start": 433.67,
-"end": 466.55
+"label": "철강 - 생산 전략 전환",
+"start": 439.29,
+"end": 476.85
 },
 {
 "group": "domestic",
 "label": "국내 - 증시와 금리",
-"start": 467.55,
-"end": 487.68
+"start": 477.85,
+"end": 500.65
 },
 {
 "group": "domestic",
-"label": "국내 - 가계대출",
-"start": 488.03,
-"end": 528.19
+"label": "국내 - 국고채 금리 상승",
+"start": 501.0,
+"end": 542.33
 },
 {
 "group": "domestic",
-"label": "국내 - 부동산",
-"start": 528.54,
-"end": 555.63
-},
-{
-"group": "domestic",
-"label": "국내 - 정부 민생 대응",
-"start": 555.98,
-"end": 588.6
-},
-{
-"group": "domestic",
-"label": "국내 - 공공 발주",
-"start": 588.95,
-"end": 615.66
-},
-{
-"group": "domestic",
-"label": "국내 - 7월 지역 수출",
-"start": 616.01,
-"end": 650.38
+"label": "국내 - 취약차주 지원방안",
+"start": 542.68,
+"end": 578.56
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 651.38,
-"end": 676.0
+"start": 579.56,
+"end": 603.47
 }
 ]
