@@ -6,6 +6,7 @@ import urllib.request, urllib.parse
 
 VOICE = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Despina")
 RATE = float(os.environ.get("TTS_RATE", "1.08"))
+LEAD_IN = 1.0   # 도입부 무음(초)
 GAP = {"intro": 0.35, "weather": 0.3, "global": 0.3, "steel": 0.3, "domestic": 0.3, "outro": 0.35}
 API = "https://texttospeech.googleapis.com/v1/text:synthesize"
 
@@ -76,7 +77,7 @@ def main():
     print("음성: %s / 속도 %.2f / 단락 %d개" % (VOICE, RATE, len(segs)))
 
     tmp = tempfile.mkdtemp()
-    parts, chapters, t = [], [], 0.0
+    parts, chapters, t = [], [], LEAD_IN   # 앞 무음만큼 밀려서 시작한다
     total_chars = 0
 
     for i, seg in enumerate(segs):
@@ -99,6 +100,8 @@ def main():
                     "-i", "anullsrc=r=24000:cl=mono", silence], check=True)
     listfile = os.path.join(tmp, "list.txt")
     with io.open(listfile, "w", encoding="utf-8") as f:
+        # 맨 앞 1초 무음: 재생을 누른 직후 오디오 장치가 깨어나며 첫 음절이 잘리는 것을 막는다
+        f.write("file '%s'\noutpoint %.2f\n" % (silence, LEAD_IN))
         for idx, (p, gap) in enumerate(parts):
             f.write("file '%s'\n" % p)
             if idx < len(parts) - 1:
