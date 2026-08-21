@@ -1,1 +1,51 @@
+name: 브리핑 음성 생성
 
+# index.html이 갱신되면(= 새 브리핑이 배포되면) 음성을 새로 만든다.
+on:
+  push:
+    branches: [main]
+    paths: ['index.html']
+  workflow_dispatch:        # 수동 실행도 가능
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tts-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ffmpeg 설치
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install --quiet cryptography
+
+      - name: 음성 합성
+        env:
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+          TTS_VOICE: ko-KR-Chirp3-HD-Despina
+          TTS_RATE: '1.0'
+        run: python tools/make_audio.py
+
+      - name: 커밋
+        run: |
+          git config user.email "ds1bkf@gmail.com"
+          git config user.name "ds1bkf"
+          git add audio.mp3 chapters.json
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "음성 생성 $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+          fi
