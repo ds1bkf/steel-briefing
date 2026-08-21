@@ -215,8 +215,8 @@
     startAt = from; endAt = to; idx = from; curGroup = group || null;
     playing = true; paused = false;
     acquireWakeLock();
-    // 첫 시작은 2.5초 예열 후, 이후 시작은 짧게 쉬고 낭독을 시작한다
-    var delay = warmed ? 300 : 2500;
+    // 첫 시작은 1초 예열 후, 이후 시작은 짧게 쉬고 낭독을 시작한다
+    var delay = warmed ? 300 : 1000;
     preparing = true;
     if (!warmed) warmUp();
     render();
