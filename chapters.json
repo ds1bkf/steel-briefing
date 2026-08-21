@@ -3,126 +3,126 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.1
+"end": 6.38
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.1,
-"end": 45.27
+"start": 7.38,
+"end": 45.66
 },
 {
 "group": "weather",
 "label": "오늘 배차 안내",
-"start": 45.62,
-"end": 76.03
+"start": 46.01,
+"end": 81.67
 },
 {
 "group": "global",
 "label": "세계 - 밤사이 지표",
-"start": 77.03,
-"end": 98.73
+"start": 82.67,
+"end": 104.56
 },
 {
 "group": "global",
 "label": "세계 - 미국 장기금리",
-"start": 99.08,
-"end": 140.48
+"start": 104.91,
+"end": 147.72
 },
 {
 "group": "global",
 "label": "세계 - 미국 소비",
-"start": 140.83,
-"end": 173.18
+"start": 148.07,
+"end": 185.44
 },
 {
 "group": "global",
 "label": "세계 - 유가와 호르무즈",
-"start": 173.53,
-"end": 201.66
+"start": 185.79,
+"end": 213.87
 },
 {
 "group": "global",
 "label": "세계 - 한미 통상",
-"start": 202.01,
-"end": 230.28
+"start": 214.22,
+"end": 247.63
 },
 {
 "group": "steel",
 "label": "철강 - 당진 고용위기 지정",
-"start": 231.28,
-"end": 277.36
+"start": 248.63,
+"end": 291.45
 },
 {
 "group": "steel",
 "label": "철강 - 오늘 현대차 파업",
-"start": 277.71,
-"end": 317.55
+"start": 291.8,
+"end": 335.6
 },
 {
 "group": "steel",
 "label": "철강 - 국내 유통가격",
-"start": 317.9,
-"end": 352.79
+"start": 335.95,
+"end": 372.52
 },
 {
 "group": "steel",
 "label": "철강 - 국제 원료 시세",
-"start": 353.14,
-"end": 383.89
+"start": 372.87,
+"end": 406.14
 },
 {
 "group": "steel",
 "label": "철강 - 철강 도시 침체",
-"start": 384.24,
-"end": 407.88
+"start": 406.49,
+"end": 433.32
 },
 {
 "group": "steel",
 "label": "철강 - 북극항로",
-"start": 408.23,
-"end": 440.32
+"start": 433.67,
+"end": 466.55
 },
 {
 "group": "domestic",
 "label": "국내 - 증시와 금리",
-"start": 441.32,
-"end": 463.59
+"start": 467.55,
+"end": 487.68
 },
 {
 "group": "domestic",
 "label": "국내 - 가계대출",
-"start": 463.94,
-"end": 503.32
+"start": 488.03,
+"end": 528.19
 },
 {
 "group": "domestic",
 "label": "국내 - 부동산",
-"start": 503.67,
-"end": 531.03
+"start": 528.54,
+"end": 555.63
 },
 {
 "group": "domestic",
 "label": "국내 - 정부 민생 대응",
-"start": 531.38,
-"end": 564.38
+"start": 555.98,
+"end": 588.6
 },
 {
 "group": "domestic",
 "label": "국내 - 공공 발주",
-"start": 564.73,
-"end": 593.7
+"start": 588.95,
+"end": 615.66
 },
 {
 "group": "domestic",
 "label": "국내 - 7월 지역 수출",
-"start": 594.05,
-"end": 625.37
+"start": 616.01,
+"end": 650.38
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 626.37,
-"end": 647.8
+"start": 651.38,
+"end": 676.0
 }
 ]
