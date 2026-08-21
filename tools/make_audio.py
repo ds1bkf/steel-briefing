@@ -6,8 +6,9 @@ import urllib.request, urllib.parse
 
 VOICE = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Despina")
 RATE = float(os.environ.get("TTS_RATE", "1.08"))
-LEAD_IN = 1.0   # 도입부 무음(초)
-GAP = {"intro": 0.35, "weather": 0.3, "global": 0.3, "steel": 0.3, "domestic": 0.3, "outro": 0.35}
+LEAD_IN = 1.0        # 도입부 무음(초)
+GAP_PARA = 0.35      # 같은 섹터 안 단락 사이
+GAP_SECTION = 1.0    # 섹터가 바뀔 때
 API = "https://texttospeech.googleapis.com/v1/text:synthesize"
 
 
@@ -87,7 +88,8 @@ def main():
         with open(p, "wb") as f:
             f.write(synthesize(text, token))
         d = duration(p)
-        gap = GAP.get(seg.get("group"), 0.5)
+        nxt = segs[i + 1] if i + 1 < len(segs) else None
+        gap = GAP_SECTION if (nxt and nxt.get("group") != seg.get("group")) else GAP_PARA
         chapters.append({"group": seg.get("group", ""), "label": seg.get("label", ""),
                          "start": round(t, 2), "end": round(t + d, 2)})
         t += d + gap
