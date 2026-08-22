@@ -7,14 +7,14 @@ import urllib.request, urllib.parse
 # 섹터별 화자 — 라디오 뉴스처럼 진행자와 리포터를 나눈다.
 # 진행자(Kore)가 열고 닫으며 날씨·배차를 맡고, 섹터마다 리포터가 바뀐다.
 VOICE_BY_GROUP = {
-    "intro":    "ko-KR-Chirp3-HD-Kore",    # 진행자(여) — 또렷하고 권위감 있는 톤
-    "weather":  "ko-KR-Chirp3-HD-Kore",    # 진행자(여)
-    "global":   "ko-KR-Chirp3-HD-Charon",  # 세계(남) — 차분한 저음
-    "steel":    "ko-KR-Chirp3-HD-Leda",    # 철강(여) — 밝고 전달력 좋은 톤
-    "domestic": "ko-KR-Chirp3-HD-Orus",    # 국내(남) — 안정적인 중음
-    "outro":    "ko-KR-Chirp3-HD-Kore",    # 진행자(여) — 오프닝과 동일
+    "intro":    "ko-KR-Chirp3-HD-Sulafat",    # 진행자(여)
+    "weather":  "ko-KR-Chirp3-HD-Sulafat",    # 진행자(여)
+    "global":   "ko-KR-Chirp3-HD-Orus",       # 세계(남)
+    "steel":    "ko-KR-Chirp3-HD-Leda",       # 철강(여)
+    "domestic": "ko-KR-Chirp3-HD-Enceladus",  # 국내(남)
+    "outro":    "ko-KR-Chirp3-HD-Sulafat",    # 진행자(여) — 오프닝과 동일
 }
-VOICE_FALLBACK = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Kore")
+VOICE_FALLBACK = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Sulafat")
 RATE = float(os.environ.get("TTS_RATE", "1.08"))
 LEAD_IN = 1.0        # 도입부 무음(초)
 GAP_PARA = 0.5       # 주제와 주제 사이
