@@ -4,10 +4,20 @@
 import base64, io, json, os, re, subprocess, sys, tempfile
 import urllib.request, urllib.parse
 
-VOICE = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Despina")
+# 섹터별 화자 — 라디오 뉴스처럼 진행자와 리포터를 나눈다.
+# 진행자(Kore)가 열고 닫으며 날씨·배차를 맡고, 섹터마다 리포터가 바뀐다.
+VOICE_BY_GROUP = {
+    "intro":    "ko-KR-Chirp3-HD-Kore",    # 진행자(여) — 또렷하고 권위감 있는 톤
+    "weather":  "ko-KR-Chirp3-HD-Kore",    # 진행자(여)
+    "global":   "ko-KR-Chirp3-HD-Charon",  # 세계(남) — 차분한 저음
+    "steel":    "ko-KR-Chirp3-HD-Leda",    # 철강(여) — 밝고 전달력 좋은 톤
+    "domestic": "ko-KR-Chirp3-HD-Orus",    # 국내(남) — 안정적인 중음
+    "outro":    "ko-KR-Chirp3-HD-Kore",    # 진행자(여) — 오프닝과 동일
+}
+VOICE_FALLBACK = os.environ.get("TTS_VOICE", "ko-KR-Chirp3-HD-Kore")
 RATE = float(os.environ.get("TTS_RATE", "1.08"))
 LEAD_IN = 1.0        # 도입부 무음(초)
-GAP_PARA = 0.35      # 같은 섹터 안 단락 사이
+GAP_PARA = 0.5       # 주제와 주제 사이
 GAP_SECTION = 1.0    # 섹터가 바뀔 때
 API = "https://texttospeech.googleapis.com/v1/text:synthesize"
 
@@ -44,10 +54,10 @@ def access_token(sa: dict) -> str:
         return json.load(r)["access_token"]
 
 
-def synthesize(text: str, token: str) -> bytes:
+def synthesize(text: str, token: str, voice: str) -> bytes:
     payload = {
         "input": {"text": text},
-        "voice": {"languageCode": "ko-KR", "name": VOICE},
+        "voice": {"languageCode": "ko-KR", "name": voice},
         "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE},
     }
     req = urllib.request.Request(API, data=json.dumps(payload).encode(),
@@ -75,7 +85,9 @@ def main():
 
     sa = json.loads(os.environ["GCP_TTS_KEY"])
     token = access_token(sa)
-    print("음성: %s / 속도 %.2f / 단락 %d개" % (VOICE, RATE, len(segs)))
+    print("속도 %.2f / 단락 %d개 / 화자 %d명" % (RATE, len(segs), len(set(VOICE_BY_GROUP.values()))))
+    for g, v in VOICE_BY_GROUP.items():
+        print("   %-9s %s" % (g, v))
 
     tmp = tempfile.mkdtemp()
     parts, chapters, t = [], [], LEAD_IN   # 앞 무음만큼 밀려서 시작한다
@@ -84,9 +96,10 @@ def main():
     for i, seg in enumerate(segs):
         text = seg["text"].strip()
         total_chars += len(text)
+        voice = seg.get("voice") or VOICE_BY_GROUP.get(seg.get("group"), VOICE_FALLBACK)
         p = os.path.join(tmp, "%02d.mp3" % i)
         with open(p, "wb") as f:
-            f.write(synthesize(text, token))
+            f.write(synthesize(text, token, voice))
         d = duration(p)
         nxt = segs[i + 1] if i + 1 < len(segs) else None
         gap = GAP_SECTION if (nxt and nxt.get("group") != seg.get("group")) else GAP_PARA
@@ -94,7 +107,7 @@ def main():
                          "start": round(t, 2), "end": round(t + d, 2)})
         t += d + gap
         parts.append((p, gap))
-        print("  %2d. %-24s %6.1f초  (%s)" % (i + 1, seg.get("label", "")[:24], d, seg.get("group")))
+        print("  %2d. %-22s %6.1f초  %s" % (i + 1, seg.get("label", "")[:22], d, voice.split("-")[-1]))
 
     # 단락 사이에 무음을 끼워 이어 붙인다
     silence = os.path.join(tmp, "sil.mp3")
