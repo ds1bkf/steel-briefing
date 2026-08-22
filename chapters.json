@@ -3,102 +3,102 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 6.78
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 57.61
+"start": 7.78,
+"end": 61.71
 },
 {
 "group": "weather",
 "label": "오늘 배차 안내",
-"start": 58.11,
-"end": 85.73
+"start": 62.21,
+"end": 89.84
 },
 {
 "group": "global",
 "label": "세계 - 밤사이 지표",
-"start": 86.73,
-"end": 117.4
+"start": 90.84,
+"end": 119.49
 },
 {
 "group": "global",
 "label": "세계 - 미국 장기금리",
-"start": 117.9,
-"end": 160.67
+"start": 119.99,
+"end": 164.18
 },
 {
 "group": "global",
 "label": "세계 - 국제유가",
-"start": 161.17,
-"end": 200.82
+"start": 164.68,
+"end": 205.09
 },
 {
 "group": "global",
 "label": "세계 - 미국 경기 지표",
-"start": 201.32,
-"end": 233.17
+"start": 205.59,
+"end": 237.44
 },
 {
 "group": "global",
 "label": "세계 - 다음 주 일정",
-"start": 233.67,
-"end": 268.37
+"start": 237.94,
+"end": 272.45
 },
 {
 "group": "steel",
 "label": "철강 - 하투 확산",
-"start": 269.37,
-"end": 316.87
+"start": 273.45,
+"end": 320.95
 },
 {
 "group": "steel",
 "label": "철강 - 전기요금 차등제",
-"start": 317.37,
-"end": 357.98
+"start": 321.45,
+"end": 363.69
 },
 {
 "group": "steel",
 "label": "철강 - 포항세관 7월 실적",
-"start": 358.48,
-"end": 392.12
+"start": 364.19,
+"end": 397.84
 },
 {
 "group": "steel",
 "label": "철강 - 중국발 수출 공세",
-"start": 392.62,
-"end": 424.66
+"start": 398.34,
+"end": 430.04
 },
 {
 "group": "steel",
 "label": "철강 - 생산 전략 전환",
-"start": 425.16,
-"end": 462.0
+"start": 430.54,
+"end": 468.41
 },
 {
 "group": "domestic",
 "label": "국내 - 증시와 금리",
-"start": 463.0,
-"end": 487.63
+"start": 469.41,
+"end": 493.24
 },
 {
 "group": "domestic",
 "label": "국내 - 국고채 금리 상승",
-"start": 488.13,
-"end": 529.84
+"start": 493.74,
+"end": 538.31
 },
 {
 "group": "domestic",
 "label": "국내 - 취약차주 지원방안",
-"start": 530.34,
-"end": 567.44
+"start": 538.81,
+"end": 578.32
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 568.44,
-"end": 592.49
+"start": 579.32,
+"end": 596.4
 }
 ]
