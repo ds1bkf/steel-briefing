@@ -3,120 +3,126 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.92
+"end": 7.29
 },
 {
 "group": "weather",
 "label": "날씨 - 폭염특보",
-"start": 6.92,
-"end": 41.02
+"start": 8.29,
+"end": 43.38
 },
 {
 "group": "weather",
 "label": "날씨 - 소나기",
-"start": 41.52,
-"end": 72.96
+"start": 43.88,
+"end": 77.79
 },
 {
 "group": "weather",
-"label": "배차 안내",
-"start": 73.46,
-"end": 119.59
+"label": "배차 - 대상 추리기",
+"start": 78.29,
+"end": 107.59
+},
+{
+"group": "weather",
+"label": "배차 - 조치",
+"start": 108.09,
+"end": 136.48
 },
 {
 "group": "global",
 "label": "세계 - 미국 캐나다 관세 전면전",
-"start": 120.59,
-"end": 150.93
+"start": 137.48,
+"end": 168.47
 },
 {
 "group": "global",
 "label": "세계 - 철강 관세 인하안 무산",
-"start": 151.43,
-"end": 190.86
+"start": 168.97,
+"end": 207.44
 },
 {
 "group": "global",
 "label": "세계 - 한미 통상 2라운드",
-"start": 191.36,
-"end": 221.65
+"start": 207.94,
+"end": 238.47
 },
 {
 "group": "global",
 "label": "세계 - 대미 계약 조언",
-"start": 222.15,
-"end": 245.55
+"start": 238.97,
+"end": 261.24
 },
 {
 "group": "global",
 "label": "세계 - 일본 물가",
-"start": 246.05,
-"end": 279.77
+"start": 261.74,
+"end": 295.46
 },
 {
 "group": "steel",
 "label": "철강 - 대EU 수출 급감",
-"start": 280.77,
-"end": 315.47
+"start": 296.46,
+"end": 331.09
 },
 {
 "group": "steel",
 "label": "철강 - 미국향은 두 배",
-"start": 315.97,
-"end": 346.64
+"start": 331.59,
+"end": 363.63
 },
 {
 "group": "steel",
 "label": "철강 - 철강 도시 지원",
-"start": 347.14,
-"end": 382.5
+"start": 364.13,
+"end": 399.03
 },
 {
 "group": "steel",
 "label": "철강 - 거래처 점검",
-"start": 383.0,
-"end": 398.84
+"start": 399.53,
+"end": 414.34
 },
 {
 "group": "steel",
 "label": "철강 - 철스크랩과 철근",
-"start": 399.34,
-"end": 430.85
+"start": 414.84,
+"end": 447.14
 },
 {
 "group": "domestic",
 "label": "국내 - 8월 중순 수출",
-"start": 431.85,
-"end": 460.7
+"start": 448.14,
+"end": 476.99
 },
 {
 "group": "domestic",
 "label": "국내 - 수출 해석",
-"start": 461.2,
-"end": 483.23
+"start": 477.49,
+"end": 499.52
 },
 {
 "group": "domestic",
 "label": "국내 - 27일 금통위",
-"start": 483.73,
-"end": 515.05
+"start": 500.02,
+"end": 531.34
 },
 {
 "group": "domestic",
 "label": "국내 - 자금 점검",
-"start": 515.55,
-"end": 532.83
+"start": 531.84,
+"end": 550.34
 },
 {
 "group": "domestic",
 "label": "국내 - 9월 부동산 대책",
-"start": 533.33,
-"end": 577.06
+"start": 550.84,
+"end": 594.57
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 578.06,
-"end": 597.81
+"start": 595.57,
+"end": 614.29
 }
 ]
