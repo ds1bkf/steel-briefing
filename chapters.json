@@ -3,102 +3,120 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.78
+"end": 5.8
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 7.78,
-"end": 61.71
+"label": "날씨 - 폭염특보",
+"start": 6.8,
+"end": 39.49
 },
 {
 "group": "weather",
-"label": "오늘 배차 안내",
-"start": 62.21,
-"end": 89.84
+"label": "날씨 - 소나기",
+"start": 39.99,
+"end": 73.9
+},
+{
+"group": "weather",
+"label": "배차 안내",
+"start": 74.4,
+"end": 99.36
 },
 {
 "group": "global",
-"label": "세계 - 밤사이 지표",
-"start": 90.84,
-"end": 119.49
+"label": "세계 - 미국 캐나다 관세 전면전",
+"start": 100.36,
+"end": 131.34
 },
 {
 "group": "global",
-"label": "세계 - 미국 장기금리",
-"start": 119.99,
-"end": 164.18
+"label": "세계 - 철강 관세 인하안 무산",
+"start": 131.84,
+"end": 171.23
 },
 {
 "group": "global",
-"label": "세계 - 국제유가",
-"start": 164.68,
-"end": 205.09
+"label": "세계 - 한미 통상 2라운드",
+"start": 171.73,
+"end": 202.02
 },
 {
 "group": "global",
-"label": "세계 - 미국 경기 지표",
-"start": 205.59,
-"end": 237.44
+"label": "세계 - 대미 계약 조언",
+"start": 202.52,
+"end": 225.92
 },
 {
 "group": "global",
-"label": "세계 - 다음 주 일정",
-"start": 237.94,
-"end": 272.45
+"label": "세계 - 일본 물가",
+"start": 226.42,
+"end": 260.14
 },
 {
 "group": "steel",
-"label": "철강 - 하투 확산",
-"start": 273.45,
-"end": 320.95
+"label": "철강 - 대EU 수출 급감",
+"start": 261.14,
+"end": 293.37
 },
 {
 "group": "steel",
-"label": "철강 - 전기요금 차등제",
-"start": 321.45,
-"end": 363.69
+"label": "철강 - 미국향은 두 배",
+"start": 293.87,
+"end": 325.91
 },
 {
 "group": "steel",
-"label": "철강 - 포항세관 7월 실적",
-"start": 364.19,
-"end": 397.84
+"label": "철강 - 철강 도시 지원",
+"start": 326.41,
+"end": 361.69
 },
 {
 "group": "steel",
-"label": "철강 - 중국발 수출 공세",
-"start": 398.34,
-"end": 430.04
+"label": "철강 - 거래처 점검",
+"start": 362.19,
+"end": 378.03
 },
 {
 "group": "steel",
-"label": "철강 - 생산 전략 전환",
-"start": 430.54,
-"end": 468.41
+"label": "철강 - 철스크랩과 철근",
+"start": 378.53,
+"end": 410.83
 },
 {
 "group": "domestic",
-"label": "국내 - 증시와 금리",
-"start": 469.41,
-"end": 493.24
+"label": "국내 - 8월 중순 수출",
+"start": 411.83,
+"end": 441.02
 },
 {
 "group": "domestic",
-"label": "국내 - 국고채 금리 상승",
-"start": 493.74,
-"end": 538.31
+"label": "국내 - 수출 해석",
+"start": 441.52,
+"end": 463.21
 },
 {
 "group": "domestic",
-"label": "국내 - 취약차주 지원방안",
-"start": 538.81,
-"end": 578.32
+"label": "국내 - 27일 금통위",
+"start": 463.71,
+"end": 494.84
+},
+{
+"group": "domestic",
+"label": "국내 - 자금 점검",
+"start": 495.34,
+"end": 512.24
+},
+{
+"group": "domestic",
+"label": "국내 - 9월 부동산 대책",
+"start": 512.74,
+"end": 556.27
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 579.32,
-"end": 596.4
+"start": 557.27,
+"end": 576.88
 }
 ]
