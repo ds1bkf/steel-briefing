@@ -3,114 +3,114 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.29
+"end": 6.38
 },
 {
 "group": "weather",
 "label": "날씨 - 폭염특보",
-"start": 8.29,
-"end": 36.75
+"start": 7.38,
+"end": 35.19
 },
 {
 "group": "weather",
 "label": "날씨 - 소나기",
-"start": 37.25,
-"end": 71.04
+"start": 35.69,
+"end": 67.13
 },
 {
 "group": "weather",
 "label": "배차 안내",
-"start": 71.54,
-"end": 94.8
+"start": 67.63,
+"end": 92.52
 },
 {
 "group": "global",
 "label": "세계 - 미국 캐나다 관세 전면전",
-"start": 95.8,
-"end": 124.65
+"start": 93.52,
+"end": 124.38
 },
 {
 "group": "global",
 "label": "세계 - 철강 관세 인하안 무산",
-"start": 125.15,
-"end": 164.58
+"start": 124.88,
+"end": 168.42
 },
 {
 "group": "global",
 "label": "세계 - 한미 통상 2라운드",
-"start": 165.08,
-"end": 195.37
+"start": 168.92,
+"end": 199.45
 },
 {
 "group": "global",
 "label": "세계 - 대미 계약 조언",
-"start": 195.87,
-"end": 219.27
+"start": 199.95,
+"end": 221.33
 },
 {
 "group": "global",
 "label": "세계 - 일본 물가",
-"start": 219.77,
-"end": 254.74
+"start": 221.83,
+"end": 256.08
 },
 {
 "group": "steel",
 "label": "철강 - 대EU 수출 급감",
-"start": 255.74,
-"end": 290.44
+"start": 257.08,
+"end": 291.78
 },
 {
 "group": "steel",
 "label": "철강 - 미국향은 두 배",
-"start": 290.94,
-"end": 321.88
+"start": 292.28,
+"end": 323.48
 },
 {
 "group": "steel",
 "label": "철강 - 철강 도시 지원",
-"start": 322.38,
-"end": 358.45
+"start": 323.98,
+"end": 364.4
 },
 {
 "group": "steel",
 "label": "철강 - 철스크랩과 철근",
-"start": 358.95,
-"end": 389.48
+"start": 364.9,
+"end": 395.43
 },
 {
 "group": "domestic",
 "label": "국내 - 8월 중순 수출",
-"start": 390.48,
-"end": 417.43
+"start": 396.43,
+"end": 425.28
 },
 {
 "group": "domestic",
 "label": "국내 - 수출 해석",
-"start": 417.93,
-"end": 439.62
+"start": 425.78,
+"end": 445.91
 },
 {
 "group": "domestic",
 "label": "국내 - 27일 금통위",
-"start": 440.12,
-"end": 471.64
+"start": 446.41,
+"end": 477.92
 },
 {
 "group": "domestic",
 "label": "국내 - 자금 점검",
-"start": 472.14,
-"end": 488.31
+"start": 478.42,
+"end": 498.49
 },
 {
 "group": "domestic",
 "label": "국내 - 9월 부동산 대책",
-"start": 488.81,
-"end": 526.18
+"start": 498.99,
+"end": 537.08
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 527.18,
-"end": 548.3
+"start": 538.08,
+"end": 559.2
 }
 ]
