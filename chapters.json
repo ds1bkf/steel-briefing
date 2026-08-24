@@ -3,114 +3,108 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.38
+"end": 6.26
 },
 {
 "group": "weather",
-"label": "날씨 - 폭염특보",
-"start": 7.38,
-"end": 35.19
+"label": "오늘 날씨",
+"start": 7.26,
+"end": 40.66
 },
 {
 "group": "weather",
-"label": "날씨 - 소나기",
-"start": 35.69,
-"end": 67.13
-},
-{
-"group": "weather",
-"label": "배차 안내",
-"start": 67.63,
-"end": 92.52
+"label": "오늘 배차 안내",
+"start": 41.16,
+"end": 66.17
 },
 {
 "group": "global",
-"label": "세계 - 미국 캐나다 관세 전면전",
-"start": 93.52,
-"end": 124.38
+"label": "세계 - 대이란 2차 제재",
+"start": 67.17,
+"end": 92.37
 },
 {
 "group": "global",
-"label": "세계 - 철강 관세 인하안 무산",
-"start": 124.88,
-"end": 168.42
+"label": "세계 - 이란의 대응",
+"start": 92.87,
+"end": 122.06
 },
 {
 "group": "global",
-"label": "세계 - 한미 통상 2라운드",
-"start": 168.92,
-"end": 199.45
+"label": "세계 - 유가와 반제품",
+"start": 122.56,
+"end": 157.0
 },
 {
 "group": "global",
-"label": "세계 - 대미 계약 조언",
-"start": 199.95,
-"end": 221.33
+"label": "세계 - 미 장기금리",
+"start": 157.5,
+"end": 194.48
 },
 {
 "group": "global",
-"label": "세계 - 일본 물가",
-"start": 221.83,
-"end": 256.08
+"label": "세계 - 조달 여건 점검",
+"start": 194.98,
+"end": 216.1
 },
 {
 "group": "steel",
-"label": "철강 - 대EU 수출 급감",
-"start": 257.08,
-"end": 291.78
+"label": "철강 - 캐나다 관세 50퍼센트",
+"start": 217.1,
+"end": 250.56
 },
 {
 "group": "steel",
-"label": "철강 - 미국향은 두 배",
-"start": 292.28,
-"end": 323.48
+"label": "철강 - 계약 조항 점검",
+"start": 251.06,
+"end": 278.68
 },
 {
 "group": "steel",
-"label": "철강 - 철강 도시 지원",
-"start": 323.98,
-"end": 364.4
+"label": "철강 - 노사 갈등 조선 확산",
+"start": 279.18,
+"end": 308.1
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩과 철근",
-"start": 364.9,
-"end": 395.43
+"label": "철강 - 원청 교섭과 포항 노조연대",
+"start": 308.6,
+"end": 342.01
+},
+{
+"group": "steel",
+"label": "철강 - 당진 고용위기 지정",
+"start": 342.51,
+"end": 377.72
 },
 {
 "group": "domestic",
-"label": "국내 - 8월 중순 수출",
-"start": 396.43,
-"end": 425.28
+"label": "국내 - 가계신용 2000조",
+"start": 378.72,
+"end": 413.23
 },
 {
 "group": "domestic",
-"label": "국내 - 수출 해석",
-"start": 425.78,
-"end": 445.91
+"label": "국내 - 거래처 결제 점검",
+"start": 413.73,
+"end": 439.26
 },
 {
 "group": "domestic",
-"label": "국내 - 27일 금통위",
-"start": 446.41,
-"end": 477.92
+"label": "국내 - 정비사업 권한 충돌",
+"start": 439.76,
+"end": 485.24
 },
 {
 "group": "domestic",
-"label": "국내 - 자금 점검",
-"start": 478.42,
-"end": 498.49
-},
-{
-"group": "domestic",
-"label": "국내 - 9월 부동산 대책",
-"start": 498.99,
-"end": 537.08
+"label": "국내 - 봉형강 수요 갈림",
+"start": 485.74,
+"end": 508.62
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 538.08,
-"end": 559.2
+"start": 509.62,
+"end": 530.78
 }
 ]
