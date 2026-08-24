@@ -9,8 +9,22 @@
     var mm = String(kst.getMonth() + 1).padStart(2, "0");
     var dd = String(kst.getDate()).padStart(2, "0");
     var day = kst.getFullYear() + "-" + mm + "-" + dd;
+    function bump(key) {
+      fetch(BASE + key, { keepalive: true }).catch(function () {});
+    }
     // 총 방문 + 오늘 방문 각각 1 증가 (실패해도 무시)
-    fetch(BASE + "total", { keepalive: true }).catch(function () {});
-    fetch(BASE + "d-" + day, { keepalive: true }).catch(function () {});
+    bump("total");
+    bump("d-" + day);
+    // '음성으로 듣기' 클릭 집계 — 누를 때마다 1 증가
+    // 키: play-total(누적), play-d-YYYY-MM-DD(일별)
+    var btn = document.getElementById("tts-play");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        try {
+          bump("play-total");
+          bump("play-d-" + day);
+        } catch (e) {}
+      });
+    }
   } catch (e) {}
 })()
