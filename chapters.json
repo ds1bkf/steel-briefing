@@ -3,108 +3,108 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.26
+"end": 5.92
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.26,
-"end": 40.66
+"start": 6.92,
+"end": 43.18
 },
 {
 "group": "weather",
 "label": "오늘 배차 안내",
-"start": 41.16,
-"end": 66.17
+"start": 43.68,
+"end": 61.73
 },
 {
 "group": "global",
 "label": "세계 - 대이란 2차 제재",
-"start": 67.17,
-"end": 92.37
+"start": 62.73,
+"end": 89.49
 },
 {
 "group": "global",
 "label": "세계 - 이란의 대응",
-"start": 92.87,
-"end": 122.06
+"start": 89.99,
+"end": 119.18
 },
 {
 "group": "global",
 "label": "세계 - 유가와 반제품",
-"start": 122.56,
-"end": 157.0
+"start": 119.68,
+"end": 152.75
 },
 {
 "group": "global",
 "label": "세계 - 미 장기금리",
-"start": 157.5,
-"end": 194.48
+"start": 153.25,
+"end": 190.23
 },
 {
 "group": "global",
 "label": "세계 - 조달 여건 점검",
-"start": 194.98,
-"end": 216.1
+"start": 190.73,
+"end": 211.85
 },
 {
 "group": "steel",
 "label": "철강 - 캐나다 관세 50퍼센트",
-"start": 217.1,
-"end": 250.56
+"start": 212.85,
+"end": 245.16
 },
 {
 "group": "steel",
 "label": "철강 - 계약 조항 점검",
-"start": 251.06,
-"end": 278.68
+"start": 245.66,
+"end": 273.14
 },
 {
 "group": "steel",
 "label": "철강 - 노사 갈등 조선 확산",
-"start": 279.18,
-"end": 308.1
+"start": 273.64,
+"end": 304.43
 },
 {
 "group": "steel",
 "label": "철강 - 원청 교섭과 포항 노조연대",
-"start": 308.6,
-"end": 342.01
+"start": 304.93,
+"end": 337.88
 },
 {
 "group": "steel",
 "label": "철강 - 당진 고용위기 지정",
-"start": 342.51,
-"end": 377.72
+"start": 338.38,
+"end": 373.47
 },
 {
 "group": "domestic",
 "label": "국내 - 가계신용 2000조",
-"start": 378.72,
-"end": 413.23
+"start": 374.47,
+"end": 413.66
 },
 {
 "group": "domestic",
 "label": "국내 - 거래처 결제 점검",
-"start": 413.73,
-"end": 439.26
+"start": 414.16,
+"end": 439.24
 },
 {
 "group": "domestic",
 "label": "국내 - 정비사업 권한 충돌",
-"start": 439.76,
-"end": 485.24
+"start": 439.74,
+"end": 485.63
 },
 {
 "group": "domestic",
 "label": "국내 - 봉형강 수요 갈림",
-"start": 485.74,
-"end": 508.62
+"start": 486.13,
+"end": 513.3
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 509.62,
-"end": 530.78
+"start": 514.3,
+"end": 535.01
 }
 ]
