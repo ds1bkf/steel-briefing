@@ -3,108 +3,72 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.18
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 40.66
+"start": 7.18,
+"end": 33.3
 },
 {
 "group": "weather",
-"label": "오늘 배차 안내",
-"start": 41.16,
-"end": 59.48
+"label": "오늘 배차",
+"start": 33.8,
+"end": 52.56
 },
 {
 "group": "global",
-"label": "세계 - 대이란 2차 제재",
-"start": 60.48,
-"end": 85.1
+"label": "세계 - 연준 인상론",
+"start": 53.56,
+"end": 87.43
 },
 {
 "group": "global",
-"label": "세계 - 이란의 대응",
-"start": 85.6,
-"end": 115.24
-},
-{
-"group": "global",
-"label": "세계 - 유가와 반제품",
-"start": 115.74,
-"end": 148.81
-},
-{
-"group": "global",
-"label": "세계 - 미 장기금리",
-"start": 149.31,
-"end": 184.78
-},
-{
-"group": "global",
-"label": "세계 - 조달 여건 점검",
-"start": 185.28,
-"end": 204.39
+"label": "세계 - 독일 일본 지표",
+"start": 87.93,
+"end": 121.91
 },
 {
 "group": "steel",
-"label": "철강 - 캐나다 관세 50퍼센트",
-"start": 205.39,
-"end": 238.72
+"label": "철강 - 캐나다 보복관세",
+"start": 122.91,
+"end": 161.19
 },
 {
 "group": "steel",
-"label": "철강 - 계약 조항 점검",
-"start": 239.22,
-"end": 265.67
+"label": "철강 - 대미 수출 급증",
+"start": 161.69,
+"end": 200.16
 },
 {
 "group": "steel",
-"label": "철강 - 노사 갈등 조선 확산",
-"start": 266.17,
-"end": 296.0
-},
-{
-"group": "steel",
-"label": "철강 - 원청 교섭과 포항 노조연대",
-"start": 296.5,
-"end": 331.02
-},
-{
-"group": "steel",
-"label": "철강 - 당진 고용위기 지정",
-"start": 331.52,
-"end": 366.72
+"label": "철강 - 건설 현장 감소",
+"start": 200.66,
+"end": 236.14
 },
 {
 "group": "domestic",
-"label": "국내 - 가계신용 2000조",
-"start": 367.72,
-"end": 406.0
+"label": "국내 - 내년 예산안",
+"start": 237.14,
+"end": 278.73
 },
 {
 "group": "domestic",
-"label": "국내 - 거래처 결제 점검",
-"start": 406.5,
-"end": 429.95
+"label": "국내 - 소비심리 하락",
+"start": 279.23,
+"end": 313.86
 },
 {
 "group": "domestic",
-"label": "국내 - 정비사업 권한 충돌",
-"start": 430.45,
-"end": 475.93
-},
-{
-"group": "domestic",
-"label": "국내 - 봉형강 수요 갈림",
-"start": 476.43,
-"end": 503.65
+"label": "국내 - 무안 국가산단",
+"start": 314.36,
+"end": 353.22
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 504.65,
-"end": 525.77
+"start": 354.22,
+"end": 375.19
 }
 ]
