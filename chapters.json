@@ -3,72 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.18
+"end": 6.52
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 7.18,
-"end": 33.3
+"label": "날씨 - 오늘 전국 날씨",
+"start": 7.52,
+"end": 40.59
 },
 {
 "group": "weather",
-"label": "오늘 배차",
-"start": 33.8,
-"end": 52.56
+"label": "날씨 - 오늘 배차",
+"start": 41.09,
+"end": 62.79
 },
 {
 "group": "global",
-"label": "세계 - 연준 인상론",
-"start": 53.56,
-"end": 87.43
+"label": "세계 - 대미 투자 1호 프로젝트 연기",
+"start": 63.79,
+"end": 107.78
 },
 {
 "group": "global",
-"label": "세계 - 독일 일본 지표",
-"start": 87.93,
-"end": 121.91
+"label": "세계 - 유럽과 일본 9월 금리 인상론",
+"start": 108.28,
+"end": 148.89
 },
 {
 "group": "steel",
-"label": "철강 - 캐나다 보복관세",
-"start": 122.91,
-"end": 161.19
+"label": "철강 - 산업용 지역 전기요금제 설계안",
+"start": 149.89,
+"end": 193.35
 },
 {
 "group": "steel",
-"label": "철강 - 대미 수출 급증",
-"start": 161.69,
-"end": 200.16
+"label": "철강 - 전기료 인하가 원가에 미치는 영향",
+"start": 193.85,
+"end": 223.68
 },
 {
 "group": "steel",
-"label": "철강 - 건설 현장 감소",
-"start": 200.66,
-"end": 236.14
+"label": "철강 - 생산 거점 미국으로 이동",
+"start": 224.18,
+"end": 270.53
+},
+{
+"group": "steel",
+"label": "철강 - 현대차 중장기 전략과 강판 수요",
+"start": 271.03,
+"end": 318.79
 },
 {
 "group": "domestic",
-"label": "국내 - 내년 예산안",
-"start": 237.14,
-"end": 278.73
+"label": "국내 - 오늘 금통위 기준금리 결정",
+"start": 319.79,
+"end": 359.44
 },
 {
 "group": "domestic",
-"label": "국내 - 소비심리 하락",
-"start": 279.23,
-"end": 313.86
+"label": "국내 - 멈춘 피에프 사업장 임대주택 전환",
+"start": 359.94,
+"end": 410.1
 },
 {
 "group": "domestic",
-"label": "국내 - 무안 국가산단",
-"start": 314.36,
-"end": 353.22
+"label": "국내 - 종부세 개편안 후퇴 검토",
+"start": 410.6,
+"end": 459.72
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 354.22,
-"end": 375.19
+"start": 460.72,
+"end": 476.9
 }
 ]
