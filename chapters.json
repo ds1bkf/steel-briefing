@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.98
+"end": 6.9
 },
 {
 "group": "weather",
 "label": "날씨 - 오늘 전국 날씨",
-"start": 7.98,
-"end": 41.58
+"start": 7.9,
+"end": 40.78
 },
 {
 "group": "weather",
 "label": "날씨 - 오늘 배차",
-"start": 42.08,
-"end": 64.04
+"start": 41.28,
+"end": 64.01
 },
 {
 "group": "global",
 "label": "세계 - 대미 투자 1호 프로젝트 연기",
-"start": 65.04,
-"end": 109.03
+"start": 65.01,
+"end": 109.0
 },
 {
 "group": "global",
 "label": "세계 - 유럽과 일본 9월 금리 인상론",
-"start": 109.53,
-"end": 150.02
+"start": 109.5,
+"end": 149.99
 },
 {
 "group": "steel",
 "label": "철강 - 산업용 지역 전기요금제 설계안",
-"start": 151.02,
-"end": 191.5
+"start": 150.99,
+"end": 194.6
 },
 {
 "group": "steel",
 "label": "철강 - 전기료 인하가 원가에 미치는 영향",
-"start": 192.0,
-"end": 219.68
+"start": 195.1,
+"end": 222.77
 },
 {
 "group": "steel",
 "label": "철강 - 생산 거점 미국으로 이동",
-"start": 220.18,
-"end": 265.01
+"start": 223.27,
+"end": 268.1
 },
 {
 "group": "steel",
 "label": "철강 - 현대차 중장기 전략과 강판 수요",
-"start": 265.51,
-"end": 313.27
+"start": 268.6,
+"end": 313.63
 },
 {
 "group": "domestic",
 "label": "국내 - 오늘 금통위 기준금리 결정",
-"start": 314.27,
-"end": 353.92
+"start": 314.63,
+"end": 355.43
 },
 {
 "group": "domestic",
 "label": "국내 - 멈춘 피에프 사업장 임대주택 전환",
-"start": 354.42,
-"end": 400.62
+"start": 355.93,
+"end": 406.09
 },
 {
 "group": "domestic",
 "label": "국내 - 종부세 개편안 후퇴 검토",
-"start": 401.12,
-"end": 450.24
+"start": 406.59,
+"end": 453.63
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 451.24,
-"end": 467.42
+"start": 454.63,
+"end": 470.23
 }
 ]
