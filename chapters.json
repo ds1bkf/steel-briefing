@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.57
 },
 {
 "group": "weather",
-"label": "날씨 - 오늘 전국 날씨",
-"start": 7.52,
-"end": 40.4
+"label": "날씨 - 전국 곳곳 비",
+"start": 7.57,
+"end": 41.02
 },
 {
 "group": "weather",
-"label": "날씨 - 오늘 배차",
-"start": 40.9,
-"end": 62.86
+"label": "오늘 배차",
+"start": 41.52,
+"end": 64.13
 },
 {
 "group": "global",
-"label": "세계 - 대미 투자 1호 프로젝트 연기",
-"start": 63.86,
-"end": 108.64
+"label": "세계 - 미국과 이란 대화 무산",
+"start": 65.13,
+"end": 100.03
 },
 {
 "group": "global",
-"label": "세계 - 유럽과 일본 9월 금리 인상론",
-"start": 109.14,
-"end": 149.37
+"label": "세계 - 미국 전력장비 금지 행정명령",
+"start": 100.53,
+"end": 135.69
+},
+{
+"group": "global",
+"label": "세계 - 해상운임 넉 주 연속 상승",
+"start": 136.19,
+"end": 163.93
 },
 {
 "group": "steel",
-"label": "철강 - 산업용 지역 전기요금제 설계안",
-"start": 150.37,
-"end": 192.22
+"label": "철강 - 포스코 9월 9일 파업 시한",
+"start": 164.93,
+"end": 200.36
 },
 {
 "group": "steel",
-"label": "철강 - 전기료 인하가 원가에 미치는 영향",
-"start": 192.72,
-"end": 220.4
+"label": "철강 - 경북 철강 지원 조례",
+"start": 200.86,
+"end": 238.54
 },
 {
 "group": "steel",
-"label": "철강 - 생산 거점 미국으로 이동",
-"start": 220.9,
-"end": 265.68
-},
-{
-"group": "steel",
-"label": "철강 - 현대차 중장기 전략과 강판 수요",
-"start": 266.18,
-"end": 311.2
+"label": "철강 - 중국 구조조정 주문",
+"start": 239.04,
+"end": 270.74
 },
 {
 "group": "domestic",
-"label": "국내 - 오늘 금통위 기준금리 결정",
-"start": 312.2,
-"end": 353.8
+"label": "국내 - 상호금융 집단대출 재개",
+"start": 271.74,
+"end": 304.28
 },
 {
 "group": "domestic",
-"label": "국내 - 멈춘 피에프 사업장 임대주택 전환",
-"start": 354.3,
-"end": 400.5
+"label": "국내 - 신규 댐 다섯 곳 확정",
+"start": 304.78,
+"end": 345.39
 },
 {
 "group": "domestic",
-"label": "국내 - 종부세 개편안 후퇴 검토",
-"start": 401.0,
-"end": 448.64
+"label": "국내 - 국민성장펀드 자금 승인",
+"start": 345.89,
+"end": 390.92
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 449.64,
-"end": 464.44
+"start": 391.92,
+"end": 410.11
 }
 ]
