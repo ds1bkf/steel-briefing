@@ -9,72 +9,96 @@
 "group": "weather",
 "label": "날씨 - 전국 곳곳 비",
 "start": 7.57,
-"end": 41.02
+"end": 33.68
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 41.52,
-"end": 64.13
+"start": 34.18,
+"end": 53.67
 },
 {
 "group": "global",
 "label": "세계 - 미국과 이란 대화 무산",
-"start": 65.13,
-"end": 100.03
+"start": 54.67,
+"end": 89.18
 },
 {
 "group": "global",
 "label": "세계 - 미국 전력장비 금지 행정명령",
-"start": 100.53,
-"end": 135.69
+"start": 89.68,
+"end": 123.54
 },
 {
 "group": "global",
 "label": "세계 - 해상운임 넉 주 연속 상승",
-"start": 136.19,
-"end": 163.93
+"start": 124.04,
+"end": 152.12
 },
 {
 "group": "steel",
 "label": "철강 - 포스코 9월 9일 파업 시한",
-"start": 164.93,
-"end": 200.36
+"start": 153.12,
+"end": 188.93
+},
+{
+"group": "steel",
+"label": "철강 - 8월 4주 유통시황",
+"start": 189.43,
+"end": 223.03
+},
+{
+"group": "steel",
+"label": "철강 - 일본 철스크랩 지표 하락",
+"start": 223.53,
+"end": 257.52
+},
+{
+"group": "steel",
+"label": "철강 - 유럽 STS 할증료 인상",
+"start": 258.02,
+"end": 288.5
+},
+{
+"group": "steel",
+"label": "철강 - 도요타 강판 사급가 인상",
+"start": 289.0,
+"end": 320.84
 },
 {
 "group": "steel",
 "label": "철강 - 경북 철강 지원 조례",
-"start": 200.86,
-"end": 238.54
+"start": 321.34,
+"end": 355.86
 },
 {
 "group": "steel",
 "label": "철강 - 중국 구조조정 주문",
-"start": 239.04,
-"end": 270.74
+"start": 356.36,
+"end": 386.5
 },
 {
 "group": "domestic",
 "label": "국내 - 상호금융 집단대출 재개",
-"start": 271.74,
-"end": 304.28
+"start": 387.5,
+"end": 421.48
 },
 {
 "group": "domestic",
 "label": "국내 - 신규 댐 다섯 곳 확정",
-"start": 304.78,
-"end": 345.39
+"start": 421.98,
+"end": 456.42
 },
 {
 "group": "domestic",
 "label": "국내 - 국민성장펀드 자금 승인",
-"start": 345.89,
-"end": 390.92
+"start": 456.92,
+"end": 496.36
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 391.92,
-"end": 410.11
+"start": 497.36,
+"end": 514.64
 }
 ]
