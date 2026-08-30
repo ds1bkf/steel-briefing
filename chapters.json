@@ -7,98 +7,86 @@
 },
 {
 "group": "weather",
-"label": "날씨 - 전국 곳곳 비",
+"label": "날씨 - 전국 비",
 "start": 7.78,
-"end": 36.18
+"end": 42.94
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 36.68,
-"end": 56.16
+"start": 43.44,
+"end": 67.08
 },
 {
 "group": "global",
-"label": "세계 - 미국과 이란 대화 무산",
-"start": 57.16,
-"end": 89.25
+"label": "세계 - 워시 잭슨홀",
+"start": 68.08,
+"end": 110.59
 },
 {
 "group": "global",
-"label": "세계 - 미국 전력장비 금지 행정명령",
-"start": 89.75,
-"end": 126.21
-},
-{
-"group": "global",
-"label": "세계 - 해상운임 넉 주 연속 상승",
-"start": 126.71,
-"end": 154.79
+"label": "세계 - 미·베네수 원유 협정",
+"start": 111.09,
+"end": 152.94
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 9월 9일 파업 시한",
-"start": 155.79,
-"end": 191.91
+"label": "철강 - 9월 철근 기준가",
+"start": 153.94,
+"end": 194.82
 },
 {
 "group": "steel",
-"label": "철강 - 8월 4주 유통시황",
-"start": 192.41,
-"end": 226.78
+"label": "철강 - 철광석 100달러",
+"start": 195.32,
+"end": 239.76
 },
 {
 "group": "steel",
-"label": "철강 - 일본 철스크랩 지표 하락",
-"start": 227.28,
-"end": 260.92
+"label": "철강 - 수입재 가격 매력",
+"start": 240.26,
+"end": 274.32
 },
 {
 "group": "steel",
-"label": "철강 - 유럽 STS 할증료 인상",
-"start": 261.42,
-"end": 291.11
+"label": "철강 - 가공전문기업 기준",
+"start": 274.82,
+"end": 311.8
 },
 {
 "group": "steel",
-"label": "철강 - 도요타 강판 사급가 인상",
-"start": 291.61,
-"end": 323.46
-},
-{
-"group": "steel",
-"label": "철강 - 경북 철강 지원 조례",
-"start": 323.96,
-"end": 358.47
-},
-{
-"group": "steel",
-"label": "철강 - 중국 구조조정 주문",
-"start": 358.97,
-"end": 388.16
+"label": "철강 - 파키스탄 반덤핑",
+"start": 312.3,
+"end": 346.82
 },
 {
 "group": "domestic",
-"label": "국내 - 상호금융 집단대출 재개",
-"start": 389.16,
-"end": 424.63
+"label": "국내 - 원달러 13개월 최저",
+"start": 347.82,
+"end": 393.49
 },
 {
 "group": "domestic",
-"label": "국내 - 신규 댐 다섯 곳 확정",
-"start": 425.13,
-"end": 460.79
+"label": "국내 - 착공률이 발목",
+"start": 393.99,
+"end": 439.01
 },
 {
 "group": "domestic",
-"label": "국내 - 국민성장펀드 자금 승인",
-"start": 461.29,
-"end": 498.59
+"label": "국내 - 중기 경기전망",
+"start": 439.51,
+"end": 480.84
+},
+{
+"group": "domestic",
+"label": "국내 - 지게차 크레인 점검",
+"start": 481.34,
+"end": 519.16
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 499.59,
-"end": 517.06
+"start": 520.16,
+"end": 539.84
 }
 ]
