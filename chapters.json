@@ -3,102 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.18
+"end": 6.26
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 7.18,
-"end": 37.66
+"label": "날씨 - 오늘 전국",
+"start": 7.26,
+"end": 40.14
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 38.16,
-"end": 59.14
+"start": 40.64,
+"end": 58.37
 },
 {
 "group": "global",
-"label": "세계 - 미·이란 교전 재개",
-"start": 60.14,
-"end": 106.87
+"label": "세계 - 미 제조업 지표 둔화",
+"start": 59.37,
+"end": 95.76
 },
 {
 "group": "global",
-"label": "세계 - 중국 8월 제조업 PMI",
-"start": 107.37,
-"end": 153.45
+"label": "세계 - 글로벌 장기금리 급등",
+"start": 96.26,
+"end": 139.26
 },
 {
 "group": "global",
-"label": "세계 - 미 재무장관 엔화 발언",
-"start": 153.95,
-"end": 201.59
+"label": "세계 - 미 캐나다 통상 대치",
+"start": 139.76,
+"end": 176.68
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 9월 냉연도금재 인상",
-"start": 202.59,
-"end": 239.16
+"label": "철강 - 현대제철 H형강 정찰제",
+"start": 177.68,
+"end": 214.85
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 열연 수입",
-"start": 239.66,
-"end": 289.13
+"label": "철강 - 8월 철근 판매 목표 미달",
+"start": 215.35,
+"end": 256.68
 },
 {
 "group": "steel",
-"label": "철강 - 아시아 스테인리스 가격",
-"start": 289.63,
-"end": 321.67
+"label": "철강 - EU 용해 주조국 증명",
+"start": 257.18,
+"end": 297.28
 },
 {
 "group": "steel",
-"label": "철강 - 미국 냉연 상계관세 확정",
-"start": 322.17,
-"end": 365.63
+"label": "철강 - 대만 밀 STS 인상",
+"start": 297.78,
+"end": 336.18
 },
 {
 "group": "steel",
-"label": "철강 - 수입 철근 재고",
-"start": 366.13,
-"end": 396.16
+"label": "철강 - 해상운임 5주 연속 상승",
+"start": 336.68,
+"end": 379.91
 },
 {
 "group": "domestic",
-"label": "국내 - 내년 예산안 국무회의",
-"start": 397.16,
-"end": 444.53
+"label": "국내 - 8월 수출 982억 달러",
+"start": 380.91,
+"end": 420.22
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 시내버스 쟁의조정",
-"start": 445.03,
-"end": 496.1
-},
-{
-"group": "domestic",
-"label": "국내 - 산업부 R&D 우대금융",
-"start": 496.6,
-"end": 546.72
-},
-{
-"group": "domestic",
-"label": "국내 - 당진 리튬배터리 창고 화재",
-"start": 547.22,
-"end": 599.08
-},
-{
-"group": "domestic",
-"label": "국내 - 성남 원도심 재개발",
-"start": 599.58,
-"end": 649.24
+"label": "국내 - 현대차 임금교섭 타결",
+"start": 420.72,
+"end": 466.99
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 650.24,
-"end": 666.41
+"start": 467.99,
+"end": 484.36
 }
 ]
