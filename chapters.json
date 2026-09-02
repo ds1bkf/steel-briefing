@@ -3,84 +3,96 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.26
+"end": 6.52
 },
 {
 "group": "weather",
-"label": "날씨 - 오늘 전국",
-"start": 7.26,
-"end": 40.14
+"label": "오늘 날씨",
+"start": 7.52,
+"end": 52.23
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 40.64,
-"end": 58.37
+"start": 52.73,
+"end": 74.43
 },
 {
 "group": "global",
-"label": "세계 - 미 제조업 지표 둔화",
-"start": 59.37,
-"end": 95.76
+"label": "세계 - 미국 고용과 베이지북",
+"start": 75.43,
+"end": 121.05
 },
 {
 "group": "global",
-"label": "세계 - 글로벌 장기금리 급등",
-"start": 96.26,
-"end": 139.26
+"label": "세계 - 미 반도체 표적 관세",
+"start": 121.55,
+"end": 163.34
 },
 {
 "group": "global",
-"label": "세계 - 미 캐나다 통상 대치",
-"start": 139.76,
-"end": 176.68
+"label": "세계 - 영국 탄소국경조정제도",
+"start": 163.84,
+"end": 195.35
 },
 {
 "group": "steel",
-"label": "철강 - 현대제철 H형강 정찰제",
-"start": 177.68,
-"end": 214.85
+"label": "철강 - 새롬패널 당좌거래정지",
+"start": 196.35,
+"end": 241.83
 },
 {
 "group": "steel",
-"label": "철강 - 8월 철근 판매 목표 미달",
-"start": 215.35,
-"end": 256.68
+"label": "철강 - 관수 철근 계약가",
+"start": 242.33,
+"end": 285.02
 },
 {
 "group": "steel",
-"label": "철강 - EU 용해 주조국 증명",
-"start": 257.18,
-"end": 297.28
+"label": "철강 - 철스크랩 반등",
+"start": 285.52,
+"end": 335.04
 },
 {
 "group": "steel",
-"label": "철강 - 대만 밀 STS 인상",
-"start": 297.78,
-"end": 336.18
+"label": "철강 - 8월 철강 수출입",
+"start": 335.54,
+"end": 385.19
 },
 {
 "group": "steel",
-"label": "철강 - 해상운임 5주 연속 상승",
-"start": 336.68,
-"end": 379.91
+"label": "철강 - 현대제철 당진 산소공장 사고",
+"start": 385.69,
+"end": 428.2
 },
 {
 "group": "domestic",
-"label": "국내 - 8월 수출 982억 달러",
-"start": 380.91,
-"end": 420.22
+"label": "국내 - 세제 개편 수정안",
+"start": 429.2,
+"end": 474.87
 },
 {
 "group": "domestic",
-"label": "국내 - 현대차 임금교섭 타결",
-"start": 420.72,
-"end": 466.99
+"label": "국내 - 납품대금 지급기한 단축",
+"start": 475.37,
+"end": 519.1
+},
+{
+"group": "domestic",
+"label": "국내 - 홈플러스 회생계획 인가",
+"start": 519.6,
+"end": 561.26
+},
+{
+"group": "domestic",
+"label": "국내 - 해상풍력 계획입지",
+"start": 561.76,
+"end": 607.05
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 467.99,
-"end": 484.36
+"start": 608.05,
+"end": 623.89
 }
 ]
