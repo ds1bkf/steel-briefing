@@ -3,96 +3,102 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 52.23
+"start": 7.71,
+"end": 42.73
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 52.73,
-"end": 74.43
+"start": 43.23,
+"end": 61.16
 },
 {
 "group": "global",
-"label": "세계 - 미국 고용과 베이지북",
-"start": 75.43,
-"end": 121.05
+"label": "세계 - 미국과 이란 공방 확전",
+"start": 62.16,
+"end": 106.15
 },
 {
 "group": "global",
-"label": "세계 - 미 반도체 표적 관세",
-"start": 121.55,
-"end": 163.34
+"label": "세계 - 일본은행 인상 임박과 환율",
+"start": 106.65,
+"end": 154.55
 },
 {
 "group": "global",
-"label": "세계 - 영국 탄소국경조정제도",
-"start": 163.84,
-"end": 195.35
+"label": "세계 - 미국 7월 무역적자",
+"start": 155.05,
+"end": 197.82
+},
+{
+"group": "global",
+"label": "세계 - 역대 최강 엘니뇨와 니켈",
+"start": 198.32,
+"end": 237.44
 },
 {
 "group": "steel",
-"label": "철강 - 새롬패널 당좌거래정지",
-"start": 196.35,
-"end": 241.83
+"label": "철강 - 철근 출하 중단과 고시가 동결",
+"start": 238.44,
+"end": 282.7
 },
 {
 "group": "steel",
-"label": "철강 - 관수 철근 계약가",
-"start": 242.33,
-"end": 285.02
+"label": "철강 - 포스코 임단협 결렬",
+"start": 283.2,
+"end": 332.52
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 반등",
-"start": 285.52,
-"end": 335.04
+"label": "철강 - 2027년 할당관세 신청안",
+"start": 333.02,
+"end": 373.12
 },
 {
 "group": "steel",
-"label": "철강 - 8월 철강 수출입",
-"start": 335.54,
-"end": 385.19
+"label": "철강 - 특수강봉강 수입 급증",
+"start": 373.62,
+"end": 418.91
 },
 {
 "group": "steel",
-"label": "철강 - 현대제철 당진 산소공장 사고",
-"start": 385.69,
-"end": 428.2
+"label": "철강 - 8월 에이치형강 수출",
+"start": 419.41,
+"end": 451.95
 },
 {
 "group": "domestic",
-"label": "국내 - 세제 개편 수정안",
-"start": 429.2,
-"end": 474.87
+"label": "국내 - 공공기관 기능개혁",
+"start": 452.95,
+"end": 500.64
 },
 {
 "group": "domestic",
-"label": "국내 - 납품대금 지급기한 단축",
-"start": 475.37,
-"end": 519.1
+"label": "국내 - 금융노조 총파업",
+"start": 501.14,
+"end": 538.96
 },
 {
 "group": "domestic",
-"label": "국내 - 홈플러스 회생계획 인가",
-"start": 519.6,
-"end": 561.26
+"label": "국내 - 미국 기업 20억달러 투자",
+"start": 539.46,
+"end": 578.66
 },
 {
 "group": "domestic",
-"label": "국내 - 해상풍력 계획입지",
-"start": 561.76,
-"end": 607.05
+"label": "국내 - 티빙 계정 유출 확정",
+"start": 579.16,
+"end": 611.0
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 608.05,
-"end": 623.89
+"start": 612.0,
+"end": 627.72
 }
 ]
