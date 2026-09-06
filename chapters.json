@@ -3,102 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.71
+"end": 5.8
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.71,
-"end": 42.73
+"start": 6.8,
+"end": 43.9
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 43.23,
-"end": 61.16
+"start": 44.4,
+"end": 58.95
 },
 {
 "group": "global",
-"label": "세계 - 미국과 이란 공방 확전",
-"start": 62.16,
-"end": 106.15
+"label": "세계 - 미 재무부 국채 조기환매 확대",
+"start": 59.95,
+"end": 102.57
 },
 {
 "group": "global",
-"label": "세계 - 일본은행 인상 임박과 환율",
-"start": 106.65,
-"end": 154.55
-},
-{
-"group": "global",
-"label": "세계 - 미국 7월 무역적자",
-"start": 155.05,
-"end": 197.82
-},
-{
-"group": "global",
-"label": "세계 - 역대 최강 엘니뇨와 니켈",
-"start": 198.32,
-"end": 237.44
+"label": "세계 - 미국 캐나다 통상 교착",
+"start": 103.07,
+"end": 131.15
 },
 {
 "group": "steel",
-"label": "철강 - 철근 출하 중단과 고시가 동결",
-"start": 238.44,
-"end": 282.7
+"label": "철강 - 철근 열흘 비가동",
+"start": 132.15,
+"end": 158.91
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 임단협 결렬",
-"start": 283.2,
-"end": 332.52
+"label": "철강 - 철근 유통가 반등",
+"start": 159.41,
+"end": 185.79
 },
 {
 "group": "steel",
-"label": "철강 - 2027년 할당관세 신청안",
-"start": 333.02,
-"end": 373.12
+"label": "철강 - 조선용 후판 판가 타결",
+"start": 186.29,
+"end": 223.97
 },
 {
 "group": "steel",
-"label": "철강 - 특수강봉강 수입 급증",
-"start": 373.62,
-"end": 418.91
+"label": "철강 - 중국산 도금재 오퍼",
+"start": 224.47,
+"end": 254.04
 },
 {
 "group": "steel",
-"label": "철강 - 8월 에이치형강 수출",
-"start": 419.41,
-"end": 451.95
+"label": "철강 - 중국 원료 강세",
+"start": 254.54,
+"end": 296.06
+},
+{
+"group": "steel",
+"label": "철강 - EU 용해 주조국 증빙",
+"start": 296.56,
+"end": 337.04
+},
+{
+"group": "steel",
+"label": "철강 - 미 루이지애나 전기로 기공",
+"start": 337.54,
+"end": 380.05
 },
 {
 "group": "domestic",
-"label": "국내 - 공공기관 기능개혁",
-"start": 452.95,
-"end": 500.64
-},
-{
-"group": "domestic",
-"label": "국내 - 금융노조 총파업",
-"start": 501.14,
-"end": 538.96
-},
-{
-"group": "domestic",
-"label": "국내 - 미국 기업 20억달러 투자",
-"start": 539.46,
-"end": 578.66
-},
-{
-"group": "domestic",
-"label": "국내 - 티빙 계정 유출 확정",
-"start": 579.16,
-"end": 611.0
+"label": "국내 - 반도체 뒤의 내수",
+"start": 381.05,
+"end": 423.02
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 612.0,
-"end": 627.72
+"start": 424.02,
+"end": 439.1
 }
 ]
