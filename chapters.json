@@ -3,84 +3,126 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.8
+"end": 6.45
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 6.8,
-"end": 43.9
+"label": "오늘 날씨 - 백로",
+"start": 7.45,
+"end": 39.03
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 44.4,
-"end": 58.95
+"start": 39.53,
+"end": 56.24
 },
 {
 "group": "global",
-"label": "세계 - 미 재무부 국채 조기환매 확대",
-"start": 59.95,
-"end": 102.57
+"label": "세계 - 해상운임 여섯 주 연속 상승",
+"start": 57.24,
+"end": 88.17
 },
 {
 "group": "global",
-"label": "세계 - 미국 캐나다 통상 교착",
-"start": 103.07,
-"end": 131.15
+"label": "세계 - 미국 경유값 사상 최고",
+"start": 88.67,
+"end": 128.51
+},
+{
+"group": "global",
+"label": "세계 - 대미투자 1호 텍사스 발전소",
+"start": 129.01,
+"end": 170.27
+},
+{
+"group": "global",
+"label": "세계 - 발전 플랜트와 우리 물량",
+"start": 170.77,
+"end": 192.2
+},
+{
+"group": "global",
+"label": "세계 - 미국 전기동 수입 사상 최대",
+"start": 192.7,
+"end": 232.66
 },
 {
 "group": "steel",
-"label": "철강 - 철근 열흘 비가동",
-"start": 132.15,
-"end": 158.91
+"label": "철강 - 철스크랩 국내 인하 해외 인상",
+"start": 233.66,
+"end": 272.25
 },
 {
 "group": "steel",
-"label": "철강 - 철근 유통가 반등",
-"start": 159.41,
-"end": 185.79
+"label": "철강 - 스크랩 격차를 어떻게 볼까",
+"start": 272.75,
+"end": 290.75
 },
 {
 "group": "steel",
-"label": "철강 - 조선용 후판 판가 타결",
-"start": 186.29,
-"end": 223.97
+"label": "철강 - 중국 건설재 감산 확대",
+"start": 291.25,
+"end": 323.34
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 도금재 오퍼",
-"start": 224.47,
-"end": 254.04
+"label": "철강 - 4분기 중국 오퍼 어떻게 잡을까",
+"start": 323.84,
+"end": 342.75
 },
 {
 "group": "steel",
-"label": "철강 - 중국 원료 강세",
-"start": 254.54,
-"end": 296.06
+"label": "철강 - 7월 철근 판매 연중 최저",
+"start": 343.25,
+"end": 381.2
 },
 {
 "group": "steel",
-"label": "철강 - EU 용해 주조국 증빙",
-"start": 296.56,
-"end": 337.04
+"label": "철강 - 유통 재고를 보는 순서",
+"start": 381.7,
+"end": 398.98
 },
 {
 "group": "steel",
-"label": "철강 - 미 루이지애나 전기로 기공",
-"start": 337.54,
-"end": 380.05
+"label": "철강 - 한일 스테인리스 교역 증가",
+"start": 399.48,
+"end": 442.29
 },
 {
 "group": "domestic",
-"label": "국내 - 반도체 뒤의 내수",
-"start": 381.05,
-"end": 423.02
+"label": "국내 - 회사채 시장 양극화",
+"start": 443.29,
+"end": 487.86
+},
+{
+"group": "domestic",
+"label": "국내 - 등급별 문턱이 벌어진다",
+"start": 488.36,
+"end": 506.67
+},
+{
+"group": "domestic",
+"label": "국내 - 한불 전략산업대화 신설",
+"start": 507.17,
+"end": 531.8
+},
+{
+"group": "domestic",
+"label": "국내 - 유럽 조달 요건이 쟁점",
+"start": 532.3,
+"end": 562.58
+},
+{
+"group": "domestic",
+"label": "국내 - 강원 데이터센터 네 곳",
+"start": 563.08,
+"end": 607.41
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 424.02,
-"end": 439.1
+"start": 608.41,
+"end": 628.48
 }
 ]
