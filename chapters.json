@@ -3,126 +3,90 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.45
+"end": 6.18
 },
 {
 "group": "weather",
-"label": "오늘 날씨 - 백로",
-"start": 7.45,
-"end": 39.03
+"label": "오늘 날씨",
+"start": 7.18,
+"end": 45.92
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 39.53,
-"end": 56.24
+"start": 46.42,
+"end": 61.23
 },
 {
 "group": "global",
-"label": "세계 - 해상운임 여섯 주 연속 상승",
-"start": 57.24,
-"end": 88.17
+"label": "세계 - 중동 확전과 유가",
+"start": 62.23,
+"end": 99.86
 },
 {
 "group": "global",
-"label": "세계 - 미국 경유값 사상 최고",
-"start": 88.67,
-"end": 128.51
+"label": "세계 - 유가와 수입 선적",
+"start": 100.36,
+"end": 124.72
 },
 {
 "group": "global",
-"label": "세계 - 대미투자 1호 텍사스 발전소",
-"start": 129.01,
-"end": 170.27
-},
-{
-"group": "global",
-"label": "세계 - 발전 플랜트와 우리 물량",
-"start": 170.77,
-"end": 192.2
-},
-{
-"group": "global",
-"label": "세계 - 미국 전기동 수입 사상 최대",
-"start": 192.7,
-"end": 232.66
+"label": "세계 - 엔화 7개월 최저",
+"start": 125.22,
+"end": 163.5
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 국내 인하 해외 인상",
-"start": 233.66,
-"end": 272.25
+"label": "철강 - 포스코 48시간 부분파업",
+"start": 164.5,
+"end": 203.62
 },
 {
 "group": "steel",
-"label": "철강 - 스크랩 격차를 어떻게 볼까",
-"start": 272.75,
-"end": 290.75
+"label": "철강 - 파업 대응",
+"start": 204.12,
+"end": 224.9
 },
 {
 "group": "steel",
-"label": "철강 - 중국 건설재 감산 확대",
-"start": 291.25,
-"end": 323.34
+"label": "철강 - 중국산 도금재 우회",
+"start": 225.4,
+"end": 274.92
 },
 {
 "group": "steel",
-"label": "철강 - 4분기 중국 오퍼 어떻게 잡을까",
-"start": 323.84,
-"end": 342.75
+"label": "철강 - 중국 수출과 열연 수입",
+"start": 275.42,
+"end": 313.62
 },
 {
 "group": "steel",
-"label": "철강 - 7월 철근 판매 연중 최저",
-"start": 343.25,
-"end": 381.2
-},
-{
-"group": "steel",
-"label": "철강 - 유통 재고를 보는 순서",
-"start": 381.7,
-"end": 398.98
-},
-{
-"group": "steel",
-"label": "철강 - 한일 스테인리스 교역 증가",
-"start": 399.48,
-"end": 442.29
+"label": "철강 - 비주거 착공과 컬러강판",
+"start": 314.12,
+"end": 359.22
 },
 {
 "group": "domestic",
-"label": "국내 - 회사채 시장 양극화",
-"start": 443.29,
-"end": 487.86
+"label": "국내 - 건강보험료율 동결",
+"start": 360.22,
+"end": 401.67
 },
 {
 "group": "domestic",
-"label": "국내 - 등급별 문턱이 벌어진다",
-"start": 488.36,
-"end": 506.67
+"label": "국내 - 소비자 집단소송제 확대",
+"start": 402.17,
+"end": 438.1
 },
 {
 "group": "domestic",
-"label": "국내 - 한불 전략산업대화 신설",
-"start": 507.17,
-"end": 531.8
-},
-{
-"group": "domestic",
-"label": "국내 - 유럽 조달 요건이 쟁점",
-"start": 532.3,
-"end": 562.58
-},
-{
-"group": "domestic",
-"label": "국내 - 강원 데이터센터 네 곳",
-"start": 563.08,
-"end": 607.41
+"label": "국내 - 서울 매입임대 2만 가구",
+"start": 438.6,
+"end": 477.64
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 608.41,
-"end": 628.48
+"start": 478.64,
+"end": 494.29
 }
 ]
