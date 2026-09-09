@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.71
+"end": 6.06
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.71,
-"end": 38.24
+"start": 7.06,
+"end": 38.38
 },
 {
 "group": "global",
 "label": "세계 - 미 국채금리 4.85퍼센트",
-"start": 39.24,
-"end": 82.06
+"start": 39.38,
+"end": 82.39
 },
 {
 "group": "global",
 "label": "세계 - 미국 캐나다 수입금지",
-"start": 82.56,
-"end": 125.18
+"start": 82.89,
+"end": 128.25
 },
 {
 "group": "global",
 "label": "세계 - 중국 생산자물가",
-"start": 125.68,
-"end": 163.5
+"start": 128.75,
+"end": 168.52
 },
 {
 "group": "steel",
 "label": "철강 - 일본 관동 스크랩 입찰",
-"start": 164.5,
-"end": 212.53
+"start": 169.52,
+"end": 217.54
 },
 {
 "group": "steel",
 "label": "철강 - 열연 내수 쏠림",
-"start": 213.03,
-"end": 256.04
+"start": 218.04,
+"end": 260.09
 },
 {
 "group": "steel",
 "label": "철강 - 일본제철 STS 인하",
-"start": 256.54,
-"end": 303.77
+"start": 260.59,
+"end": 307.82
 },
 {
 "group": "steel",
 "label": "철강 - 특수강봉강 주문 감소",
-"start": 304.27,
-"end": 336.5
+"start": 308.32,
+"end": 341.52
 },
 {
 "group": "domestic",
 "label": "국내 - 서울 생애최초 매수",
-"start": 337.5,
-"end": 380.84
+"start": 342.52,
+"end": 388.52
 },
 {
 "group": "domestic",
 "label": "국내 - 사업자대출 용도외 유용",
-"start": 381.34,
-"end": 424.16
+"start": 389.02,
+"end": 434.77
 },
 {
 "group": "domestic",
 "label": "국내 - LH 분사 노조 교섭 요구",
-"start": 424.66,
-"end": 471.2
+"start": 435.27,
+"end": 478.73
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 472.2,
-"end": 492.02
+"start": 479.73,
+"end": 499.56
 }
 ]
