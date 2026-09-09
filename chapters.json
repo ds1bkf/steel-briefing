@@ -3,90 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.18
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.18,
-"end": 45.92
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 46.42,
-"end": 61.23
+"start": 7.71,
+"end": 38.24
 },
 {
 "group": "global",
-"label": "세계 - 중동 확전과 유가",
-"start": 62.23,
-"end": 99.86
+"label": "세계 - 미 국채금리 4.85퍼센트",
+"start": 39.24,
+"end": 82.06
 },
 {
 "group": "global",
-"label": "세계 - 유가와 수입 선적",
-"start": 100.36,
-"end": 124.72
+"label": "세계 - 미국 캐나다 수입금지",
+"start": 82.56,
+"end": 125.18
 },
 {
 "group": "global",
-"label": "세계 - 엔화 7개월 최저",
-"start": 125.22,
+"label": "세계 - 중국 생산자물가",
+"start": 125.68,
 "end": 163.5
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 48시간 부분파업",
+"label": "철강 - 일본 관동 스크랩 입찰",
 "start": 164.5,
-"end": 203.62
+"end": 212.53
 },
 {
 "group": "steel",
-"label": "철강 - 파업 대응",
-"start": 204.12,
-"end": 224.9
+"label": "철강 - 열연 내수 쏠림",
+"start": 213.03,
+"end": 256.04
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 도금재 우회",
-"start": 225.4,
-"end": 274.92
+"label": "철강 - 일본제철 STS 인하",
+"start": 256.54,
+"end": 303.77
 },
 {
 "group": "steel",
-"label": "철강 - 중국 수출과 열연 수입",
-"start": 275.42,
-"end": 313.62
-},
-{
-"group": "steel",
-"label": "철강 - 비주거 착공과 컬러강판",
-"start": 314.12,
-"end": 359.22
+"label": "철강 - 특수강봉강 주문 감소",
+"start": 304.27,
+"end": 336.5
 },
 {
 "group": "domestic",
-"label": "국내 - 건강보험료율 동결",
-"start": 360.22,
-"end": 401.67
+"label": "국내 - 서울 생애최초 매수",
+"start": 337.5,
+"end": 380.84
 },
 {
 "group": "domestic",
-"label": "국내 - 소비자 집단소송제 확대",
-"start": 402.17,
-"end": 438.1
+"label": "국내 - 사업자대출 용도외 유용",
+"start": 381.34,
+"end": 424.16
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 매입임대 2만 가구",
-"start": 438.6,
-"end": 477.64
+"label": "국내 - LH 분사 노조 교섭 요구",
+"start": 424.66,
+"end": 471.2
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 478.64,
-"end": 494.29
+"start": 472.2,
+"end": 492.02
 }
 ]
