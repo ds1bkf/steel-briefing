@@ -3,78 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.06
+"end": 6.83
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.06,
-"end": 38.38
+"start": 7.83,
+"end": 37.86
 },
 {
 "group": "global",
-"label": "세계 - 미 국채금리 4.85퍼센트",
-"start": 39.38,
-"end": 82.39
+"label": "세계 - 트럼프 배당금 공약",
+"start": 38.86,
+"end": 84.34
 },
 {
 "group": "global",
-"label": "세계 - 미국 캐나다 수입금지",
-"start": 82.89,
-"end": 128.25
+"label": "세계 - ECB 금리 인상",
+"start": 84.84,
+"end": 133.77
 },
 {
 "group": "global",
-"label": "세계 - 중국 생산자물가",
-"start": 128.75,
-"end": 168.52
+"label": "세계 - 해상운임 6주 연속 상승",
+"start": 134.27,
+"end": 179.75
 },
 {
 "group": "steel",
-"label": "철강 - 일본 관동 스크랩 입찰",
-"start": 169.52,
-"end": 217.54
+"label": "철강 - 동국 철근 89만원 동결",
+"start": 180.75,
+"end": 226.95
 },
 {
 "group": "steel",
-"label": "철강 - 열연 내수 쏠림",
-"start": 218.04,
-"end": 260.09
+"label": "철강 - 철광석 100달러선 붕괴",
+"start": 227.45,
+"end": 271.56
 },
 {
 "group": "steel",
-"label": "철강 - 일본제철 STS 인하",
-"start": 260.59,
-"end": 307.82
+"label": "철강 - 철스크랩 국적별 역주행",
+"start": 272.06,
+"end": 318.65
 },
 {
 "group": "steel",
-"label": "철강 - 특수강봉강 주문 감소",
-"start": 308.32,
-"end": 341.52
+"label": "철강 - 판재 유통과 철도 차질",
+"start": 319.15,
+"end": 352.68
+},
+{
+"group": "steel",
+"label": "철강 - 아시아 빌릿 오퍼",
+"start": 353.18,
+"end": 400.74
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 생애최초 매수",
-"start": 342.52,
-"end": 388.52
+"label": "국내 - 한은 추가 인상 여지",
+"start": 401.74,
+"end": 446.38
 },
 {
 "group": "domestic",
-"label": "국내 - 사업자대출 용도외 유용",
-"start": 389.02,
-"end": 434.77
+"label": "국내 - 대미 투자 첫 사업",
+"start": 446.88,
+"end": 495.29
 },
 {
 "group": "domestic",
-"label": "국내 - LH 분사 노조 교섭 요구",
-"start": 435.27,
-"end": 478.73
+"label": "국내 - 추석 물가 특별대책기간",
+"start": 495.79,
+"end": 543.43
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 479.73,
-"end": 499.56
+"start": 544.43,
+"end": 560.54
 }
 ]
