@@ -3,72 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.06
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 35.07
+"start": 7.06,
+"end": 35.38
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 35.88,
+"end": 47.04
 },
 {
 "group": "global",
-"label": "세계 - 사우디 송유관 피격",
-"start": 36.07,
-"end": 78.05
+"label": "세계 - 중국계 전기차 세계 점유율 60퍼센트",
+"start": 48.04,
+"end": 92.61
 },
 {
 "group": "global",
-"label": "세계 - 미일 동시 인상 주간",
-"start": 78.55,
-"end": 125.2
+"label": "세계 - 인도 유럽연합 철강 쿼터 확대",
+"start": 93.11,
+"end": 120.4
+},
+{
+"group": "global",
+"label": "세계 - 인니 광산 작업계획 심사",
+"start": 120.9,
+"end": 147.28
+},
+{
+"group": "global",
+"label": "세계 - 한국 중앙아시아 핵심광물 협력",
+"start": 147.78,
+"end": 182.98
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 2차 파업 예고",
-"start": 126.2,
-"end": 177.16
+"label": "철강 - 현대제철 철근 89만 원 확정",
+"start": 183.98,
+"end": 210.5
 },
 {
 "group": "steel",
-"label": "철강 - 17일 무역위 판정",
-"start": 177.66,
-"end": 221.34
+"label": "철강 - 철근 재고와 규격 확보",
+"start": 211.0,
+"end": 252.91
 },
 {
 "group": "steel",
-"label": "철강 - 철근 9월 3주 시황",
-"start": 221.84,
-"end": 269.07
+"label": "철강 - 에스티에스 냉연 수입 태국으로",
+"start": 253.41,
+"end": 282.45
 },
 {
 "group": "steel",
-"label": "철강 - 건설수주 30퍼센트 급감",
-"start": 269.57,
-"end": 314.54
-},
-{
-"group": "steel",
-"label": "철강 - 유럽 산업가속화법",
-"start": 315.04,
-"end": 365.2
+"label": "철강 - 중국산 각관 수입 증가",
+"start": 282.95,
+"end": 312.64
 },
 {
 "group": "domestic",
-"label": "국내 - 추석 자금 103조",
-"start": 366.2,
-"end": 410.27
-},
-{
-"group": "domestic",
-"label": "국내 - 염창 신규택지 파행",
-"start": 410.77,
-"end": 459.06
+"label": "국내 - 한국거래소 애프터마켓 개장",
+"start": 313.64,
+"end": 350.62
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 460.06,
-"end": 481.22
+"start": 351.62,
+"end": 364.8
 }
 ]
