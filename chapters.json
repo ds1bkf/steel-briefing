@@ -3,84 +3,102 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.06
+"end": 6.52
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 7.06,
-"end": 35.84
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 36.34,
-"end": 47.57
+"label": "날씨 - 전국 맑고 큰 일교차",
+"start": 7.52,
+"end": 42.27
 },
 {
 "group": "global",
-"label": "세계 - 중국계 전기차 세계 점유율 60퍼센트",
-"start": 48.57,
-"end": 92.18
+"label": "세계 - 중국 8월 실물 지표",
+"start": 43.27,
+"end": 86.23
 },
 {
 "group": "global",
-"label": "세계 - 인도 유럽연합 철강 쿼터 확대",
-"start": 92.68,
-"end": 120.54
+"label": "세계 - 미중 정상회담 의제",
+"start": 86.73,
+"end": 118.36
 },
 {
 "group": "global",
-"label": "세계 - 인니 광산 작업계획 심사",
-"start": 121.04,
-"end": 150.68
-},
-{
-"group": "global",
-"label": "세계 - 한국 중앙아시아 핵심광물 협력",
-"start": 151.18,
-"end": 185.89
+"label": "세계 - 미중 정상회담 의제",
+"start": 118.86,
+"end": 136.34
 },
 {
 "group": "steel",
-"label": "철강 - 현대제철 철근 89만 원 확정",
-"start": 186.89,
-"end": 211.7
+"label": "철강 - 포스코 2차 부분파업",
+"start": 137.34,
+"end": 170.34
 },
 {
 "group": "steel",
-"label": "철강 - 철근 재고와 규격 확보",
-"start": 212.2,
-"end": 251.52
+"label": "철강 - 포스코 2차 부분파업",
+"start": 170.84,
+"end": 188.57
 },
 {
 "group": "steel",
-"label": "철강 - 동남아 에스티에스 무역장벽 확산",
-"start": 252.02,
-"end": 291.9
+"label": "철강 - 중국 대만 10월 인상",
+"start": 189.07,
+"end": 222.14
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 각관 수입 증가",
-"start": 292.4,
-"end": 319.36
+"label": "철강 - 중국 대만 10월 인상",
+"start": 222.64,
+"end": 242.66
 },
 {
 "group": "steel",
-"label": "철강 - 호주 와이알라 고로 영구 폐쇄",
-"start": 319.86,
-"end": 352.09
+"label": "철강 - 철스크랩 국내외 격차",
+"start": 243.16,
+"end": 280.79
+},
+{
+"group": "steel",
+"label": "철강 - 철스크랩 국내외 격차",
+"start": 281.29,
+"end": 300.97
 },
 {
 "group": "domestic",
-"label": "국내 - 한국거래소 애프터마켓 개장",
-"start": 353.09,
-"end": 389.16
+"label": "국내 - 서울 버스 임단협 타결",
+"start": 301.97,
+"end": 337.13
+},
+{
+"group": "domestic",
+"label": "국내 - 서울 버스 임단협 타결",
+"start": 337.63,
+"end": 355.68
+},
+{
+"group": "domestic",
+"label": "국내 - 한은 금통위 의사록",
+"start": 356.18,
+"end": 403.36
+},
+{
+"group": "domestic",
+"label": "국내 - 재생에너지 제도 개편",
+"start": 403.86,
+"end": 438.83
+},
+{
+"group": "domestic",
+"label": "국내 - 재생에너지 제도 개편",
+"start": 439.33,
+"end": 457.79
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 390.16,
-"end": 404.13
+"start": 458.79,
+"end": 474.12
 }
 ]
