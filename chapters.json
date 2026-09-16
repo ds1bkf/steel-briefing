@@ -3,102 +3,120 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.26
 },
 {
 "group": "weather",
-"label": "날씨 - 전국 맑고 큰 일교차",
-"start": 7.52,
-"end": 42.27
+"label": "오늘 날씨",
+"start": 7.26,
+"end": 37.09
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 37.59,
+"end": 60.77
 },
 {
 "group": "global",
-"label": "세계 - 중국 8월 실물 지표",
-"start": 43.27,
-"end": 86.23
+"label": "세계 - 연준 3년 만의 금리 인상",
+"start": 61.77,
+"end": 97.44
 },
 {
 "group": "global",
-"label": "세계 - 미중 정상회담 의제",
-"start": 86.73,
-"end": 118.36
+"label": "세계 - 국내 금리로 오는 여파",
+"start": 97.94,
+"end": 131.08
 },
 {
 "group": "global",
-"label": "세계 - 미중 정상회담 의제",
-"start": 118.86,
-"end": 136.34
+"label": "세계 - 유가 반락과 운임 상승",
+"start": 131.58,
+"end": 161.72
+},
+{
+"group": "global",
+"label": "세계 - 운임은 늦게 따라온다",
+"start": 162.22,
+"end": 183.01
+},
+{
+"group": "global",
+"label": "세계 - 일본은행 내일 결정",
+"start": 183.51,
+"end": 218.86
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 2차 부분파업",
-"start": 137.34,
-"end": 170.34
+"label": "철강 - 중국산 에이치형강 쿼터가",
+"start": 219.86,
+"end": 258.26
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 2차 부분파업",
-"start": 170.84,
-"end": 188.57
+"label": "철강 - 추석 앞 결제 점검",
+"start": 258.76,
+"end": 288.78
 },
 {
 "group": "steel",
-"label": "철강 - 중국 대만 10월 인상",
-"start": 189.07,
-"end": 222.14
+"label": "철강 - 회생채권으로 묶입니다",
+"start": 289.28,
+"end": 308.12
 },
 {
 "group": "steel",
-"label": "철강 - 중국 대만 10월 인상",
-"start": 222.64,
-"end": 242.66
+"label": "철강 - 중국 45개사 자율 감산",
+"start": 308.62,
+"end": 339.75
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 국내외 격차",
-"start": 243.16,
-"end": 280.79
+"label": "철강 - 대만 전기강판 덤핑 확정",
+"start": 340.25,
+"end": 368.64
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 국내외 격차",
-"start": 281.29,
-"end": 300.97
+"label": "철강 - 태양광위원회 출범",
+"start": 369.14,
+"end": 409.9
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 버스 임단협 타결",
-"start": 301.97,
-"end": 337.13
+"label": "국내 - 대미투자 양해각서 연기",
+"start": 410.9,
+"end": 444.3
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 버스 임단협 타결",
-"start": 337.63,
-"end": 355.68
+"label": "국내 - 라인파이프 발주 시점",
+"start": 444.8,
+"end": 464.1
 },
 {
 "group": "domestic",
-"label": "국내 - 한은 금통위 의사록",
-"start": 356.18,
-"end": 403.36
+"label": "국내 - 다음 달 택지 발표",
+"start": 464.6,
+"end": 504.3
 },
 {
 "group": "domestic",
-"label": "국내 - 재생에너지 제도 개편",
-"start": 403.86,
-"end": 438.83
+"label": "국내 - 노동감독관 독자 수사",
+"start": 504.8,
+"end": 542.93
 },
 {
 "group": "domestic",
-"label": "국내 - 재생에너지 제도 개편",
-"start": 439.33,
-"end": 457.79
+"label": "국내 - 공정위 명령 효력 정지",
+"start": 543.43,
+"end": 588.91
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 458.79,
-"end": 474.12
+"start": 589.91,
+"end": 605.56
 }
 ]
