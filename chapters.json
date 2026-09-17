@@ -3,120 +3,96 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.26
+"end": 6.45
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 7.26,
-"end": 37.09
+"label": "날씨 - 남해안 동해안 비",
+"start": 7.45,
+"end": 45.58
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 37.59,
-"end": 60.77
+"start": 46.08,
+"end": 69.92
 },
 {
 "group": "global",
-"label": "세계 - 연준 3년 만의 금리 인상",
-"start": 61.77,
-"end": 97.44
+"label": "세계 - 러 에너지 구매국 100퍼센트 관세",
+"start": 70.92,
+"end": 108.79
 },
 {
 "group": "global",
-"label": "세계 - 국내 금리로 오는 여파",
-"start": 97.94,
-"end": 131.08
-},
-{
-"group": "global",
-"label": "세계 - 유가 반락과 운임 상승",
-"start": 131.58,
-"end": 161.72
-},
-{
-"group": "global",
-"label": "세계 - 운임은 늦게 따라온다",
-"start": 162.22,
-"end": 183.01
-},
-{
-"group": "global",
-"label": "세계 - 일본은행 내일 결정",
-"start": 183.51,
-"end": 218.86
+"label": "세계 - 영란은행 동결",
+"start": 109.29,
+"end": 150.54
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 에이치형강 쿼터가",
-"start": 219.86,
-"end": 258.26
+"label": "철강 - 철근 재고 30만톤",
+"start": 151.54,
+"end": 191.58
 },
 {
 "group": "steel",
-"label": "철강 - 추석 앞 결제 점검",
-"start": 258.76,
-"end": 288.78
+"label": "철강 - 무역위 H형강 5년 연장",
+"start": 192.08,
+"end": 227.81
 },
 {
 "group": "steel",
-"label": "철강 - 회생채권으로 묶입니다",
-"start": 289.28,
-"end": 308.12
+"label": "철강 - 대체선을 다시 짜야",
+"start": 228.31,
+"end": 245.9
 },
 {
 "group": "steel",
-"label": "철강 - 중국 45개사 자율 감산",
-"start": 308.62,
-"end": 339.75
+"label": "철강 - 미국 철근 피해 판정과 EU 재심",
+"start": 246.4,
+"end": 281.61
 },
 {
 "group": "steel",
-"label": "철강 - 대만 전기강판 덤핑 확정",
-"start": 340.25,
-"end": 368.64
+"label": "철강 - 일본 벤칸 STS 판가 인상",
+"start": 282.11,
+"end": 316.48
 },
 {
 "group": "steel",
-"label": "철강 - 태양광위원회 출범",
-"start": 369.14,
-"end": 409.9
+"label": "철강 - 유럽 미국 설비 투자",
+"start": 316.98,
+"end": 355.19
 },
 {
 "group": "domestic",
-"label": "국내 - 대미투자 양해각서 연기",
-"start": 410.9,
-"end": 444.3
+"label": "국내 - 토허구역 실거주 유예 연장",
+"start": 356.19,
+"end": 394.28
 },
 {
 "group": "domestic",
-"label": "국내 - 라인파이프 발주 시점",
-"start": 444.8,
-"end": 464.1
+"label": "국내 - 가계대출 총량규제와 예대금리차",
+"start": 394.78,
+"end": 435.07
 },
 {
 "group": "domestic",
-"label": "국내 - 다음 달 택지 발표",
-"start": 464.6,
-"end": 504.3
+"label": "국내 - 민주노총 사회적 대화 복귀",
+"start": 435.57,
+"end": 478.0
 },
 {
 "group": "domestic",
-"label": "국내 - 노동감독관 독자 수사",
-"start": 504.8,
-"end": 542.93
-},
-{
-"group": "domestic",
-"label": "국내 - 공정위 명령 효력 정지",
-"start": 543.43,
-"end": 588.91
+"label": "국내 - 종가는 정규장 기준",
+"start": 478.5,
+"end": 513.4
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 589.91,
-"end": 605.56
+"start": 514.4,
+"end": 525.56
 }
 ]
