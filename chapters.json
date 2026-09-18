@@ -7,92 +7,98 @@
 },
 {
 "group": "weather",
-"label": "날씨 - 남해안 동해안 비",
+"label": "오늘 날씨",
 "start": 7.45,
-"end": 45.58
+"end": 37.33
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 46.08,
-"end": 69.92
+"start": 37.83,
+"end": 59.91
 },
 {
 "group": "global",
-"label": "세계 - 러 에너지 구매국 100퍼센트 관세",
-"start": 70.92,
-"end": 108.79
+"label": "세계 - 대러 제재 관세",
+"start": 60.91,
+"end": 99.57
 },
 {
 "group": "global",
 "label": "세계 - 영란은행 동결",
-"start": 109.29,
-"end": 150.54
+"start": 100.07,
+"end": 134.18
+},
+{
+"group": "steel",
+"label": "철강 - 철스크랩 자급률",
+"start": 135.18,
+"end": 176.58
+},
+{
+"group": "steel",
+"label": "철강 - 중국산 빌릿 수입",
+"start": 177.08,
+"end": 216.77
+},
+{
+"group": "steel",
+"label": "철강 - JFE 10월 인상",
+"start": 217.27,
+"end": 259.7
+},
+{
+"group": "steel",
+"label": "철강 - 무역위 반덤핑",
+"start": 260.2,
+"end": 309.14
+},
+{
+"group": "steel",
+"label": "철강 - H형강 수출 재편",
+"start": 309.64,
+"end": 343.7
 },
 {
 "group": "steel",
 "label": "철강 - 철근 재고 30만톤",
-"start": 151.54,
-"end": 191.58
+"start": 344.2,
+"end": 387.16
 },
 {
 "group": "steel",
-"label": "철강 - 무역위 H형강 5년 연장",
-"start": 192.08,
-"end": 227.81
-},
-{
-"group": "steel",
-"label": "철강 - 대체선을 다시 짜야",
-"start": 228.31,
-"end": 245.9
-},
-{
-"group": "steel",
-"label": "철강 - 미국 철근 피해 판정과 EU 재심",
-"start": 246.4,
-"end": 281.61
-},
-{
-"group": "steel",
-"label": "철강 - 일본 벤칸 STS 판가 인상",
-"start": 282.11,
-"end": 316.48
-},
-{
-"group": "steel",
-"label": "철강 - 유럽 미국 설비 투자",
-"start": 316.98,
-"end": 355.19
+"label": "철강 - 지역 전기요금제",
+"start": 387.66,
+"end": 426.25
 },
 {
 "group": "domestic",
-"label": "국내 - 토허구역 실거주 유예 연장",
-"start": 356.19,
-"end": 394.28
+"label": "국내 - 유류세 연장",
+"start": 427.25,
+"end": 471.89
 },
 {
 "group": "domestic",
-"label": "국내 - 가계대출 총량규제와 예대금리차",
-"start": 394.78,
-"end": 435.07
+"label": "국내 - 가계대출 목표 상향",
+"start": 472.39,
+"end": 515.2
 },
 {
 "group": "domestic",
-"label": "국내 - 민주노총 사회적 대화 복귀",
-"start": 435.57,
-"end": 478.0
+"label": "국내 - 토허구역 유예 연장",
+"start": 515.7,
+"end": 555.14
 },
 {
 "group": "domestic",
-"label": "국내 - 종가는 정규장 기준",
-"start": 478.5,
-"end": 513.4
+"label": "국내 - 민주노총 사회적 대화",
+"start": 555.64,
+"end": 602.63
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 514.4,
-"end": 525.56
+"start": 603.63,
+"end": 617.67
 }
 ]
