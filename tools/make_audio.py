@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """index.html의 낭독 대본을 구글 Text-to-Speech로 합성해 audio.mp3와 chapters.json을 만든다.
    단락별로 따로 합성해 길이를 재고 이어 붙이므로, 각 단락의 시작·끝 시각을 정확히 알 수 있다."""
-import base64, io, json, os, re, subprocess, sys, tempfile
-import urllib.request, urllib.parse
+import base64, http.client, io, json, os, re, socket, subprocess, sys, tempfile, time
+import urllib.request, urllib.parse, urllib.error
 
 # 섹터별 화자 — 라디오 뉴스처럼 진행자와 리포터를 나눈다.
 # 진행자(Kore)가 열고 닫으며 날씨·배차를 맡고, 섹터마다 리포터가 바뀐다.
@@ -20,6 +20,37 @@ LEAD_IN = 1.0        # 도입부 무음(초)
 GAP_PARA = 0.5       # 주제와 주제 사이
 GAP_SECTION = 1.0    # 섹터가 바뀔 때
 API = "https://texttospeech.googleapis.com/v1/text:synthesize"
+
+# 구글 API 호출이 일시적으로 끊기는 일이 있다. 재시도가 없으면 단락 하나 때문에
+# 런 전체가 죽어 그날 음성이 아예 생성되지 않는다.
+RETRIES = 3                  # 최초 시도 실패 후 재시도 횟수
+BACKOFF = (2, 5, 10)         # 재시도 전 대기 시간(초)
+
+# ConnectionResetError는 urllib가 URLError로 감싸 올리기도 하고 그대로 올리기도 한다.
+TRANSIENT = (urllib.error.URLError, http.client.HTTPException,
+             ConnectionError, socket.timeout, TimeoutError)
+
+
+def transient(e) -> bool:
+    """다시 시도해 볼 만한 오류인지 판정한다."""
+    # HTTPError는 URLError의 하위 클래스라 먼저 걸러낸다.
+    if isinstance(e, urllib.error.HTTPError):
+        return e.code == 429 or 500 <= e.code < 600   # 한도 초과·서버 오류만 재시도
+    return isinstance(e, TRANSIENT)
+
+
+def with_retry(what: str, call):
+    """call()을 최대 RETRIES회까지 다시 시도한다. 영구 오류는 즉시 올린다."""
+    for i in range(RETRIES + 1):
+        try:
+            return call()
+        except Exception as e:
+            if i == RETRIES or not transient(e):
+                raise
+            wait = BACKOFF[min(i, len(BACKOFF) - 1)]
+            print("     ! %s 실패(%s: %s) — %d초 뒤 재시도 %d/%d"
+                  % (what, type(e).__name__, e, wait, i + 1, RETRIES), flush=True)
+            time.sleep(wait)
 
 
 def access_token(sa: dict) -> str:
@@ -48,10 +79,13 @@ def access_token(sa: dict) -> str:
         "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
         "assertion": jwt,
     }).encode()
-    req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body,
-                                 headers={"Content-Type": "application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)["access_token"]
+    def call():
+        req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body,
+                                     headers={"Content-Type": "application/x-www-form-urlencoded"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.load(r)["access_token"]
+
+    return with_retry("토큰 발급", call)
 
 
 def synthesize(text: str, token: str, voice: str) -> bytes:
@@ -60,11 +94,15 @@ def synthesize(text: str, token: str, voice: str) -> bytes:
         "voice": {"languageCode": "ko-KR", "name": voice},
         "audioConfig": {"audioEncoding": "MP3", "speakingRate": RATE},
     }
-    req = urllib.request.Request(API, data=json.dumps(payload).encode(),
-                                 headers={"Authorization": "Bearer " + token,
-                                          "Content-Type": "application/json; charset=utf-8"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return base64.b64decode(json.load(r)["audioContent"])
+    def call():
+        # 요청 객체는 시도마다 새로 만든다.
+        req = urllib.request.Request(API, data=json.dumps(payload).encode(),
+                                     headers={"Authorization": "Bearer " + token,
+                                              "Content-Type": "application/json; charset=utf-8"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return base64.b64decode(json.load(r)["audioContent"])
+
+    return with_retry("음성 합성 요청", call)
 
 
 def duration(path: str) -> float:
