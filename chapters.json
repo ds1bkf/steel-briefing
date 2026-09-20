@@ -3,102 +3,90 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.45
+"end": 6.33
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.45,
-"end": 37.33
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 37.83,
-"end": 59.91
+"start": 7.33,
+"end": 42.22
 },
 {
 "group": "global",
-"label": "세계 - 대러 제재 관세",
-"start": 60.91,
-"end": 99.57
+"label": "세계 - 미중 정상회담 24일",
+"start": 43.22,
+"end": 88.01
 },
 {
 "group": "global",
-"label": "세계 - 영란은행 동결",
-"start": 100.07,
-"end": 134.18
+"label": "세계 - 일본은행 금리 인상",
+"start": 88.51,
+"end": 135.43
+},
+{
+"group": "global",
+"label": "세계 - 미 제조업 생산 감소",
+"start": 135.93,
+"end": 174.06
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 자급률",
-"start": 135.18,
-"end": 176.58
+"label": "철강 - 현대제철 10월 판가 인상",
+"start": 175.06,
+"end": 208.47
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 빌릿 수입",
-"start": 177.08,
-"end": 216.77
+"label": "철강 - 추석 철근 출하와 휴동",
+"start": 208.97,
+"end": 252.89
 },
 {
 "group": "steel",
-"label": "철강 - JFE 10월 인상",
-"start": 217.27,
-"end": 259.7
+"label": "철강 - 동경제철 철스크랩 인상",
+"start": 253.39,
+"end": 290.3
 },
 {
 "group": "steel",
-"label": "철강 - 무역위 반덤핑",
-"start": 260.2,
-"end": 309.14
+"label": "철강 - 수입 열연 반덤핑 요구",
+"start": 290.8,
+"end": 329.01
 },
 {
 "group": "steel",
-"label": "철강 - H형강 수출 재편",
-"start": 309.64,
-"end": 343.7
+"label": "철강 - 미국 반덤핑 조치",
+"start": 329.51,
+"end": 365.06
 },
 {
 "group": "steel",
-"label": "철강 - 철근 재고 30만톤",
-"start": 344.2,
-"end": 387.16
-},
-{
-"group": "steel",
-"label": "철강 - 지역 전기요금제",
-"start": 387.66,
-"end": 426.25
+"label": "철강 - 일본제철 슬로바키아 전기로",
+"start": 365.56,
+"end": 406.76
 },
 {
 "group": "domestic",
-"label": "국내 - 유류세 연장",
-"start": 427.25,
-"end": 471.89
+"label": "국내 - 추석 연휴 교통과 항만",
+"start": 407.76,
+"end": 453.89
 },
 {
 "group": "domestic",
-"label": "국내 - 가계대출 목표 상향",
-"start": 472.39,
-"end": 515.2
+"label": "국내 - 납품대금 지급기한 단축 건의",
+"start": 454.39,
+"end": 493.78
 },
 {
 "group": "domestic",
-"label": "국내 - 토허구역 유예 연장",
-"start": 515.7,
-"end": 555.14
-},
-{
-"group": "domestic",
-"label": "국내 - 민주노총 사회적 대화",
-"start": 555.64,
-"end": 602.63
+"label": "국내 - 반도체 안전점검 338건 적발",
+"start": 494.28,
+"end": 531.72
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 603.63,
-"end": 617.67
+"start": 532.72,
+"end": 549.61
 }
 ]
