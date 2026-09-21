@@ -2,7 +2,7 @@ name: 기기용 카운터 갱신
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 
 permissions:
