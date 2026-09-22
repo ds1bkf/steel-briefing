@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.83
+"end": 6.98
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.83,
-"end": 36.22
+"start": 7.98,
+"end": 43.4
 },
 {
 "group": "global",
-"label": "세계 - 유가와 해상운임",
-"start": 37.22,
-"end": 83.35
+"label": "세계 - 미국 경유 수출 금지 검토",
+"start": 44.4,
+"end": 85.2
 },
 {
 "group": "global",
-"label": "세계 - 일본 태풍 두쥐안",
-"start": 83.85,
-"end": 124.34
+"label": "세계 - 중국철강협회 수요 전망",
+"start": 85.7,
+"end": 129.38
+},
+{
+"group": "global",
+"label": "세계 - 인도 인프라 생산 둔화",
+"start": 129.88,
+"end": 164.13
 },
 {
 "group": "steel",
-"label": "철강 - 원료탄 급등",
-"start": 125.34,
-"end": 165.11
+"label": "철강 - 철스크랩 10월 인하",
+"start": 165.13,
+"end": 201.06
 },
 {
 "group": "steel",
-"label": "철강 - 중국 열연가 하락",
-"start": 165.61,
-"end": 198.3
+"label": "철강 - 수입 열연 15만 톤 돌파",
+"start": 201.56,
+"end": 233.6
 },
 {
 "group": "steel",
-"label": "철강 - 유럽연합 전기강판 세이프가드",
-"start": 198.8,
-"end": 247.85
+"label": "철강 - 대양금속 파산신청 취하",
+"start": 234.1,
+"end": 273.94
 },
 {
 "group": "steel",
-"label": "철강 - 스테인리스 오퍼와 판가",
-"start": 248.35,
-"end": 282.41
+"label": "철강 - 제물포구 산업위기지역 신청",
+"start": 274.44,
+"end": 310.24
 },
 {
 "group": "steel",
-"label": "철강 - 전선관 내수 최저",
-"start": 282.91,
-"end": 307.6
+"label": "철강 - 특수강봉강 잠정관세 시점",
+"start": 310.74,
+"end": 340.58
 },
 {
 "group": "steel",
-"label": "철강 - 미국 강관 수입과 뉴코",
-"start": 308.1,
-"end": 334.74
+"label": "철강 - 현대제철 조달청 소송 승소",
+"start": 341.08,
+"end": 377.08
 },
 {
 "group": "domestic",
-"label": "국내 - 대미투자 협상",
-"start": 335.74,
-"end": 381.37
+"label": "국내 - 이형일 부총리 취임",
+"start": 378.08,
+"end": 416.93
 },
 {
 "group": "domestic",
-"label": "국내 - 도심복합사업 첫 철거",
-"start": 381.87,
-"end": 425.93
-},
-{
-"group": "domestic",
-"label": "국내 - 추석 차례상 비용",
-"start": 426.43,
-"end": 474.84
+"label": "국내 - 메가특구 노동 특례 협의",
+"start": 417.43,
+"end": 458.64
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 475.84,
-"end": 494.8
+"start": 459.64,
+"end": 477.18
 }
 ]
