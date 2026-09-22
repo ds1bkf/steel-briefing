@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 6.83
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 33.94
+"start": 7.83,
+"end": 36.22
 },
 {
 "group": "global",
 "label": "세계 - 유가와 해상운임",
-"start": 34.94,
-"end": 79.2
+"start": 37.22,
+"end": 83.35
 },
 {
 "group": "global",
 "label": "세계 - 일본 태풍 두쥐안",
-"start": 79.7,
-"end": 121.87
+"start": 83.85,
+"end": 124.34
 },
 {
 "group": "steel",
 "label": "철강 - 원료탄 급등",
-"start": 122.87,
-"end": 164.27
+"start": 125.34,
+"end": 165.11
 },
 {
 "group": "steel",
 "label": "철강 - 중국 열연가 하락",
-"start": 164.77,
-"end": 197.38
+"start": 165.61,
+"end": 198.3
 },
 {
 "group": "steel",
 "label": "철강 - 유럽연합 전기강판 세이프가드",
-"start": 197.88,
-"end": 246.94
+"start": 198.8,
+"end": 247.85
 },
 {
 "group": "steel",
 "label": "철강 - 스테인리스 오퍼와 판가",
-"start": 247.44,
-"end": 281.3
+"start": 248.35,
+"end": 282.41
 },
 {
 "group": "steel",
 "label": "철강 - 전선관 내수 최저",
-"start": 281.8,
-"end": 307.27
+"start": 282.91,
+"end": 307.6
 },
 {
 "group": "steel",
 "label": "철강 - 미국 강관 수입과 뉴코",
-"start": 307.77,
-"end": 337.19
+"start": 308.1,
+"end": 334.74
 },
 {
 "group": "domestic",
 "label": "국내 - 대미투자 협상",
-"start": 338.19,
-"end": 386.02
+"start": 335.74,
+"end": 381.37
 },
 {
 "group": "domestic",
 "label": "국내 - 도심복합사업 첫 철거",
-"start": 386.52,
-"end": 431.31
+"start": 381.87,
+"end": 425.93
 },
 {
 "group": "domestic",
 "label": "국내 - 추석 차례상 비용",
-"start": 431.81,
-"end": 479.83
+"start": 426.43,
+"end": 474.84
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 480.83,
-"end": 498.38
+"start": 475.84,
+"end": 494.8
 }
 ]
