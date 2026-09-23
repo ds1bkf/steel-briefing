@@ -3,84 +3,72 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.98
+"end": 5.99
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.98,
-"end": 43.4
+"start": 6.99,
+"end": 29.22
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 29.72,
+"end": 47.26
 },
 {
 "group": "global",
-"label": "세계 - 미국 경유 수출 금지 검토",
-"start": 44.4,
-"end": 85.2
+"label": "세계 - 미국 국채금리 급등",
+"start": 48.26,
+"end": 89.78
 },
 {
 "group": "global",
-"label": "세계 - 중국철강협회 수요 전망",
-"start": 85.7,
-"end": 129.38
+"label": "세계 - 미중 무역휴전",
+"start": 90.28,
+"end": 124.72
 },
 {
 "group": "global",
-"label": "세계 - 인도 인프라 생산 둔화",
-"start": 129.88,
-"end": 164.13
+"label": "세계 - 러시아 우크라이나 에너지 휴전",
+"start": 125.22,
+"end": 162.25
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 10월 인하",
-"start": 165.13,
-"end": 201.06
+"label": "철강 - 철근 10월 고시가",
+"start": 163.25,
+"end": 202.37
 },
 {
 "group": "steel",
-"label": "철강 - 수입 열연 15만 톤 돌파",
-"start": 201.56,
-"end": 233.6
+"label": "철강 - 미국 철근 수입",
+"start": 202.87,
+"end": 251.42
 },
 {
 "group": "steel",
-"label": "철강 - 대양금속 파산신청 취하",
-"start": 234.1,
-"end": 273.94
-},
-{
-"group": "steel",
-"label": "철강 - 제물포구 산업위기지역 신청",
-"start": 274.44,
-"end": 310.24
-},
-{
-"group": "steel",
-"label": "철강 - 특수강봉강 잠정관세 시점",
-"start": 310.74,
-"end": 340.58
-},
-{
-"group": "steel",
-"label": "철강 - 현대제철 조달청 소송 승소",
-"start": 341.08,
-"end": 377.08
+"label": "철강 - 매출채권보험 사고 급증",
+"start": 251.92,
+"end": 295.65
 },
 {
 "group": "domestic",
-"label": "국내 - 이형일 부총리 취임",
-"start": 378.08,
-"end": 416.93
+"label": "국내 - OECD 성장률 상향",
+"start": 296.65,
+"end": 337.26
 },
 {
 "group": "domestic",
-"label": "국내 - 메가특구 노동 특례 협의",
-"start": 417.43,
-"end": 458.64
+"label": "국내 - 상동광산 텅스텐",
+"start": 337.76,
+"end": 381.68
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 459.64,
-"end": 477.18
+"start": 382.68,
+"end": 397.49
 }
 ]
