@@ -3,72 +3,54 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 29.22
+"start": 7.71,
+"end": 35.58
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 29.72,
-"end": 47.26
+"start": 36.08,
+"end": 57.77
 },
 {
 "group": "global",
-"label": "세계 - 미국 국채금리 급등",
-"start": 48.26,
-"end": 89.78
+"label": "세계 - 중동 공급 차질과 유가",
+"start": 58.77,
+"end": 108.16
 },
 {
 "group": "global",
-"label": "세계 - 미중 무역휴전",
-"start": 90.28,
-"end": 124.72
-},
-{
-"group": "global",
-"label": "세계 - 러시아 우크라이나 에너지 휴전",
-"start": 125.22,
-"end": 162.25
+"label": "세계 - 미중 무역 휴전 연장",
+"start": 108.66,
+"end": 151.62
 },
 {
 "group": "steel",
-"label": "철강 - 철근 10월 고시가",
-"start": 163.25,
-"end": 202.37
+"label": "철강 - EU 고철 수출 규제 초안",
+"start": 152.62,
+"end": 203.19
 },
 {
 "group": "steel",
-"label": "철강 - 미국 철근 수입",
-"start": 202.87,
-"end": 251.42
-},
-{
-"group": "steel",
-"label": "철강 - 매출채권보험 사고 급증",
-"start": 251.92,
-"end": 295.65
+"label": "철강 - OECD 과잉설비 전망",
+"start": 203.69,
+"end": 234.68
 },
 {
 "group": "domestic",
-"label": "국내 - OECD 성장률 상향",
-"start": 296.65,
-"end": 337.26
-},
-{
-"group": "domestic",
-"label": "국내 - 상동광산 텅스텐",
-"start": 337.76,
-"end": 381.68
+"label": "국내 - 산림조합 연체율",
+"start": 235.68,
+"end": 277.99
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 382.68,
-"end": 397.49
+"start": 278.99,
+"end": 299.12
 }
 ]
