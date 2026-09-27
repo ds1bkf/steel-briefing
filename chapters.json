@@ -3,54 +3,90 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.71
+"end": 7.67
 },
 {
 "group": "weather",
-"label": "오늘 날씨",
-"start": 7.71,
-"end": 35.58
+"label": "날씨 - 오늘 전국 날씨",
+"start": 8.67,
+"end": 27.39
 },
 {
 "group": "weather",
-"label": "오늘 배차",
-"start": 36.08,
-"end": 57.77
+"label": "배차 - 내일 새벽 동해안 비",
+"start": 27.89,
+"end": 45.24
 },
 {
 "group": "global",
-"label": "세계 - 중동 공급 차질과 유가",
-"start": 58.77,
-"end": 108.16
+"label": "세계 - 유럽 에너지 가격 위기",
+"start": 46.24,
+"end": 91.8
 },
 {
 "group": "global",
-"label": "세계 - 미중 무역 휴전 연장",
-"start": 108.66,
-"end": 151.62
+"label": "세계 - 미국 연비 기준 완화",
+"start": 92.3,
+"end": 124.0
+},
+{
+"group": "global",
+"label": "세계 - 엔화와 달러인덱스",
+"start": 124.5,
+"end": 164.92
 },
 {
 "group": "steel",
-"label": "철강 - EU 고철 수출 규제 초안",
-"start": 152.62,
-"end": 203.19
+"label": "철강 - 일본 제철소 태풍 침수",
+"start": 165.92,
+"end": 212.38
 },
 {
 "group": "steel",
-"label": "철강 - OECD 과잉설비 전망",
-"start": 203.69,
-"end": 234.68
+"label": "철강 - 원료 조달 다변화",
+"start": 212.88,
+"end": 258.7
+},
+{
+"group": "steel",
+"label": "철강 - 세계 조강생산",
+"start": 259.2,
+"end": 308.2
+},
+{
+"group": "steel",
+"label": "철강 - 철근 유통가 85만 원선",
+"start": 308.7,
+"end": 350.1
+},
+{
+"group": "steel",
+"label": "철강 - 성분분석 KS 개편",
+"start": 350.6,
+"end": 388.43
 },
 {
 "group": "domestic",
-"label": "국내 - 산림조합 연체율",
-"start": 235.68,
-"end": 277.99
+"label": "국내 - 4분기 제조업 경기전망",
+"start": 389.43,
+"end": 439.59
+},
+{
+"group": "domestic",
+"label": "국내 - 한아세안 FTA 2차 협상",
+"start": 440.09,
+"end": 479.66
+},
+{
+"group": "domestic",
+"label": "국내 - 대미투자 발표 지연",
+"start": 480.16,
+"end": 524.04
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 278.99,
-"end": 299.12
+"start": 525.04,
+"end": 543.76
 }
 ]
