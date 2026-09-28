@@ -3,90 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.67
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "날씨 - 오늘 전국 날씨",
-"start": 8.67,
-"end": 27.39
+"start": 7.71,
+"end": 29.74
 },
 {
 "group": "weather",
-"label": "배차 - 내일 새벽 동해안 비",
-"start": 27.89,
-"end": 45.24
+"label": "배차 - 오늘 배차 유의",
+"start": 30.24,
+"end": 49.47
 },
 {
 "group": "global",
-"label": "세계 - 유럽 에너지 가격 위기",
-"start": 46.24,
-"end": 91.8
-},
-{
-"group": "global",
-"label": "세계 - 미국 연비 기준 완화",
-"start": 92.3,
-"end": 124.0
-},
-{
-"group": "global",
-"label": "세계 - 엔화와 달러인덱스",
-"start": 124.5,
-"end": 164.92
+"label": "세계 - 미 장기금리 급등",
+"start": 50.47,
+"end": 87.84
 },
 {
 "group": "steel",
-"label": "철강 - 일본 제철소 태풍 침수",
-"start": 165.92,
-"end": 212.38
+"label": "철강 - 10월 봉형강 가격",
+"start": 88.84,
+"end": 127.24
 },
 {
 "group": "steel",
-"label": "철강 - 원료 조달 다변화",
-"start": 212.88,
-"end": 258.7
+"label": "철강 - 한국철강 스크랩 인하 연기",
+"start": 127.74,
+"end": 148.9
 },
 {
 "group": "steel",
-"label": "철강 - 세계 조강생산",
-"start": 259.2,
-"end": 308.2
+"label": "철강 - 중국 철강업 이익 급감",
+"start": 149.4,
+"end": 180.84
 },
 {
 "group": "steel",
-"label": "철강 - 철근 유통가 85만 원선",
-"start": 308.7,
-"end": 350.1
+"label": "철강 - 스테인리스 할증료 인하",
+"start": 181.34,
+"end": 214.22
 },
 {
 "group": "steel",
-"label": "철강 - 성분분석 KS 개편",
-"start": 350.6,
-"end": 388.43
+"label": "철강 - 미국 아이오와 제철소",
+"start": 214.72,
+"end": 241.03
 },
 {
 "group": "domestic",
-"label": "국내 - 4분기 제조업 경기전망",
-"start": 389.43,
-"end": 439.59
+"label": "국내 - 한화오션 LNG선 수주",
+"start": 242.03,
+"end": 268.67
 },
 {
 "group": "domestic",
-"label": "국내 - 한아세안 FTA 2차 협상",
-"start": 440.09,
-"end": 479.66
+"label": "국내 - 삼성전기 기판 증설",
+"start": 269.17,
+"end": 294.78
 },
 {
 "group": "domestic",
-"label": "국내 - 대미투자 발표 지연",
-"start": 480.16,
-"end": 524.04
+"label": "국내 - 분당 재건축 예비구역",
+"start": 295.28,
+"end": 321.65
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 525.04,
-"end": 543.76
+"start": 322.65,
+"end": 338.44
 }
 ]
