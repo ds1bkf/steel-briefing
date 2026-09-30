@@ -3,90 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.92
+"end": 6.52
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.92,
-"end": 30.82
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 31.32,
-"end": 44.31
+"start": 7.52,
+"end": 31.04
 },
 {
 "group": "global",
-"label": "세계 - 유가 한 달 만의 저점",
-"start": 45.31,
-"end": 75.14
+"label": "세계 - 한국 대미투자 발표",
+"start": 32.04,
+"end": 63.89
 },
 {
 "group": "global",
-"label": "세계 - 호주 금리 인상",
-"start": 75.64,
-"end": 101.94
+"label": "세계 - 중국 제조업 경기",
+"start": 64.39,
+"end": 88.17
 },
 {
 "group": "global",
-"label": "세계 - 미국 소비심리",
-"start": 102.44,
-"end": 126.95
-},
-{
-"group": "global",
-"label": "세계 - 중국 미수금 해소",
-"start": 127.45,
-"end": 152.41
+"label": "세계 - 경유 수출 제한",
+"start": 88.67,
+"end": 113.1
 },
 {
 "group": "steel",
-"label": "철강 - 미국 쿼터 요구",
-"start": 153.41,
-"end": 188.04
+"label": "철강 - 중국산 우회수출 감시",
+"start": 114.1,
+"end": 147.18
 },
 {
 "group": "steel",
-"label": "철강 - 용인 산단 1공구",
-"start": 188.54,
-"end": 219.21
+"label": "철강 - 거래처 신용",
+"start": 147.68,
+"end": 166.83
 },
 {
 "group": "steel",
-"label": "철강 - 수입 철스크랩",
-"start": 219.71,
-"end": 247.34
+"label": "철강 - 철근 국산·수입 가격차",
+"start": 167.33,
+"end": 193.78
 },
 {
 "group": "steel",
-"label": "철강 - 복공판 KS 제정",
-"start": 247.84,
-"end": 271.24
+"label": "철강 - 일본산 수입 증가",
+"start": 194.28,
+"end": 222.4
+},
+{
+"group": "steel",
+"label": "철강 - 유럽 스크랩 규제",
+"start": 222.9,
+"end": 254.22
 },
 {
 "group": "domestic",
-"label": "국내 - 일시적 2주택 기한 단축",
-"start": 272.24,
-"end": 295.23
+"label": "국내 - 외환당국 개입",
+"start": 255.22,
+"end": 282.39
 },
 {
 "group": "domestic",
-"label": "국내 - 2분기 지역 성장률",
-"start": 295.73,
-"end": 324.0
+"label": "국내 - 8월 산업활동",
+"start": 282.89,
+"end": 311.16
 },
 {
 "group": "domestic",
-"label": "국내 - 대기업 고용형태",
-"start": 324.5,
-"end": 350.23
+"label": "국내 - 주택공급 점검",
+"start": 311.66,
+"end": 339.22
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 351.23,
-"end": 362.8
+"start": 340.22,
+"end": 357.11
 }
 ]
