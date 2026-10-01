@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.57
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 31.04
+"start": 7.57,
+"end": 29.0
 },
 {
 "group": "global",
-"label": "세계 - 한국 대미투자 발표",
-"start": 32.04,
-"end": 63.89
+"label": "세계 - 글로벌 국채 투매",
+"start": 30.0,
+"end": 63.26
 },
 {
 "group": "global",
-"label": "세계 - 중국 제조업 경기",
-"start": 64.39,
-"end": 88.17
-},
-{
-"group": "global",
-"label": "세계 - 경유 수출 제한",
-"start": 88.67,
-"end": 113.1
+"label": "세계 - 일본 생산 감소",
+"start": 63.76,
+"end": 92.88
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 우회수출 감시",
-"start": 114.1,
-"end": 147.18
+"label": "철강 - 수입 판재 저가 유입",
+"start": 93.88,
+"end": 125.96
 },
 {
 "group": "steel",
-"label": "철강 - 거래처 신용",
-"start": 147.68,
-"end": 166.83
+"label": "철강 - 철근 재고 32만톤",
+"start": 126.46,
+"end": 156.61
 },
 {
 "group": "steel",
-"label": "철강 - 철근 국산·수입 가격차",
-"start": 167.33,
-"end": 193.78
+"label": "철강 - 조달청 시설자재가격",
+"start": 157.11,
+"end": 182.76
 },
 {
 "group": "steel",
-"label": "철강 - 일본산 수입 증가",
-"start": 194.28,
-"end": 222.4
+"label": "철강 - 포스코 지분 매각",
+"start": 183.26,
+"end": 204.65
 },
 {
 "group": "steel",
-"label": "철강 - 유럽 스크랩 규제",
-"start": 222.9,
-"end": 254.22
+"label": "철강 - 나카야마제강 재가동",
+"start": 205.15,
+"end": 230.76
 },
 {
 "group": "domestic",
-"label": "국내 - 외환당국 개입",
-"start": 255.22,
-"end": 282.39
+"label": "국내 - 9월 수출 사상 최대",
+"start": 231.76,
+"end": 258.28
 },
 {
 "group": "domestic",
-"label": "국내 - 8월 산업활동",
-"start": 282.89,
-"end": 311.16
+"label": "국내 - 가계대출 감소",
+"start": 258.78,
+"end": 287.55
 },
 {
 "group": "domestic",
-"label": "국내 - 주택공급 점검",
-"start": 311.66,
-"end": 339.22
+"label": "국내 - 중견기업 졸업 유예",
+"start": 288.05,
+"end": 314.69
+},
+{
+"group": "domestic",
+"label": "국내 - 서울 아파트 86주 상승",
+"start": 315.19,
+"end": 338.59
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 340.22,
-"end": 357.11
+"start": 339.59,
+"end": 361.02
 }
 ]
