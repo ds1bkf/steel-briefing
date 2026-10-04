@@ -9,78 +9,78 @@
 "group": "weather",
 "label": "오늘 날씨",
 "start": 6.99,
-"end": 32.84
+"end": 33.75
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 33.34,
-"end": 49.25
+"start": 34.25,
+"end": 48.68
 },
 {
 "group": "global",
 "label": "세계 - G7 비축유와 유가",
-"start": 50.25,
-"end": 85.68
+"start": 49.68,
+"end": 86.78
 },
 {
 "group": "global",
 "label": "세계 - 미국 고용 부진과 환율",
-"start": 86.18,
-"end": 116.06
+"start": 87.28,
+"end": 119.25
 },
 {
 "group": "steel",
 "label": "철강 - 고철 매입가 엇갈림",
-"start": 117.06,
-"end": 152.07
+"start": 120.25,
+"end": 150.27
 },
 {
 "group": "steel",
 "label": "철강 - 포스코 노조 3연임",
-"start": 152.57,
-"end": 182.64
+"start": 150.77,
+"end": 179.09
 },
 {
 "group": "steel",
 "label": "철강 - 현대차 판매 부진",
-"start": 183.14,
-"end": 214.13
+"start": 179.59,
+"end": 207.91
 },
 {
 "group": "steel",
 "label": "철강 - 철광석 한 달 저점",
-"start": 214.63,
-"end": 243.67
+"start": 208.41,
+"end": 238.1
 },
 {
 "group": "steel",
 "label": "철강 - 생산세액공제 법안",
-"start": 244.17,
-"end": 271.53
+"start": 238.6,
+"end": 265.96
 },
 {
 "group": "domestic",
 "label": "국내 - 산안법 개정 통과",
-"start": 272.53,
-"end": 303.27
+"start": 266.96,
+"end": 297.25
 },
 {
 "group": "domestic",
 "label": "국내 - 9월 물가와 금통위",
-"start": 303.77,
-"end": 340.04
+"start": 297.75,
+"end": 332.91
 },
 {
 "group": "domestic",
 "label": "국내 - 금융권 해킹",
-"start": 340.54,
-"end": 372.17
+"start": 333.41,
+"end": 365.04
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 373.17,
-"end": 390.11
+"start": 366.04,
+"end": 384.04
 }
 ]
