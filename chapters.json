@@ -3,84 +3,72 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 6.78
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 33.75
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 34.25,
-"end": 48.68
+"start": 7.78,
+"end": 28.26
 },
 {
 "group": "global",
-"label": "세계 - G7 비축유와 유가",
-"start": 49.68,
-"end": 86.78
+"label": "세계 - 미 서비스업 가격지수",
+"start": 29.26,
+"end": 60.77
 },
 {
 "group": "global",
-"label": "세계 - 미국 고용 부진과 환율",
-"start": 87.28,
-"end": 119.25
+"label": "세계 - 알래스카 엘엔지 압박",
+"start": 61.27,
+"end": 95.64
 },
 {
 "group": "steel",
-"label": "철강 - 고철 매입가 엇갈림",
-"start": 120.25,
-"end": 150.27
+"label": "철강 - 에이치형강 10월 인상",
+"start": 96.64,
+"end": 131.08
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 노조 3연임",
-"start": 150.77,
-"end": 179.09
+"label": "철강 - 열연 유통가와 베트남 밀",
+"start": 131.58,
+"end": 160.88
 },
 {
 "group": "steel",
-"label": "철강 - 현대차 판매 부진",
-"start": 179.59,
-"end": 207.91
+"label": "철강 - 유럽연합 쿼터와 탄소국경세",
+"start": 161.38,
+"end": 197.12
 },
 {
 "group": "steel",
-"label": "철강 - 철광석 한 달 저점",
-"start": 208.41,
-"end": 238.1
-},
-{
-"group": "steel",
-"label": "철강 - 생산세액공제 법안",
-"start": 238.6,
-"end": 265.96
+"label": "철강 - 아연 4000달러",
+"start": 197.62,
+"end": 218.54
 },
 {
 "group": "domestic",
-"label": "국내 - 산안법 개정 통과",
-"start": 266.96,
-"end": 297.25
+"label": "국내 - 주택 조기 대량공급",
+"start": 219.54,
+"end": 253.0
 },
 {
 "group": "domestic",
-"label": "국내 - 9월 물가와 금통위",
-"start": 297.75,
-"end": 332.91
+"label": "국내 - 에너지효율 정책자금 금리 인하",
+"start": 253.5,
+"end": 280.52
 },
 {
 "group": "domestic",
-"label": "국내 - 금융권 해킹",
-"start": 333.41,
-"end": 365.04
+"label": "국내 - 국정감사 개막",
+"start": 281.02,
+"end": 309.3
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 366.04,
-"end": 384.04
+"start": 310.3,
+"end": 323.54
 }
 ]
