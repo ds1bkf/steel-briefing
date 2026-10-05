@@ -3,72 +3,72 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.78
+"end": 5.99
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.78,
-"end": 28.26
+"start": 6.99,
+"end": 28.16
 },
 {
 "group": "global",
 "label": "세계 - 미 서비스업 가격지수",
-"start": 29.26,
-"end": 60.77
+"start": 29.16,
+"end": 60.67
 },
 {
 "group": "global",
 "label": "세계 - 알래스카 엘엔지 압박",
-"start": 61.27,
-"end": 95.64
+"start": 61.17,
+"end": 95.88
 },
 {
 "group": "steel",
 "label": "철강 - 에이치형강 10월 인상",
-"start": 96.64,
-"end": 131.08
+"start": 96.88,
+"end": 128.65
 },
 {
 "group": "steel",
 "label": "철강 - 열연 유통가와 베트남 밀",
-"start": 131.58,
-"end": 160.88
+"start": 129.15,
+"end": 157.81
 },
 {
 "group": "steel",
 "label": "철강 - 유럽연합 쿼터와 탄소국경세",
-"start": 161.38,
-"end": 197.12
+"start": 158.31,
+"end": 193.2
 },
 {
 "group": "steel",
 "label": "철강 - 아연 4000달러",
-"start": 197.62,
-"end": 218.54
+"start": 193.7,
+"end": 214.63
 },
 {
 "group": "domestic",
 "label": "국내 - 주택 조기 대량공급",
-"start": 219.54,
-"end": 253.0
+"start": 215.63,
+"end": 247.48
 },
 {
 "group": "domestic",
 "label": "국내 - 에너지효율 정책자금 금리 인하",
-"start": 253.5,
-"end": 280.52
+"start": 247.98,
+"end": 275.39
 },
 {
 "group": "domestic",
 "label": "국내 - 국정감사 개막",
-"start": 281.02,
-"end": 309.3
+"start": 275.89,
+"end": 304.16
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 310.3,
-"end": 323.54
+"start": 305.16,
+"end": 319.44
 }
 ]
