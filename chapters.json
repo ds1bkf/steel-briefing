@@ -3,72 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 5.92
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 28.16
+"start": 6.92,
+"end": 29.26
 },
 {
 "group": "global",
-"label": "세계 - 미 서비스업 가격지수",
-"start": 29.16,
-"end": 60.67
+"label": "세계 - 미국 장기금리 후퇴",
+"start": 30.26,
+"end": 55.92
 },
 {
 "group": "global",
-"label": "세계 - 알래스카 엘엔지 압박",
-"start": 61.17,
-"end": 95.88
+"label": "세계 - 일본은행 추가 인상 시사",
+"start": 56.42,
+"end": 82.6
+},
+{
+"group": "global",
+"label": "세계 - 관세 앞 밀어내기",
+"start": 83.1,
+"end": 107.66
+},
+{
+"group": "global",
+"label": "세계 - 중국 3분기 성장 둔화",
+"start": 108.16,
+"end": 133.88
 },
 {
 "group": "steel",
-"label": "철강 - 에이치형강 10월 인상",
-"start": 96.88,
-"end": 128.65
+"label": "철강 - 철근 감산과 수입 재고",
+"start": 134.88,
+"end": 160.35
 },
 {
 "group": "steel",
-"label": "철강 - 열연 유통가와 베트남 밀",
-"start": 129.15,
-"end": 157.81
+"label": "철강 - 중국산 후판 급증",
+"start": 160.85,
+"end": 183.72
 },
 {
 "group": "steel",
-"label": "철강 - 유럽연합 쿼터와 탄소국경세",
-"start": 158.31,
-"end": 193.2
+"label": "철강 - 스테인리스 원가",
+"start": 184.22,
+"end": 206.11
 },
 {
 "group": "steel",
-"label": "철강 - 아연 4000달러",
-"start": 193.7,
-"end": 214.63
+"label": "철강 - 남부내륙철도 9공구",
+"start": 206.61,
+"end": 229.94
 },
 {
 "group": "domestic",
-"label": "국내 - 주택 조기 대량공급",
-"start": 215.63,
-"end": 247.48
+"label": "국내 - 대미투자 첫 송금",
+"start": 230.94,
+"end": 254.98
 },
 {
 "group": "domestic",
-"label": "국내 - 에너지효율 정책자금 금리 인하",
-"start": 247.98,
-"end": 275.39
-},
-{
-"group": "domestic",
-"label": "국내 - 국정감사 개막",
-"start": 275.89,
-"end": 304.16
+"label": "국내 - CPTPP 원점 재검토",
+"start": 255.48,
+"end": 277.64
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 305.16,
-"end": 319.44
+"start": 278.64,
+"end": 294.67
 }
 ]
