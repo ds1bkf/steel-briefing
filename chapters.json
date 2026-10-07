@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.92
+"end": 5.99
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.92,
-"end": 29.26
+"start": 6.99,
+"end": 36.22
 },
 {
 "group": "global",
-"label": "세계 - 미국 장기금리 후퇴",
-"start": 30.26,
-"end": 55.92
+"label": "세계 - 비축유 방출과 유조선 운임",
+"start": 37.22,
+"end": 72.24
 },
 {
 "group": "global",
-"label": "세계 - 일본은행 추가 인상 시사",
-"start": 56.42,
-"end": 82.6
-},
-{
-"group": "global",
-"label": "세계 - 관세 앞 밀어내기",
-"start": 83.1,
-"end": 107.66
-},
-{
-"group": "global",
-"label": "세계 - 중국 3분기 성장 둔화",
-"start": 108.16,
-"end": 133.88
+"label": "세계 - 인도 금리 인상",
+"start": 72.74,
+"end": 98.08
 },
 {
 "group": "steel",
-"label": "철강 - 철근 감산과 수입 재고",
-"start": 134.88,
-"end": 160.35
+"label": "철강 - 철근 84만원선 붕괴",
+"start": 99.08,
+"end": 128.0
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 후판 급증",
-"start": 160.85,
-"end": 183.72
+"label": "철강 - 원료탄 급등과 열연",
+"start": 128.5,
+"end": 155.46
 },
 {
 "group": "steel",
-"label": "철강 - 스테인리스 원가",
-"start": 184.22,
-"end": 206.11
+"label": "철강 - 브라질 철광석과 슬래브",
+"start": 155.96,
+"end": 181.56
 },
 {
 "group": "steel",
-"label": "철강 - 남부내륙철도 9공구",
-"start": 206.61,
-"end": 229.94
+"label": "철강 - 강관 내수 부진",
+"start": 182.06,
+"end": 207.14
+},
+{
+"group": "steel",
+"label": "철강 - 제강사 자본 공시",
+"start": 207.64,
+"end": 237.07
+},
+{
+"group": "steel",
+"label": "철강 - 인도 철강 순수입",
+"start": 237.57,
+"end": 265.19
 },
 {
 "group": "domestic",
-"label": "국내 - 대미투자 첫 송금",
-"start": 230.94,
-"end": 254.98
+"label": "국내 - 수도권 착공 목표 미달",
+"start": 266.19,
+"end": 293.36
 },
 {
 "group": "domestic",
-"label": "국내 - CPTPP 원점 재검토",
-"start": 255.48,
-"end": 277.64
+"label": "국내 - 정유 2사 담합 심의",
+"start": 293.86,
+"end": 325.44
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 278.64,
-"end": 294.67
+"start": 326.44,
+"end": 342.81
 }
 ]
