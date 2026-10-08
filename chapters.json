@@ -3,78 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 6.18
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 36.22
+"start": 7.18,
+"end": 27.78
+},
+{
+"group": "weather",
+"label": "내일 배차",
+"start": 28.28,
+"end": 43.35
 },
 {
 "group": "global",
-"label": "세계 - 비축유 방출과 유조선 운임",
-"start": 37.22,
-"end": 72.24
+"label": "세계 - 중국 과잉생산 견제",
+"start": 44.35,
+"end": 71.44
 },
 {
 "group": "global",
-"label": "세계 - 인도 금리 인상",
-"start": 72.74,
-"end": 98.08
+"label": "세계 - WTO 무역 전망 상향",
+"start": 71.94,
+"end": 94.89
 },
 {
 "group": "steel",
-"label": "철강 - 철근 84만원선 붕괴",
-"start": 99.08,
-"end": 128.0
+"label": "철강 - 형강 인상과 철근 동결",
+"start": 95.89,
+"end": 125.26
 },
 {
 "group": "steel",
-"label": "철강 - 원료탄 급등과 열연",
-"start": 128.5,
-"end": 155.46
+"label": "철강 - 엔화 18년여 만의 최저",
+"start": 125.76,
+"end": 149.28
 },
 {
 "group": "steel",
-"label": "철강 - 브라질 철광석과 슬래브",
-"start": 155.96,
-"end": 181.56
+"label": "철강 - 중국 유통재고",
+"start": 149.78,
+"end": 172.2
 },
 {
 "group": "steel",
-"label": "철강 - 강관 내수 부진",
-"start": 182.06,
-"end": 207.14
+"label": "철강 - 도쿄제철 스크랩 인상",
+"start": 172.7,
+"end": 193.1
 },
 {
 "group": "steel",
-"label": "철강 - 제강사 자본 공시",
-"start": 207.64,
-"end": 237.07
-},
-{
-"group": "steel",
-"label": "철강 - 인도 철강 순수입",
-"start": 237.57,
-"end": 265.19
+"label": "철강 - 페로크롬 인하",
+"start": 193.6,
+"end": 216.4
 },
 {
 "group": "domestic",
-"label": "국내 - 수도권 착공 목표 미달",
-"start": 266.19,
-"end": 293.36
+"label": "국내 - 8월 경상흑자",
+"start": 217.4,
+"end": 237.27
 },
 {
 "group": "domestic",
-"label": "국내 - 정유 2사 담합 심의",
-"start": 293.86,
-"end": 325.44
+"label": "국내 - 초과세수와 국채",
+"start": 237.77,
+"end": 261.48
+},
+{
+"group": "domestic",
+"label": "국내 - 주담대 규제",
+"start": 261.98,
+"end": 285.05
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 326.44,
-"end": 342.81
+"start": 286.05,
+"end": 300.66
 }
 ]
