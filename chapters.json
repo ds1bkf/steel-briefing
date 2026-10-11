@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.18
+"end": 6.45
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.18,
-"end": 27.78
+"start": 7.45,
+"end": 31.09
 },
 {
 "group": "weather",
-"label": "내일 배차",
-"start": 28.28,
-"end": 43.35
+"label": "오늘 배차",
+"start": 31.59,
+"end": 52.83
 },
 {
 "group": "global",
-"label": "세계 - 중국 과잉생산 견제",
-"start": 44.35,
-"end": 71.44
+"label": "세계 - 러·우 에너지 휴전",
+"start": 53.83,
+"end": 83.47
 },
 {
 "group": "global",
-"label": "세계 - WTO 무역 전망 상향",
-"start": 71.94,
-"end": 94.89
+"label": "세계 - 중국 EU 하이브리드 합의",
+"start": 83.97,
+"end": 112.05
 },
 {
 "group": "steel",
-"label": "철강 - 형강 인상과 철근 동결",
-"start": 95.89,
-"end": 125.26
+"label": "철강 - 한국철강 야드 화재",
+"start": 113.05,
+"end": 148.59
 },
 {
 "group": "steel",
-"label": "철강 - 엔화 18년여 만의 최저",
-"start": 125.76,
-"end": 149.28
+"label": "철강 - 중국산 도금강판 관세 연장",
+"start": 149.09,
+"end": 180.08
 },
 {
 "group": "steel",
-"label": "철강 - 중국 유통재고",
-"start": 149.78,
-"end": 172.2
+"label": "철강 - 일본 관동 스크랩 입찰",
+"start": 180.58,
+"end": 213.34
 },
 {
 "group": "steel",
-"label": "철강 - 도쿄제철 스크랩 인상",
-"start": 172.7,
-"end": 193.1
+"label": "철강 - 일본 강관 가격 인상",
+"start": 213.84,
+"end": 241.58
 },
 {
 "group": "steel",
-"label": "철강 - 페로크롬 인하",
-"start": 193.6,
-"end": 216.4
+"label": "철강 - 중국 지방채와 철강값",
+"start": 242.08,
+"end": 278.08
 },
 {
 "group": "domestic",
-"label": "국내 - 8월 경상흑자",
-"start": 217.4,
-"end": 237.27
+"label": "국내 - 금리와 한은 국감",
+"start": 279.08,
+"end": 313.52
 },
 {
 "group": "domestic",
-"label": "국내 - 초과세수와 국채",
-"start": 237.77,
-"end": 261.48
+"label": "국내 - 건설 비자발적 이직",
+"start": 314.02,
+"end": 349.64
 },
 {
 "group": "domestic",
-"label": "국내 - 주담대 규제",
-"start": 261.98,
-"end": 285.05
+"label": "국내 - 엘에이치 재무 부담",
+"start": 350.14,
+"end": 387.31
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 286.05,
-"end": 300.66
+"start": 388.31,
+"end": 403.7
 }
 ]
