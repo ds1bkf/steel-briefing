@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.45
+"end": 6.83
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.45,
-"end": 31.09
+"start": 7.83,
+"end": 34.4
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 31.59,
-"end": 52.83
+"start": 34.9,
+"end": 48.22
 },
 {
 "group": "global",
-"label": "세계 - 러·우 에너지 휴전",
-"start": 53.83,
-"end": 83.47
+"label": "세계 - 사우디 피격에 유가 상승",
+"start": 49.22,
+"end": 79.7
 },
 {
 "group": "global",
-"label": "세계 - 중국 EU 하이브리드 합의",
-"start": 83.97,
-"end": 112.05
+"label": "세계 - IMF 총재 AI 투자 진단",
+"start": 80.2,
+"end": 107.1
 },
 {
 "group": "steel",
-"label": "철강 - 한국철강 야드 화재",
-"start": 113.05,
-"end": 148.59
+"label": "철강 - 미국 도금강판 예비판정",
+"start": 108.1,
+"end": 141.51
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 도금강판 관세 연장",
-"start": 149.09,
-"end": 180.08
+"label": "철강 - 세계 철강 수요 전망 하향",
+"start": 142.01,
+"end": 170.48
 },
 {
 "group": "steel",
-"label": "철강 - 일본 관동 스크랩 입찰",
-"start": 180.58,
-"end": 213.34
+"label": "철강 - 수입 철근 재고 증가",
+"start": 170.98,
+"end": 197.28
 },
 {
 "group": "steel",
-"label": "철강 - 일본 강관 가격 인상",
-"start": 213.84,
-"end": 241.58
+"label": "철강 - 포스코 노사 본교섭",
+"start": 197.78,
+"end": 225.86
 },
 {
 "group": "steel",
-"label": "철강 - 중국 지방채와 철강값",
-"start": 242.08,
-"end": 278.08
+"label": "철강 - 철강부산물 법안",
+"start": 226.36,
+"end": 251.82
 },
 {
 "group": "domestic",
-"label": "국내 - 금리와 한은 국감",
-"start": 279.08,
-"end": 313.52
+"label": "국내 - 10월 초 수출 역대 최대",
+"start": 252.82,
+"end": 287.38
 },
 {
 "group": "domestic",
-"label": "국내 - 건설 비자발적 이직",
-"start": 314.02,
-"end": 349.64
+"label": "국내 - 해외건설 신전략펀드",
+"start": 287.88,
+"end": 311.52
 },
 {
 "group": "domestic",
-"label": "국내 - 엘에이치 재무 부담",
-"start": 350.14,
-"end": 387.31
+"label": "국내 - 현대차 직접고용 시정지시",
+"start": 312.02,
+"end": 338.47
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 388.31,
-"end": 403.7
+"start": 339.47,
+"end": 357.14
 }
 ]
