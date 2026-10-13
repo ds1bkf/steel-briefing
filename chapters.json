@@ -3,84 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.83
+"end": 6.98
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.83,
-"end": 34.4
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 34.9,
-"end": 48.22
+"start": 7.98,
+"end": 30.66
 },
 {
 "group": "global",
-"label": "세계 - 사우디 피격에 유가 상승",
-"start": 49.22,
-"end": 79.7
+"label": "세계 - 연준 추가 인상",
+"start": 31.66,
+"end": 63.43
 },
 {
 "group": "global",
-"label": "세계 - IMF 총재 AI 투자 진단",
-"start": 80.2,
-"end": 107.1
+"label": "세계 - 중국 차 내수 부진",
+"start": 63.93,
+"end": 93.12
 },
 {
 "group": "steel",
-"label": "철강 - 미국 도금강판 예비판정",
-"start": 108.1,
-"end": 141.51
+"label": "철강 - 철근 유통가 하락",
+"start": 94.12,
+"end": 120.88
 },
 {
 "group": "steel",
-"label": "철강 - 세계 철강 수요 전망 하향",
-"start": 142.01,
-"end": 170.48
+"label": "철강 - 관수 철근 단가 인상",
+"start": 121.38,
+"end": 142.76
 },
 {
 "group": "steel",
-"label": "철강 - 수입 철근 재고 증가",
-"start": 170.98,
-"end": 197.28
+"label": "철강 - 열연 유통가 반등",
+"start": 143.26,
+"end": 168.99
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 노사 본교섭",
-"start": 197.78,
-"end": 225.86
+"label": "철강 - 베트남 반덤핑",
+"start": 169.49,
+"end": 197.81
 },
 {
 "group": "steel",
-"label": "철강 - 철강부산물 법안",
-"start": 226.36,
-"end": 251.82
+"label": "철강 - 중국 감산·코크스",
+"start": 198.31,
+"end": 220.27
 },
 {
 "group": "domestic",
-"label": "국내 - 10월 초 수출 역대 최대",
-"start": 252.82,
-"end": 287.38
+"label": "국내 - 주택 착공 드라이브",
+"start": 221.27,
+"end": 252.71
 },
 {
 "group": "domestic",
-"label": "국내 - 해외건설 신전략펀드",
-"start": 287.88,
-"end": 311.52
+"label": "국내 - 대외무역법 시행령",
+"start": 253.21,
+"end": 278.6
 },
 {
 "group": "domestic",
-"label": "국내 - 현대차 직접고용 시정지시",
-"start": 312.02,
-"end": 338.47
+"label": "국내 - 정년연장 입법",
+"start": 279.1,
+"end": 305.16
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 339.47,
-"end": 357.14
+"start": 306.16,
+"end": 320.4
 }
 ]
