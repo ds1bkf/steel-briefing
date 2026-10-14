@@ -3,78 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.98
+"end": 7.62
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.98,
-"end": 30.66
+"start": 8.62,
+"end": 35.34
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 35.84,
+"end": 51.1
 },
 {
 "group": "global",
-"label": "세계 - 연준 추가 인상",
-"start": 31.66,
-"end": 63.43
+"label": "세계 - 경유 공급난 장기화",
+"start": 52.1,
+"end": 84.86
 },
 {
 "group": "global",
-"label": "세계 - 중국 차 내수 부진",
-"start": 63.93,
-"end": 93.12
+"label": "세계 - 중국 생산자물가",
+"start": 85.36,
+"end": 114.4
+},
+{
+"group": "global",
+"label": "세계 - 알래스카 엘엔지",
+"start": 114.9,
+"end": 142.12
 },
 {
 "group": "steel",
-"label": "철강 - 철근 유통가 하락",
-"start": 94.12,
-"end": 120.88
+"label": "철강 - 환율과 달러 반등",
+"start": 143.12,
+"end": 168.27
 },
 {
 "group": "steel",
-"label": "철강 - 관수 철근 단가 인상",
-"start": 121.38,
-"end": 142.76
+"label": "철강 - 철스크랩 수출 급감",
+"start": 168.77,
+"end": 196.7
 },
 {
 "group": "steel",
-"label": "철강 - 열연 유통가 반등",
-"start": 143.26,
-"end": 168.99
+"label": "철강 - 중국 강재 수출",
+"start": 197.2,
+"end": 221.3
 },
 {
 "group": "steel",
-"label": "철강 - 베트남 반덤핑",
-"start": 169.49,
-"end": 197.81
+"label": "철강 - 강관 수입",
+"start": 221.8,
+"end": 243.57
 },
 {
 "group": "steel",
-"label": "철강 - 중국 감산·코크스",
-"start": 198.31,
-"end": 220.27
+"label": "철강 - 철근 수출",
+"start": 244.07,
+"end": 264.92
 },
 {
 "group": "domestic",
-"label": "국내 - 주택 착공 드라이브",
-"start": 221.27,
-"end": 252.71
+"label": "국내 - 정비사업 특별점검",
+"start": 265.92,
+"end": 292.56
 },
 {
 "group": "domestic",
-"label": "국내 - 대외무역법 시행령",
-"start": 253.21,
-"end": 278.6
-},
-{
-"group": "domestic",
-"label": "국내 - 정년연장 입법",
-"start": 279.1,
-"end": 305.16
+"label": "국내 - 건설수주 감소",
+"start": 293.06,
+"end": 322.75
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 306.16,
-"end": 320.4
+"start": 323.75,
+"end": 340.05
 }
 ]
