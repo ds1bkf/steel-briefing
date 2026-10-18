@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.57
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 29.29
+"start": 7.57,
+"end": 34.02
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 29.79,
-"end": 41.67
+"start": 34.52,
+"end": 48.8
 },
 {
 "group": "global",
-"label": "세계 - 한일 통화스와프 연장",
-"start": 42.67,
-"end": 76.84
+"label": "세계 - 유가와 대러 제재 유예",
+"start": 49.8,
+"end": 79.82
 },
 {
 "group": "global",
-"label": "세계 - 원엔 840원대",
-"start": 77.34,
-"end": 104.3
+"label": "세계 - 연준 워시 발언",
+"start": 80.32,
+"end": 107.08
 },
 {
 "group": "steel",
-"label": "철강 - 에이치형강 대보수",
-"start": 105.3,
-"end": 137.65
+"label": "철강 - 철근 82만원선 붕괴",
+"start": 108.08,
+"end": 136.74
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 무계목강관 반덤핑",
-"start": 138.15,
-"end": 168.03
+"label": "철강 - 일본 고철값 인상",
+"start": 137.24,
+"end": 165.36
 },
 {
 "group": "steel",
-"label": "철강 - 유럽연합 산업가속화법",
-"start": 168.53,
-"end": 195.55
+"label": "철강 - 현대제철 당진 사고",
+"start": 165.86,
+"end": 197.95
 },
 {
 "group": "steel",
-"label": "철강 - 쇳물 원가 하락",
-"start": 196.05,
-"end": 226.39
+"label": "철강 - 중국 생산과 재고",
+"start": 198.45,
+"end": 218.66
 },
 {
 "group": "steel",
-"label": "철강 - 베트남 인도 공급 확대",
-"start": 226.89,
-"end": 257.1
+"label": "철강 - 미국 강재값 최고",
+"start": 219.16,
+"end": 248.58
+},
+{
+"group": "steel",
+"label": "철강 - 건설 체감경기",
+"start": 249.08,
+"end": 277.93
 },
 {
 "group": "domestic",
-"label": "국내 - 코픽스 급등",
-"start": 258.1,
-"end": 288.39
+"label": "국내 - 성장률과 제조업 체감",
+"start": 278.93,
+"end": 305.57
 },
 {
 "group": "domestic",
-"label": "국내 - 가계대출 첫 감소",
-"start": 288.89,
-"end": 312.08
-},
-{
-"group": "domestic",
-"label": "국내 - 서울 토허제 1년",
-"start": 312.58,
-"end": 341.76
+"label": "국내 - 하도급과 납품대금 점검",
+"start": 306.07,
+"end": 335.18
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 342.76,
-"end": 354.45
+"start": 336.18,
+"end": 352.89
 }
 ]
