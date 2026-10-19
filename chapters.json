@@ -3,84 +3,96 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.57
+"end": 6.52
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.57,
-"end": 34.02
+"start": 7.52,
+"end": 35.72
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 34.52,
-"end": 48.8
+"start": 36.22,
+"end": 53.24
 },
 {
 "group": "global",
-"label": "세계 - 유가와 대러 제재 유예",
-"start": 49.8,
-"end": 79.82
+"label": "세계 - 중국 3분기 성장률",
+"start": 54.24,
+"end": 84.57
 },
 {
 "group": "global",
-"label": "세계 - 연준 워시 발언",
-"start": 80.32,
-"end": 107.08
+"label": "세계 - 미국 주택건설 경기",
+"start": 85.07,
+"end": 112.48
 },
 {
 "group": "steel",
-"label": "철강 - 철근 82만원선 붕괴",
-"start": 108.08,
-"end": 136.74
+"label": "철강 - 동국제강 스크랩 인하",
+"start": 113.48,
+"end": 140.24
 },
 {
 "group": "steel",
-"label": "철강 - 일본 고철값 인상",
-"start": 137.24,
-"end": 165.36
+"label": "철강 - 인천 제물포구 실사",
+"start": 140.74,
+"end": 165.03
 },
 {
 "group": "steel",
-"label": "철강 - 현대제철 당진 사고",
-"start": 165.86,
-"end": 197.95
+"label": "철강 - 중국 판재 수출",
+"start": 165.53,
+"end": 196.46
 },
 {
 "group": "steel",
-"label": "철강 - 중국 생산과 재고",
-"start": 198.45,
-"end": 218.66
+"label": "철강 - 일본 강재 수요 전망",
+"start": 196.96,
+"end": 224.06
 },
 {
 "group": "steel",
-"label": "철강 - 미국 강재값 최고",
-"start": 219.16,
-"end": 248.58
+"label": "철강 - 스테인리스 수입",
+"start": 224.56,
+"end": 249.71
 },
 {
 "group": "steel",
-"label": "철강 - 건설 체감경기",
-"start": 249.08,
-"end": 277.93
+"label": "철강 - H형강 수출",
+"start": 250.21,
+"end": 279.52
 },
 {
 "group": "domestic",
-"label": "국내 - 성장률과 제조업 체감",
-"start": 278.93,
-"end": 305.57
+"label": "국내 - 도시정비 수주",
+"start": 280.52,
+"end": 308.07
 },
 {
 "group": "domestic",
-"label": "국내 - 하도급과 납품대금 점검",
-"start": 306.07,
-"end": 335.18
+"label": "국내 - 대통령 증시·주택 발언",
+"start": 308.57,
+"end": 337.87
+},
+{
+"group": "domestic",
+"label": "국내 - 초광역특구법 발의",
+"start": 338.37,
+"end": 361.7
+},
+{
+"group": "domestic",
+"label": "국내 - 울산항 자동차 수출",
+"start": 362.2,
+"end": 387.59
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 336.18,
-"end": 352.89
+"start": 388.59,
+"end": 403.06
 }
 ]
