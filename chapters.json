@@ -3,96 +3,96 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.33
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 35.72
+"start": 7.33,
+"end": 34.62
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 36.22,
-"end": 53.24
+"start": 35.12,
+"end": 51.29
 },
 {
 "group": "global",
 "label": "세계 - 중국 3분기 성장률",
-"start": 54.24,
-"end": 84.57
+"start": 52.29,
+"end": 85.7
 },
 {
 "group": "global",
 "label": "세계 - 미국 주택건설 경기",
-"start": 85.07,
-"end": 112.48
+"start": 86.2,
+"end": 112.05
 },
 {
 "group": "steel",
 "label": "철강 - 동국제강 스크랩 인하",
-"start": 113.48,
-"end": 140.24
+"start": 113.05,
+"end": 140.53
 },
 {
 "group": "steel",
 "label": "철강 - 인천 제물포구 실사",
-"start": 140.74,
-"end": 165.03
+"start": 141.03,
+"end": 165.32
 },
 {
 "group": "steel",
 "label": "철강 - 중국 판재 수출",
-"start": 165.53,
-"end": 196.46
+"start": 165.82,
+"end": 196.94
 },
 {
 "group": "steel",
 "label": "철강 - 일본 강재 수요 전망",
-"start": 196.96,
-"end": 224.06
+"start": 197.44,
+"end": 225.31
 },
 {
 "group": "steel",
 "label": "철강 - 스테인리스 수입",
-"start": 224.56,
-"end": 249.71
+"start": 225.81,
+"end": 249.4
 },
 {
 "group": "steel",
 "label": "철강 - H형강 수출",
-"start": 250.21,
-"end": 279.52
+"start": 249.9,
+"end": 278.75
 },
 {
 "group": "domestic",
 "label": "국내 - 도시정비 수주",
-"start": 280.52,
-"end": 308.07
+"start": 279.75,
+"end": 308.02
 },
 {
 "group": "domestic",
 "label": "국내 - 대통령 증시·주택 발언",
-"start": 308.57,
-"end": 337.87
+"start": 308.52,
+"end": 334.97
 },
 {
 "group": "domestic",
 "label": "국내 - 초광역특구법 발의",
-"start": 338.37,
-"end": 361.7
+"start": 335.47,
+"end": 357.74
 },
 {
 "group": "domestic",
 "label": "국내 - 울산항 자동차 수출",
-"start": 362.2,
-"end": 387.59
+"start": 358.24,
+"end": 383.63
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 388.59,
-"end": 403.06
+"start": 384.63,
+"end": 399.37
 }
 ]
