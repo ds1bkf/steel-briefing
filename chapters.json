@@ -3,96 +3,96 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.78
+"end": 6.18
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.78,
-"end": 35.46
+"start": 7.18,
+"end": 28.16
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 35.96,
-"end": 52.4
+"start": 28.66,
+"end": 44.84
 },
 {
 "group": "global",
-"label": "세계 - 중국 3분기 성장률",
-"start": 53.4,
-"end": 82.96
+"label": "세계 - 일본 희토류 고갈 경고",
+"start": 45.84,
+"end": 69.67
 },
 {
 "group": "global",
-"label": "세계 - 미국 주택건설 경기",
-"start": 83.46,
-"end": 108.54
+"label": "세계 - 미 재무장관 관세 권한 발언",
+"start": 70.17,
+"end": 92.7
 },
 {
 "group": "steel",
-"label": "철강 - 동국제강 스크랩 인하",
-"start": 109.54,
-"end": 135.73
+"label": "철강 - 중국산 철근 530달러 오퍼",
+"start": 93.7,
+"end": 123.92
 },
 {
 "group": "steel",
-"label": "철강 - 인천 제물포구 실사",
-"start": 136.23,
-"end": 160.52
+"label": "철강 - 포스코 광양 2고로 개수",
+"start": 124.42,
+"end": 147.15
 },
 {
 "group": "steel",
-"label": "철강 - 중국 판재 수출",
-"start": 161.02,
-"end": 193.32
+"label": "철강 - 중국산 도금강판 반덤핑 판정",
+"start": 147.65,
+"end": 171.36
 },
 {
 "group": "steel",
-"label": "철강 - 일본 강재 수요 전망",
-"start": 193.82,
-"end": 221.68
+"label": "철강 - 포스코 노사 본교섭",
+"start": 171.86,
+"end": 193.03
 },
 {
 "group": "steel",
-"label": "철강 - 스테인리스 수입",
-"start": 222.18,
-"end": 247.14
+"label": "철강 - 원화 강세와 수입 원가",
+"start": 193.53,
+"end": 219.45
 },
 {
 "group": "steel",
-"label": "철강 - H형강 수출",
-"start": 247.64,
-"end": 274.93
+"label": "철강 - 중국 철강 PMI와 코크스",
+"start": 219.95,
+"end": 248.15
 },
 {
 "group": "domestic",
-"label": "국내 - 도시정비 수주",
-"start": 275.93,
-"end": 304.52
+"label": "국내 - 4분기 공적채권과 국고채",
+"start": 249.15,
+"end": 276.05
 },
 {
 "group": "domestic",
-"label": "국내 - 대통령 증시·주택 발언",
-"start": 305.02,
-"end": 332.69
+"label": "국내 - 건설사 폐업 2009년 이후 최다",
+"start": 276.55,
+"end": 300.46
 },
 {
 "group": "domestic",
-"label": "국내 - 초광역특구법 발의",
-"start": 333.19,
-"end": 355.46
+"label": "국내 - 산재 사망 최저와 과징금",
+"start": 300.96,
+"end": 328.36
 },
 {
 "group": "domestic",
-"label": "국내 - 울산항 자동차 수출",
-"start": 355.96,
-"end": 381.04
+"label": "국내 - 중동 플랜트 수주 급감",
+"start": 328.86,
+"end": 352.19
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 382.04,
-"end": 396.27
+"start": 353.19,
+"end": 368.53
 }
 ]
