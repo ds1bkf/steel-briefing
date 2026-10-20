@@ -160,10 +160,7 @@ def main():
             if idx < len(parts) - 1:
                 f.write("file '%s'\noutpoint %.2f\n" % (silence, gap))
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
-                    "-i", listfile,
-                    # 볼륨 10% 상향(2026-10-20 jh 요청), 피크는 리미터로 클리핑 방지
-                    "-af", "volume=1.1,alimiter=limit=0.95:level=0",
-                    "-c:a", "libmp3lame", "-b:a", "64k", "-ac", "1",
+                    "-i", listfile, "-c:a", "libmp3lame", "-b:a", "64k", "-ac", "1",
                     "audio.mp3"], check=True)
 
     io.open("chapters.json", "w", encoding="utf-8").write(
