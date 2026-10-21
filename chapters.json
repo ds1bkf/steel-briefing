@@ -3,96 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.18
+"end": 6.33
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.18,
-"end": 28.16
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 28.66,
-"end": 44.84
+"start": 7.33,
+"end": 34.09
 },
 {
 "group": "global",
-"label": "세계 - 일본 희토류 고갈 경고",
-"start": 45.84,
-"end": 69.67
+"label": "세계 - 중동 긴장과 경유값",
+"start": 35.09,
+"end": 69.41
 },
 {
 "group": "global",
-"label": "세계 - 미 재무장관 관세 권한 발언",
-"start": 70.17,
-"end": 92.7
+"label": "세계 - 일본은행 회의",
+"start": 69.91,
+"end": 96.55
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 철근 530달러 오퍼",
-"start": 93.7,
-"end": 123.92
+"label": "철강 - 중국산 에이치형강 재개",
+"start": 97.55,
+"end": 125.56
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 광양 2고로 개수",
-"start": 124.42,
-"end": 147.15
+"label": "철강 - 강관 수입 증가",
+"start": 126.06,
+"end": 153.22
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 도금강판 반덤핑 판정",
-"start": 147.65,
-"end": 171.36
+"label": "철강 - 유럽 탄소국경조정제도",
+"start": 153.72,
+"end": 189.2
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 노사 본교섭",
-"start": 171.86,
-"end": 193.03
+"label": "철강 - 니켈 감산 추진",
+"start": 189.7,
+"end": 215.3
 },
 {
 "group": "steel",
-"label": "철강 - 원화 강세와 수입 원가",
-"start": 193.53,
-"end": 219.45
-},
-{
-"group": "steel",
-"label": "철강 - 중국 철강 PMI와 코크스",
-"start": 219.95,
-"end": 248.15
+"label": "철강 - 중국 철근 생산",
+"start": 215.8,
+"end": 241.15
 },
 {
 "group": "domestic",
-"label": "국내 - 4분기 공적채권과 국고채",
-"start": 249.15,
-"end": 276.05
+"label": "국내 - 이자 못 버는 기업 최고",
+"start": 242.15,
+"end": 269.17
 },
 {
 "group": "domestic",
-"label": "국내 - 건설사 폐업 2009년 이후 최다",
-"start": 276.55,
-"end": 300.46
+"label": "국내 - 모듈러 발주와 3기 신도시",
+"start": 269.67,
+"end": 301.98
 },
 {
 "group": "domestic",
-"label": "국내 - 산재 사망 최저와 과징금",
-"start": 300.96,
-"end": 328.36
-},
-{
-"group": "domestic",
-"label": "국내 - 중동 플랜트 수주 급감",
-"start": 328.86,
-"end": 352.19
+"label": "국내 - 10월 중순 수출",
+"start": 302.48,
+"end": 333.92
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 353.19,
-"end": 368.53
+"start": 334.92,
+"end": 350.64
 }
 ]
