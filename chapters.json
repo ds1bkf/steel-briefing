@@ -3,78 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.33
+"end": 7.36
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.33,
-"end": 34.09
+"start": 8.36,
+"end": 31.09
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 31.59,
+"end": 45.29
 },
 {
 "group": "global",
-"label": "세계 - 중동 긴장과 경유값",
-"start": 35.09,
-"end": 69.41
+"label": "세계 - 미 고용과 국채금리",
+"start": 46.29,
+"end": 74.61
 },
 {
 "group": "global",
-"label": "세계 - 일본은행 회의",
-"start": 69.91,
-"end": 96.55
+"label": "세계 - 우크라 종전 회담",
+"start": 75.11,
+"end": 104.34
+},
+{
+"group": "global",
+"label": "세계 - 프랑스 국채",
+"start": 104.84,
+"end": 132.66
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 에이치형강 재개",
-"start": 97.55,
-"end": 125.56
+"label": "철강 - 강관 11월 인상",
+"start": 133.66,
+"end": 161.6
 },
 {
 "group": "steel",
-"label": "철강 - 강관 수입 증가",
-"start": 126.06,
-"end": 153.22
+"label": "철강 - 일본산 철스크랩",
+"start": 162.1,
+"end": 194.4
 },
 {
 "group": "steel",
-"label": "철강 - 유럽 탄소국경조정제도",
-"start": 153.72,
-"end": 189.2
+"label": "철강 - 중국 가동률과 철광석",
+"start": 194.9,
+"end": 227.25
 },
 {
 "group": "steel",
-"label": "철강 - 니켈 감산 추진",
-"start": 189.7,
-"end": 215.3
-},
-{
-"group": "steel",
-"label": "철강 - 중국 철근 생산",
-"start": 215.8,
-"end": 241.15
+"label": "철강 - 동국제강 스틸샵 금융",
+"start": 227.75,
+"end": 255.23
 },
 {
 "group": "domestic",
-"label": "국내 - 이자 못 버는 기업 최고",
-"start": 242.15,
-"end": 269.17
+"label": "국내 - 한은 금리 동결",
+"start": 256.23,
+"end": 287.43
 },
 {
 "group": "domestic",
-"label": "국내 - 모듈러 발주와 3기 신도시",
-"start": 269.67,
-"end": 301.98
+"label": "국내 - 전기차 생산세액공제",
+"start": 287.93,
+"end": 318.72
 },
 {
 "group": "domestic",
-"label": "국내 - 10월 중순 수출",
-"start": 302.48,
-"end": 333.92
+"label": "국내 - CPTPP 가입 재확인",
+"start": 319.22,
+"end": 344.95
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 334.92,
-"end": 350.64
+"start": 345.95,
+"end": 363.88
 }
 ]
