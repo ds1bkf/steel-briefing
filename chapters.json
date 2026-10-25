@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.36
+"end": 6.78
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.36,
-"end": 31.09
+"start": 7.78,
+"end": 38.0
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 31.59,
-"end": 45.29
+"start": 38.5,
+"end": 59.93
 },
 {
 "group": "global",
-"label": "세계 - 미 고용과 국채금리",
-"start": 46.29,
-"end": 74.61
+"label": "세계 - 미 철강 관세 협상 카드",
+"start": 60.93,
+"end": 97.39
 },
 {
 "group": "global",
-"label": "세계 - 우크라 종전 회담",
-"start": 75.11,
-"end": 104.34
-},
-{
-"group": "global",
-"label": "세계 - 프랑스 국채",
-"start": 104.84,
-"end": 132.66
+"label": "세계 - 10월 구매관리자지수",
+"start": 97.89,
+"end": 126.74
 },
 {
 "group": "steel",
-"label": "철강 - 강관 11월 인상",
-"start": 133.66,
-"end": 161.6
+"label": "철강 - 포스코 무기한 파업 예고",
+"start": 127.74,
+"end": 157.5
 },
 {
 "group": "steel",
-"label": "철강 - 일본산 철스크랩",
-"start": 162.1,
-"end": 194.4
+"label": "철강 - 중국산 아연도금냉연 반덤핑",
+"start": 158.0,
+"end": 192.24
 },
 {
 "group": "steel",
-"label": "철강 - 중국 가동률과 철광석",
-"start": 194.9,
-"end": 227.25
+"label": "철강 - 세계 조강과 중국 감산",
+"start": 192.74,
+"end": 223.08
 },
 {
 "group": "steel",
-"label": "철강 - 동국제강 스틸샵 금융",
-"start": 227.75,
-"end": 255.23
+"label": "철강 - 철근 유통가 80만원 선",
+"start": 223.58,
+"end": 253.46
 },
 {
 "group": "domestic",
-"label": "국내 - 한은 금리 동결",
-"start": 256.23,
-"end": 287.43
+"label": "국내 - 원화 2년 만의 강세",
+"start": 254.46,
+"end": 289.21
 },
 {
 "group": "domestic",
-"label": "국내 - 전기차 생산세액공제",
-"start": 287.93,
-"end": 318.72
+"label": "국내 - 단기 일자리 31년 만의 최소",
+"start": 289.71,
+"end": 320.84
 },
 {
 "group": "domestic",
-"label": "국내 - CPTPP 가입 재확인",
-"start": 319.22,
-"end": 344.95
+"label": "국내 - 국내생산세액공제 보완",
+"start": 321.34,
+"end": 350.91
+},
+{
+"group": "domestic",
+"label": "국내 - 재건축 부담금 강남 첫 부과",
+"start": 351.41,
+"end": 381.94
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 345.95,
-"end": 363.88
+"start": 382.94,
+"end": 400.74
 }
 ]
