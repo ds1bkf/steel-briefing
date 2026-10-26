@@ -3,84 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.78
+"end": 5.99
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.78,
-"end": 38.0
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 38.5,
-"end": 59.93
+"start": 6.99,
+"end": 25.45
 },
 {
 "group": "global",
-"label": "세계 - 미 철강 관세 협상 카드",
-"start": 60.93,
-"end": 97.39
+"label": "세계 - 유가 소폭 하락",
+"start": 26.45,
+"end": 56.98
 },
 {
 "group": "global",
-"label": "세계 - 10월 구매관리자지수",
-"start": 97.89,
-"end": 126.74
+"label": "세계 - 브라질 금융시장 급락",
+"start": 57.48,
+"end": 82.48
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 무기한 파업 예고",
-"start": 127.74,
-"end": 157.5
+"label": "철강 - 산업용 전기료 인하 논의",
+"start": 83.48,
+"end": 108.37
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 아연도금냉연 반덤핑",
-"start": 158.0,
-"end": 192.24
+"label": "철강 - 철근 내수 전망",
+"start": 108.87,
+"end": 132.01
 },
 {
 "group": "steel",
-"label": "철강 - 세계 조강과 중국 감산",
-"start": 192.74,
-"end": 223.08
+"label": "철강 - 중국 유통재고 감소",
+"start": 132.51,
+"end": 153.82
 },
 {
 "group": "steel",
-"label": "철강 - 철근 유통가 80만원 선",
-"start": 223.58,
-"end": 253.46
+"label": "철강 - 강관 수입 증가",
+"start": 154.32,
+"end": 175.94
+},
+{
+"group": "steel",
+"label": "철강 - EU 공용쿼터 개선 요구",
+"start": 176.44,
+"end": 197.11
 },
 {
 "group": "domestic",
-"label": "국내 - 원화 2년 만의 강세",
-"start": 254.46,
-"end": 289.21
+"label": "국내 - 은행 대출 문턱",
+"start": 198.11,
+"end": 227.53
 },
 {
 "group": "domestic",
-"label": "국내 - 단기 일자리 31년 만의 최소",
-"start": 289.71,
-"end": 320.84
+"label": "국내 - 조달청 가격관리 강화",
+"start": 228.03,
+"end": 254.48
 },
 {
 "group": "domestic",
-"label": "국내 - 국내생산세액공제 보완",
-"start": 321.34,
-"end": 350.91
-},
-{
-"group": "domestic",
-"label": "국내 - 재건축 부담금 강남 첫 부과",
-"start": 351.41,
-"end": 381.94
+"label": "국내 - 서울 아파트 매물 증가",
+"start": 254.98,
+"end": 275.76
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 382.94,
-"end": 400.74
+"start": 276.76,
+"end": 291.57
 }
 ]
