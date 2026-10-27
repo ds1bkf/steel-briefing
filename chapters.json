@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 5.99
+"end": 6.98
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 6.99,
-"end": 25.45
+"start": 7.98,
+"end": 35.84
 },
 {
 "group": "global",
-"label": "세계 - 유가 소폭 하락",
-"start": 26.45,
-"end": 56.98
+"label": "세계 - FOMC 개막과 미 장기금리",
+"start": 36.84,
+"end": 64.51
 },
 {
 "group": "global",
-"label": "세계 - 브라질 금융시장 급락",
-"start": 57.48,
-"end": 82.48
+"label": "세계 - 엔화 157엔대 재진입",
+"start": 65.01,
+"end": 90.4
 },
 {
 "group": "steel",
-"label": "철강 - 산업용 전기료 인하 논의",
-"start": 83.48,
-"end": 108.37
+"label": "철강 - 11월 철근 기준가 인하",
+"start": 91.4,
+"end": 130.07
 },
 {
 "group": "steel",
-"label": "철강 - 철근 내수 전망",
-"start": 108.87,
-"end": 132.01
+"label": "철강 - 열연 보합과 대만산 유입",
+"start": 130.57,
+"end": 161.77
 },
 {
 "group": "steel",
-"label": "철강 - 중국 유통재고 감소",
-"start": 132.51,
-"end": 153.82
+"label": "철강 - 포스코 STS 스크랩 구매가 인하",
+"start": 162.27,
+"end": 191.45
 },
 {
 "group": "steel",
-"label": "철강 - 강관 수입 증가",
-"start": 154.32,
-"end": 175.94
+"label": "철강 - 중국 철강업 이익 급감",
+"start": 191.95,
+"end": 223.15
 },
 {
 "group": "steel",
-"label": "철강 - EU 공용쿼터 개선 요구",
-"start": 176.44,
-"end": 197.11
+"label": "철강 - 에이치형강 8월 소비",
+"start": 223.65,
+"end": 250.56
 },
 {
 "group": "domestic",
-"label": "국내 - 은행 대출 문턱",
-"start": 198.11,
-"end": 227.53
+"label": "국내 - 3분기 성장률 1퍼센트",
+"start": 251.56,
+"end": 284.63
 },
 {
 "group": "domestic",
-"label": "국내 - 조달청 가격관리 강화",
-"start": 228.03,
-"end": 254.48
+"label": "국내 - 주택 착공 독려와 모듈러",
+"start": 285.13,
+"end": 317.48
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 아파트 매물 증가",
-"start": 254.98,
-"end": 275.76
+"label": "국내 - 산업안전보건법 개정 공포",
+"start": 317.98,
+"end": 348.84
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 276.76,
-"end": 291.57
+"start": 349.84,
+"end": 364.99
 }
 ]
