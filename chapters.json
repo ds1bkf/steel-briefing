@@ -3,78 +3,72 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.98
+"end": 6.52
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.98,
-"end": 35.84
+"start": 7.52,
+"end": 33.06
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 33.56,
+"end": 47.07
 },
 {
 "group": "global",
-"label": "세계 - FOMC 개막과 미 장기금리",
-"start": 36.84,
-"end": 64.51
+"label": "세계 - 연준 금리 동결",
+"start": 48.07,
+"end": 72.62
 },
 {
 "group": "global",
-"label": "세계 - 엔화 157엔대 재진입",
-"start": 65.01,
-"end": 90.4
+"label": "세계 - 유럽연합 위안화 압박",
+"start": 73.12,
+"end": 98.78
 },
 {
 "group": "steel",
-"label": "철강 - 11월 철근 기준가 인하",
-"start": 91.4,
-"end": 130.07
+"label": "철강 - 포스코 노조 파업 예고",
+"start": 99.78,
+"end": 127.33
 },
 {
 "group": "steel",
-"label": "철강 - 열연 보합과 대만산 유입",
-"start": 130.57,
-"end": 161.77
+"label": "철강 - 일본 스테인리스 반덤핑",
+"start": 127.83,
+"end": 152.91
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 STS 스크랩 구매가 인하",
-"start": 162.27,
-"end": 191.45
+"label": "철강 - 세아제강 강관 인상",
+"start": 153.41,
+"end": 173.74
 },
 {
 "group": "steel",
-"label": "철강 - 중국 철강업 이익 급감",
-"start": 191.95,
-"end": 223.15
-},
-{
-"group": "steel",
-"label": "철강 - 에이치형강 8월 소비",
-"start": 223.65,
-"end": 250.56
+"label": "철강 - 상하이 열연 선물",
+"start": 174.24,
+"end": 196.2
 },
 {
 "group": "domestic",
-"label": "국내 - 3분기 성장률 1퍼센트",
-"start": 251.56,
-"end": 284.63
+"label": "국내 - 퇴직급여 사외적립",
+"start": 197.2,
+"end": 219.68
 },
 {
 "group": "domestic",
-"label": "국내 - 주택 착공 독려와 모듈러",
-"start": 285.13,
-"end": 317.48
-},
-{
-"group": "domestic",
-"label": "국내 - 산업안전보건법 개정 공포",
-"start": 317.98,
-"end": 348.84
+"label": "국내 - 새만금 공공 주도",
+"start": 220.18,
+"end": 249.75
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 349.84,
-"end": 364.99
+"start": 250.75,
+"end": 267.38
 }
 ]
