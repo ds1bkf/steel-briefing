@@ -3,72 +3,90 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 33.06
+"start": 7.71,
+"end": 42.15
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 33.56,
-"end": 47.07
+"start": 42.65,
+"end": 63.12
 },
 {
 "group": "global",
-"label": "세계 - 연준 금리 동결",
-"start": 48.07,
-"end": 72.62
+"label": "세계 - 미·이란 협상 기대에 유가 하락",
+"start": 64.12,
+"end": 93.36
 },
 {
 "group": "global",
-"label": "세계 - 유럽연합 위안화 압박",
-"start": 73.12,
-"end": 98.78
+"label": "세계 - ECB 동결과 미 물가",
+"start": 93.86,
+"end": 123.88
+},
+{
+"group": "global",
+"label": "세계 - EU 산업가속화법",
+"start": 124.38,
+"end": 150.76
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 노조 파업 예고",
-"start": 99.78,
-"end": 127.33
+"label": "철강 - 동국제강 철근 82만원",
+"start": 151.76,
+"end": 179.43
 },
 {
 "group": "steel",
-"label": "철강 - 일본 스테인리스 반덤핑",
-"start": 127.83,
-"end": 152.91
+"label": "철강 - 철스크랩 구매가 인하",
+"start": 179.93,
+"end": 209.3
 },
 {
 "group": "steel",
-"label": "철강 - 세아제강 강관 인상",
-"start": 153.41,
-"end": 173.74
+"label": "철강 - 내년 건설수주 전망",
+"start": 209.8,
+"end": 236.56
 },
 {
 "group": "steel",
-"label": "철강 - 상하이 열연 선물",
-"start": 174.24,
-"end": 196.2
+"label": "철강 - 현대차 판매목표 하향",
+"start": 237.06,
+"end": 263.97
+},
+{
+"group": "steel",
+"label": "철강 - 중국 원료탄 원가 상승",
+"start": 264.47,
+"end": 291.56
 },
 {
 "group": "domestic",
-"label": "국내 - 퇴직급여 사외적립",
-"start": 197.2,
-"end": 219.68
+"label": "국내 - 수도권 신규택지",
+"start": 292.56,
+"end": 320.57
 },
 {
 "group": "domestic",
-"label": "국내 - 새만금 공공 주도",
-"start": 220.18,
-"end": 249.75
+"label": "국내 - 국고채 발행 축소",
+"start": 321.07,
+"end": 349.58
+},
+{
+"group": "domestic",
+"label": "국내 - 체코 원전 시공협상 결렬",
+"start": 350.08,
+"end": 376.99
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 250.75,
-"end": 267.38
+"start": 377.99,
+"end": 392.22
 }
 ]
