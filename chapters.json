@@ -3,90 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.71
+"end": 6.64
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.71,
-"end": 42.15
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 42.65,
-"end": 63.12
+"start": 7.64,
+"end": 28.3
 },
 {
 "group": "global",
-"label": "세계 - 미·이란 협상 기대에 유가 하락",
-"start": 64.12,
-"end": 93.36
+"label": "세계 - 중국 제조업 위축",
+"start": 29.3,
+"end": 56.26
 },
 {
 "group": "global",
-"label": "세계 - ECB 동결과 미 물가",
-"start": 93.86,
-"end": 123.88
-},
-{
-"group": "global",
-"label": "세계 - EU 산업가속화법",
-"start": 124.38,
-"end": 150.76
+"label": "세계 - 일본은행 동결",
+"start": 56.76,
+"end": 85.15
 },
 {
 "group": "steel",
-"label": "철강 - 동국제강 철근 82만원",
-"start": 151.76,
-"end": 179.43
+"label": "철강 - 철근 기준가 인하",
+"start": 86.15,
+"end": 118.38
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 구매가 인하",
-"start": 179.93,
-"end": 209.3
+"label": "철강 - 현대제철 컨콜",
+"start": 118.88,
+"end": 147.99
 },
 {
 "group": "steel",
-"label": "철강 - 내년 건설수주 전망",
-"start": 209.8,
-"end": 236.56
+"label": "철강 - 일본산 한국향 증가",
+"start": 148.49,
+"end": 179.16
 },
 {
 "group": "steel",
-"label": "철강 - 현대차 판매목표 하향",
-"start": 237.06,
-"end": 263.97
+"label": "철강 - 중국 철강사 적자",
+"start": 179.66,
+"end": 209.54
 },
 {
 "group": "steel",
-"label": "철강 - 중국 원료탄 원가 상승",
-"start": 264.47,
-"end": 291.56
+"label": "철강 - 한국철강 완전자회사",
+"start": 210.04,
+"end": 234.4
 },
 {
 "group": "domestic",
-"label": "국내 - 수도권 신규택지",
-"start": 292.56,
-"end": 320.57
+"label": "국내 - 10월 수출",
+"start": 235.4,
+"end": 273.88
 },
 {
 "group": "domestic",
-"label": "국내 - 국고채 발행 축소",
-"start": 321.07,
-"end": 349.58
+"label": "국내 - 내년 예산안",
+"start": 274.38,
+"end": 303.42
 },
 {
 "group": "domestic",
-"label": "국내 - 체코 원전 시공협상 결렬",
-"start": 350.08,
-"end": 376.99
+"label": "국내 - 현대건설 정비수주",
+"start": 303.92,
+"end": 326.4
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 377.99,
-"end": 392.22
+"start": 327.4,
+"end": 341.64
 }
 ]
