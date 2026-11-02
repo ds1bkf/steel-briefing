@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.64
+"end": 6.57
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.64,
-"end": 28.3
+"start": 7.57,
+"end": 34.4
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 34.9,
+"end": 48.99
 },
 {
 "group": "global",
-"label": "세계 - 중국 제조업 위축",
-"start": 29.3,
-"end": 56.26
+"label": "세계 - 미국 제조업 지수",
+"start": 49.99,
+"end": 77.61
 },
 {
 "group": "global",
-"label": "세계 - 일본은행 동결",
-"start": 56.76,
-"end": 85.15
+"label": "세계 - 미국 중간선거",
+"start": 78.11,
+"end": 103.96
 },
 {
 "group": "steel",
-"label": "철강 - 철근 기준가 인하",
-"start": 86.15,
-"end": 118.38
+"label": "철강 - 포스코 광양 고로 개보수",
+"start": 104.96,
+"end": 134.0
 },
 {
 "group": "steel",
-"label": "철강 - 현대제철 컨콜",
-"start": 118.88,
-"end": 147.99
+"label": "철강 - 일본 철스크랩 수출",
+"start": 134.5,
+"end": 165.24
 },
 {
 "group": "steel",
-"label": "철강 - 일본산 한국향 증가",
-"start": 148.49,
-"end": 179.16
+"label": "철강 - 제네시스 라인 중단",
+"start": 165.74,
+"end": 192.0
 },
 {
 "group": "steel",
-"label": "철강 - 중국 철강사 적자",
-"start": 179.66,
-"end": 209.54
-},
-{
-"group": "steel",
-"label": "철강 - 한국철강 완전자회사",
-"start": 210.04,
-"end": 234.4
+"label": "철강 - 강관 수출",
+"start": 192.5,
+"end": 215.9
 },
 {
 "group": "domestic",
-"label": "국내 - 10월 수출",
-"start": 235.4,
-"end": 273.88
+"label": "국내 - 원 달러 환율",
+"start": 216.9,
+"end": 245.17
 },
 {
 "group": "domestic",
-"label": "국내 - 내년 예산안",
-"start": 274.38,
-"end": 303.42
+"label": "국내 - 재건축 용적률 상향",
+"start": 245.67,
+"end": 274.59
 },
 {
 "group": "domestic",
-"label": "국내 - 현대건설 정비수주",
-"start": 303.92,
-"end": 326.4
+"label": "국내 - 전기차 생산세액공제",
+"start": 275.09,
+"end": 301.66
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 327.4,
-"end": 341.64
+"start": 302.66,
+"end": 318.5
 }
 ]
