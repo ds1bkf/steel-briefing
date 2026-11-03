@@ -3,78 +3,90 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.57
+"end": 6.06
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.57,
-"end": 34.4
+"start": 7.06,
+"end": 33.44
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 34.9,
-"end": 48.99
+"start": 33.94,
+"end": 52.2
 },
 {
 "group": "global",
-"label": "세계 - 미국 제조업 지수",
-"start": 49.99,
-"end": 77.61
+"label": "세계 - 국제유가 이틀째 하락",
+"start": 53.2,
+"end": 87.19
 },
 {
 "group": "global",
-"label": "세계 - 미국 중간선거",
-"start": 78.11,
-"end": 103.96
+"label": "세계 - 위안화 4년 만의 최고",
+"start": 87.69,
+"end": 114.78
+},
+{
+"group": "global",
+"label": "세계 - 우크라이나 종전협상",
+"start": 115.28,
+"end": 143.6
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 광양 고로 개보수",
-"start": 104.96,
-"end": 134.0
+"label": "철강 - 철근 유통가 80만원 붕괴",
+"start": 144.6,
+"end": 175.59
 },
 {
 "group": "steel",
-"label": "철강 - 일본 철스크랩 수출",
-"start": 134.5,
-"end": 165.24
+"label": "철강 - 철강제 벽판 KS 개정",
+"start": 176.09,
+"end": 205.97
 },
 {
 "group": "steel",
-"label": "철강 - 제네시스 라인 중단",
-"start": 165.74,
-"end": 192.0
+"label": "철강 - 케이지스틸 3분기 실적",
+"start": 206.47,
+"end": 235.58
 },
 {
 "group": "steel",
-"label": "철강 - 강관 수출",
-"start": 192.5,
-"end": 215.9
+"label": "철강 - 내년 철강 수요 전망",
+"start": 236.08,
+"end": 270.71
+},
+{
+"group": "steel",
+"label": "철강 - 호아팟 일본 수출",
+"start": 271.21,
+"end": 304.28
 },
 {
 "group": "domestic",
-"label": "국내 - 원 달러 환율",
-"start": 216.9,
-"end": 245.17
+"label": "국내 - 상습 체불 사업주 신용제재",
+"start": 305.28,
+"end": 338.36
 },
 {
 "group": "domestic",
-"label": "국내 - 재건축 용적률 상향",
-"start": 245.67,
-"end": 274.59
+"label": "국내 - 10월 소비자물가",
+"start": 338.86,
+"end": 368.74
 },
 {
 "group": "domestic",
-"label": "국내 - 전기차 생산세액공제",
-"start": 275.09,
-"end": 301.66
+"label": "국내 - 다세대 다가구 규제 완화",
+"start": 369.24,
+"end": 400.82
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 302.66,
-"end": 318.5
+"start": 401.82,
+"end": 415.0
 }
 ]
