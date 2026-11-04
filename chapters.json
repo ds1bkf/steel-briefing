@@ -3,90 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.06
+"end": 6.45
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.06,
-"end": 33.44
+"start": 7.45,
+"end": 27.66
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 33.94,
-"end": 52.2
+"start": 28.16,
+"end": 46.47
 },
 {
 "group": "global",
-"label": "세계 - 국제유가 이틀째 하락",
-"start": 53.2,
-"end": 87.19
+"label": "세계 - 미 의회 민주당 장악",
+"start": 47.47,
+"end": 79.1
 },
 {
 "group": "global",
-"label": "세계 - 위안화 4년 만의 최고",
-"start": 87.69,
-"end": 114.78
+"label": "세계 - 중국 증시 부양",
+"start": 79.6,
+"end": 103.58
 },
 {
 "group": "global",
-"label": "세계 - 우크라이나 종전협상",
-"start": 115.28,
-"end": 143.6
+"label": "세계 - 한중 상무장관회의",
+"start": 104.08,
+"end": 131.17
 },
 {
 "group": "steel",
-"label": "철강 - 철근 유통가 80만원 붕괴",
-"start": 144.6,
-"end": 175.59
+"label": "철강 - 철스크랩 9차 인하",
+"start": 132.17,
+"end": 164.6
 },
 {
 "group": "steel",
-"label": "철강 - 철강제 벽판 KS 개정",
-"start": 176.09,
-"end": 205.97
+"label": "철강 - 10월 수입 급증",
+"start": 165.1,
+"end": 194.74
 },
 {
 "group": "steel",
-"label": "철강 - 케이지스틸 3분기 실적",
-"start": 206.47,
-"end": 235.58
+"label": "철강 - 열연 인상 제동",
+"start": 195.24,
+"end": 223.63
 },
 {
 "group": "steel",
-"label": "철강 - 내년 철강 수요 전망",
-"start": 236.08,
-"end": 270.71
-},
-{
-"group": "steel",
-"label": "철강 - 호아팟 일본 수출",
-"start": 271.21,
-"end": 304.28
+"label": "철강 - 중국 강재값 하락",
+"start": 224.13,
+"end": 256.36
 },
 {
 "group": "domestic",
-"label": "국내 - 상습 체불 사업주 신용제재",
-"start": 305.28,
-"end": 338.36
+"label": "국내 - 위험성평가 과태료",
+"start": 257.36,
+"end": 284.91
 },
 {
 "group": "domestic",
-"label": "국내 - 10월 소비자물가",
-"start": 338.86,
-"end": 368.74
+"label": "국내 - 공공주택 공정률 0퍼센트",
+"start": 285.41,
+"end": 315.94
 },
 {
 "group": "domestic",
-"label": "국내 - 다세대 다가구 규제 완화",
-"start": 369.24,
-"end": 400.82
+"label": "국내 - 대출규제 유지",
+"start": 316.44,
+"end": 339.24
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 401.82,
-"end": 415.0
+"start": 340.24,
+"end": 355.05
 }
 ]
