@@ -3,84 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.45
+"end": 6.18
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.45,
-"end": 27.66
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 28.16,
-"end": 46.47
+"start": 7.18,
+"end": 31.47
 },
 {
 "group": "global",
-"label": "세계 - 미 의회 민주당 장악",
-"start": 47.47,
-"end": 79.1
+"label": "세계 - 연준·영란은행 금리 인상 기류",
+"start": 32.47,
+"end": 66.91
 },
 {
 "group": "global",
-"label": "세계 - 중국 증시 부양",
-"start": 79.6,
-"end": 103.58
-},
-{
-"group": "global",
-"label": "세계 - 한중 상무장관회의",
-"start": 104.08,
-"end": 131.17
+"label": "세계 - 머스크 이익 전망 상향",
+"start": 67.41,
+"end": 92.61
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 9차 인하",
-"start": 132.17,
-"end": 164.6
+"label": "철강 - 동국제강 철근 82만원 동결",
+"start": 93.61,
+"end": 121.81
 },
 {
 "group": "steel",
-"label": "철강 - 10월 수입 급증",
-"start": 165.1,
-"end": 194.74
+"label": "철강 - 후판 호가 인상",
+"start": 122.31,
+"end": 148.04
 },
 {
 "group": "steel",
-"label": "철강 - 열연 인상 제동",
-"start": 195.24,
-"end": 223.63
+"label": "철강 - 도금재 할인과 구조관 인상",
+"start": 148.54,
+"end": 174.6
 },
 {
 "group": "steel",
-"label": "철강 - 중국 강재값 하락",
-"start": 224.13,
-"end": 256.36
+"label": "철강 - 캐나다 중국산 철강 관세 감면 연장",
+"start": 175.1,
+"end": 202.27
+},
+{
+"group": "steel",
+"label": "철강 - 세계 철근 시장 약세",
+"start": 202.77,
+"end": 231.43
 },
 {
 "group": "domestic",
-"label": "국내 - 위험성평가 과태료",
-"start": 257.36,
-"end": 284.91
+"label": "국내 - 9월 경상흑자 614억달러",
+"start": 232.43,
+"end": 260.1
 },
 {
 "group": "domestic",
-"label": "국내 - 공공주택 공정률 0퍼센트",
-"start": 285.41,
-"end": 315.94
+"label": "국내 - 소규모 사업장 안전관리자 의무",
+"start": 260.6,
+"end": 290.55
 },
 {
 "group": "domestic",
-"label": "국내 - 대출규제 유지",
-"start": 316.44,
-"end": 339.24
+"label": "국내 - 가덕도신공항 착공 지연",
+"start": 291.05,
+"end": 322.18
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 340.24,
-"end": 355.05
+"start": 323.18,
+"end": 336.16
 }
 ]
