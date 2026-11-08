@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.18
+"end": 7.17
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.18,
-"end": 31.47
+"start": 8.17,
+"end": 38.77
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 39.27,
+"end": 57.39
 },
 {
 "group": "global",
-"label": "세계 - 연준·영란은행 금리 인상 기류",
-"start": 32.47,
-"end": 66.91
+"label": "세계 - 이란 협상과 유가",
+"start": 58.39,
+"end": 96.07
 },
 {
 "group": "global",
-"label": "세계 - 머스크 이익 전망 상향",
-"start": 67.41,
-"end": 92.61
+"label": "세계 - 미중 부산합의 공방",
+"start": 96.57,
+"end": 128.92
 },
 {
 "group": "steel",
-"label": "철강 - 동국제강 철근 82만원 동결",
-"start": 93.61,
-"end": 121.81
+"label": "철강 - 포스코 임협 부결",
+"start": 129.92,
+"end": 164.67
 },
 {
 "group": "steel",
-"label": "철강 - 후판 호가 인상",
-"start": 122.31,
-"end": 148.04
+"label": "철강 - 중국산 에이치형강 반덤핑 연장",
+"start": 165.17,
+"end": 198.89
 },
 {
 "group": "steel",
-"label": "철강 - 도금재 할인과 구조관 인상",
-"start": 148.54,
-"end": 174.6
+"label": "철강 - 미국 후판 강관 재심",
+"start": 199.39,
+"end": 229.15
 },
 {
 "group": "steel",
-"label": "철강 - 캐나다 중국산 철강 관세 감면 연장",
-"start": 175.1,
-"end": 202.27
-},
-{
-"group": "steel",
-"label": "철강 - 세계 철근 시장 약세",
-"start": 202.77,
-"end": 231.43
+"label": "철강 - 스테인리스 공급",
+"start": 229.65,
+"end": 267.52
 },
 {
 "group": "domestic",
-"label": "국내 - 9월 경상흑자 614억달러",
-"start": 232.43,
-"end": 260.1
+"label": "국내 - 워크아웃법 일몰",
+"start": 268.52,
+"end": 303.95
 },
 {
 "group": "domestic",
-"label": "국내 - 소규모 사업장 안전관리자 의무",
-"start": 260.6,
-"end": 290.55
+"label": "국내 - 재초환 부담금",
+"start": 304.45,
+"end": 337.64
 },
 {
 "group": "domestic",
-"label": "국내 - 가덕도신공항 착공 지연",
-"start": 291.05,
-"end": 322.18
+"label": "국내 - 지방 국책공사",
+"start": 338.14,
+"end": 374.33
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 323.18,
-"end": 336.16
+"start": 375.33,
+"end": 392.35
 }
 ]
