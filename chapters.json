@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.17
+"end": 7.24
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.17,
-"end": 38.77
-},
-{
-"group": "weather",
-"label": "오늘 배차",
-"start": 39.27,
-"end": 57.39
+"start": 8.24,
+"end": 27.27
 },
 {
 "group": "global",
-"label": "세계 - 이란 협상과 유가",
-"start": 58.39,
-"end": 96.07
+"label": "세계 - 중국 생산자물가 급등",
+"start": 28.27,
+"end": 58.15
 },
 {
 "group": "global",
-"label": "세계 - 미중 부산합의 공방",
-"start": 96.57,
-"end": 128.92
+"label": "세계 - 미 민주당 관세 철폐",
+"start": 58.65,
+"end": 87.57
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 임협 부결",
-"start": 129.92,
-"end": 164.67
+"label": "철강 - 현대제철 에이치형강 고시",
+"start": 88.57,
+"end": 128.34
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 에이치형강 반덤핑 연장",
-"start": 165.17,
-"end": 198.89
+"label": "철강 - 철스크랩 수출과 빌릿",
+"start": 128.84,
+"end": 158.48
 },
 {
 "group": "steel",
-"label": "철강 - 미국 후판 강관 재심",
-"start": 199.39,
-"end": 229.15
+"label": "철강 - 중국 대형 밀 감산",
+"start": 158.98,
+"end": 185.36
 },
 {
 "group": "steel",
-"label": "철강 - 스테인리스 공급",
-"start": 229.65,
-"end": 267.52
+"label": "철강 - 일본 제이에프이 감산",
+"start": 185.86,
+"end": 209.95
+},
+{
+"group": "steel",
+"label": "철강 - 튀르키예 제철공장 폭발",
+"start": 210.45,
+"end": 233.71
 },
 {
 "group": "domestic",
-"label": "국내 - 워크아웃법 일몰",
-"start": 268.52,
-"end": 303.95
+"label": "국내 - 은행 우대금리 점검",
+"start": 234.71,
+"end": 259.98
 },
 {
 "group": "domestic",
-"label": "국내 - 재초환 부담금",
-"start": 304.45,
-"end": 337.64
+"label": "국내 - 도시정비 수주 역대 최대",
+"start": 260.48,
+"end": 293.48
 },
 {
 "group": "domestic",
-"label": "국내 - 지방 국책공사",
-"start": 338.14,
-"end": 374.33
+"label": "국내 - 석유 최고가격제 유지",
+"start": 293.98,
+"end": 322.76
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 375.33,
-"end": 392.35
+"start": 323.76,
+"end": 341.11
 }
 ]
