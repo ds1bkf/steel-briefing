@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.24
+"end": 6.83
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.24,
-"end": 27.27
+"start": 7.83,
+"end": 33.75
 },
 {
 "group": "global",
-"label": "세계 - 중국 생산자물가 급등",
-"start": 28.27,
-"end": 58.15
+"label": "세계 - 미 물가와 금리",
+"start": 34.75,
+"end": 65.5
 },
 {
 "group": "global",
-"label": "세계 - 미 민주당 관세 철폐",
-"start": 58.65,
-"end": 87.57
+"label": "세계 - 중국 무역흑자",
+"start": 66.0,
+"end": 92.18
 },
 {
 "group": "steel",
-"label": "철강 - 현대제철 에이치형강 고시",
-"start": 88.57,
-"end": 128.34
+"label": "철강 - 일본산 철근 공급 차질",
+"start": 93.18,
+"end": 121.04
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 수출과 빌릿",
-"start": 128.84,
-"end": 158.48
+"label": "철강 - 철스크랩 일제 인하",
+"start": 121.54,
+"end": 143.77
 },
 {
 "group": "steel",
-"label": "철강 - 중국 대형 밀 감산",
-"start": 158.98,
-"end": 185.36
+"label": "철강 - 스테인리스 최저가격",
+"start": 144.27,
+"end": 168.7
 },
 {
 "group": "steel",
-"label": "철강 - 일본 제이에프이 감산",
-"start": 185.86,
-"end": 209.95
+"label": "철강 - 중국 수출과 대만 판가",
+"start": 169.2,
+"end": 194.47
 },
 {
 "group": "steel",
-"label": "철강 - 튀르키예 제철공장 폭발",
-"start": 210.45,
-"end": 233.71
+"label": "철강 - 후판 정비 감산",
+"start": 194.97,
+"end": 218.61
 },
 {
 "group": "domestic",
-"label": "국내 - 은행 우대금리 점검",
-"start": 234.71,
-"end": 259.98
+"label": "국내 - 금통위 의사록과 연체율",
+"start": 219.61,
+"end": 244.36
 },
 {
 "group": "domestic",
-"label": "국내 - 도시정비 수주 역대 최대",
-"start": 260.48,
-"end": 293.48
+"label": "국내 - 납품대금 30일 단축",
+"start": 244.86,
+"end": 268.69
 },
 {
 "group": "domestic",
-"label": "국내 - 석유 최고가격제 유지",
-"start": 293.98,
-"end": 322.76
+"label": "국내 - 수출 양극화",
+"start": 269.19,
+"end": 294.08
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 323.76,
-"end": 341.11
+"start": 295.08,
+"end": 306.43
 }
 ]
