@@ -3,78 +3,78 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.83
+"end": 6.9
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.83,
-"end": 33.75
+"start": 7.9,
+"end": 36.22
 },
 {
 "group": "global",
-"label": "세계 - 미 물가와 금리",
-"start": 34.75,
-"end": 65.5
+"label": "세계 - 국제유가 반등",
+"start": 37.22,
+"end": 68.74
 },
 {
 "group": "global",
-"label": "세계 - 중국 무역흑자",
-"start": 66.0,
-"end": 92.18
+"label": "세계 - 중국 신차 판매 감소",
+"start": 69.24,
+"end": 98.88
 },
 {
 "group": "steel",
-"label": "철강 - 일본산 철근 공급 차질",
-"start": 93.18,
-"end": 121.04
+"label": "철강 - 현대엔지니어링 영업정지",
+"start": 99.88,
+"end": 134.51
 },
 {
 "group": "steel",
-"label": "철강 - 철스크랩 일제 인하",
-"start": 121.54,
-"end": 143.77
+"label": "철강 - 포스코 임단협 결렬",
+"start": 135.01,
+"end": 161.19
 },
 {
 "group": "steel",
-"label": "철강 - 스테인리스 최저가격",
-"start": 144.27,
-"end": 168.7
+"label": "철강 - 건설 체감경기",
+"start": 161.69,
+"end": 191.07
 },
 {
 "group": "steel",
-"label": "철강 - 중국 수출과 대만 판가",
-"start": 169.2,
-"end": 194.47
+"label": "철강 - 포항 고용위기 연장",
+"start": 191.57,
+"end": 220.49
 },
 {
 "group": "steel",
-"label": "철강 - 후판 정비 감산",
-"start": 194.97,
-"end": 218.61
+"label": "철강 - 탄소국경제도 국내 검증",
+"start": 220.99,
+"end": 251.78
 },
 {
 "group": "domestic",
-"label": "국내 - 금통위 의사록과 연체율",
-"start": 219.61,
-"end": 244.36
+"label": "국내 - 피에프 보증 심사 단축",
+"start": 252.78,
+"end": 283.57
 },
 {
 "group": "domestic",
-"label": "국내 - 납품대금 30일 단축",
-"start": 244.86,
-"end": 268.69
+"label": "국내 - 지역업체 공공공사 확대",
+"start": 284.07,
+"end": 317.98
 },
 {
 "group": "domestic",
-"label": "국내 - 수출 양극화",
-"start": 269.19,
-"end": 294.08
+"label": "국내 - 대우산업개발 회계위반",
+"start": 318.48,
+"end": 344.67
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 295.08,
-"end": 306.43
+"start": 345.67,
+"end": 357.81
 }
 ]
