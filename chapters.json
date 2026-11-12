@@ -3,78 +3,90 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.9
+"end": 6.78
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.9,
-"end": 36.22
+"start": 7.78,
+"end": 31.38
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 31.88,
+"end": 45.7
 },
 {
 "group": "global",
-"label": "세계 - 국제유가 반등",
-"start": 37.22,
-"end": 68.74
+"label": "세계 - 엔비디아 CEO 사임",
+"start": 46.7,
+"end": 74.18
 },
 {
 "group": "global",
-"label": "세계 - 중국 신차 판매 감소",
-"start": 69.24,
-"end": 98.88
+"label": "세계 - 멕시코 관세 2배 경고",
+"start": 74.68,
+"end": 99.5
 },
 {
 "group": "steel",
-"label": "철강 - 현대엔지니어링 영업정지",
-"start": 99.88,
-"end": 134.51
+"label": "철강 - 열연 유통 물량 축소",
+"start": 100.5,
+"end": 124.66
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 임단협 결렬",
-"start": 135.01,
-"end": 161.19
+"label": "철강 - 철근 고시가 동결",
+"start": 125.16,
+"end": 150.89
 },
 {
 "group": "steel",
-"label": "철강 - 건설 체감경기",
-"start": 161.69,
-"end": 191.07
+"label": "철강 - 중국산 에이치형강 입항",
+"start": 151.39,
+"end": 176.78
 },
 {
 "group": "steel",
-"label": "철강 - 포항 고용위기 연장",
-"start": 191.57,
-"end": 220.49
+"label": "철강 - 강관 공급가 인상",
+"start": 177.28,
+"end": 200.61
 },
 {
 "group": "steel",
-"label": "철강 - 탄소국경제도 국내 검증",
-"start": 220.99,
-"end": 251.78
+"label": "철강 - 환율 1320원대",
+"start": 201.11,
+"end": 225.4
+},
+{
+"group": "steel",
+"label": "철강 - 한전 실적과 전기요금",
+"start": 225.9,
+"end": 251.1
 },
 {
 "group": "domestic",
-"label": "국내 - 피에프 보증 심사 단축",
-"start": 252.78,
-"end": 283.57
+"label": "국내 - 충청 메가프로젝트",
+"start": 252.1,
+"end": 280.11
 },
 {
 "group": "domestic",
-"label": "국내 - 지역업체 공공공사 확대",
-"start": 284.07,
-"end": 317.98
+"label": "국내 - 서울 아파트값",
+"start": 280.61,
+"end": 302.64
 },
 {
 "group": "domestic",
-"label": "국내 - 대우산업개발 회계위반",
-"start": 318.48,
-"end": 344.67
+"label": "국내 - 하도급대금 인상",
+"start": 303.14,
+"end": 326.92
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 345.67,
-"end": 357.81
+"start": 327.92,
+"end": 345.97
 }
 ]
