@@ -3,90 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.78
+"end": 6.33
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.78,
-"end": 31.38
+"start": 7.33,
+"end": 35.84
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 31.88,
-"end": 45.7
+"start": 36.34,
+"end": 50.81
 },
 {
 "group": "global",
-"label": "세계 - 엔비디아 CEO 사임",
-"start": 46.7,
-"end": 74.18
+"label": "세계 - 미 도매물가와 연준",
+"start": 51.81,
+"end": 82.1
 },
 {
 "group": "global",
-"label": "세계 - 멕시코 관세 2배 경고",
-"start": 74.68,
-"end": 99.5
+"label": "세계 - 엔화 160엔",
+"start": 82.6,
+"end": 112.74
+},
+{
+"group": "global",
+"label": "세계 - 미중 무역위원회",
+"start": 113.24,
+"end": 139.96
 },
 {
 "group": "steel",
-"label": "철강 - 열연 유통 물량 축소",
-"start": 100.5,
-"end": 124.66
+"label": "철강 - 철스크랩 10차 인하",
+"start": 140.96,
+"end": 173.38
 },
 {
 "group": "steel",
-"label": "철강 - 철근 고시가 동결",
-"start": 125.16,
-"end": 150.89
+"label": "철강 - 베트남산 열연 급증",
+"start": 173.88,
+"end": 209.62
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 에이치형강 입항",
-"start": 151.39,
-"end": 176.78
+"label": "철강 - 강관 KS 개정 예고",
+"start": 210.12,
+"end": 239.76
 },
 {
 "group": "steel",
-"label": "철강 - 강관 공급가 인상",
-"start": 177.28,
-"end": 200.61
-},
-{
-"group": "steel",
-"label": "철강 - 환율 1320원대",
-"start": 201.11,
-"end": 225.4
-},
-{
-"group": "steel",
-"label": "철강 - 한전 실적과 전기요금",
-"start": 225.9,
-"end": 251.1
+"label": "철강 - EU 산업가속화법",
+"start": 240.26,
+"end": 269.75
 },
 {
 "group": "domestic",
-"label": "국내 - 충청 메가프로젝트",
-"start": 252.1,
-"end": 280.11
+"label": "국내 - 토허제와 재초환",
+"start": 270.75,
+"end": 299.98
 },
 {
 "group": "domestic",
-"label": "국내 - 서울 아파트값",
-"start": 280.61,
-"end": 302.64
+"label": "국내 - 수출 1조 달러",
+"start": 300.48,
+"end": 330.96
 },
 {
 "group": "domestic",
-"label": "국내 - 하도급대금 인상",
-"start": 303.14,
-"end": 326.92
+"label": "국내 - 노란우산 정보 유출",
+"start": 331.46,
+"end": 359.74
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 327.92,
-"end": 345.97
+"start": 360.74,
+"end": 377.1
 }
 ]
