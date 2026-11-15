@@ -3,54 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.33
+"end": 7.48
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.33,
-"end": 40.4
+"start": 8.48,
+"end": 44.74
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 40.9,
-"end": 55.13
+"start": 45.24,
+"end": 60.63
 },
 {
 "group": "global",
-"label": "세계 - 석유 최고가격 동결",
-"start": 56.13,
-"end": 85.51
+"label": "세계 - 호르무즈·홍해 경색",
+"start": 61.63,
+"end": 92.61
+},
+{
+"group": "global",
+"label": "세계 - 미중러 정상회담",
+"start": 93.11,
+"end": 120.52
+},
+{
+"group": "global",
+"label": "세계 - 연준 AI 금융위험 경고",
+"start": 121.02,
+"end": 149.53
 },
 {
 "group": "steel",
-"label": "철강 - 세아제강 흑자 전환",
-"start": 86.51,
-"end": 111.66
+"label": "철강 - 철근 시중가 77만원",
+"start": 150.53,
+"end": 176.38
 },
 {
 "group": "steel",
-"label": "철강 - 경기도 예산과 지방채",
-"start": 112.16,
-"end": 142.11
+"label": "철강 - 포스코 잠정합의안 부결",
+"start": 176.88,
+"end": 201.96
+},
+{
+"group": "steel",
+"label": "철강 - 시멘트 수요 부진",
+"start": 202.46,
+"end": 228.12
+},
+{
+"group": "steel",
+"label": "철강 - 중국 시황과 철광석",
+"start": 228.62,
+"end": 250.31
+},
+{
+"group": "steel",
+"label": "철강 - 일본제철 강관 인상",
+"start": 250.81,
+"end": 271.48
 },
 {
 "group": "domestic",
-"label": "국내 - 초광역특구 노동특례",
-"start": 143.11,
-"end": 170.78
+"label": "국내 - 물가 관리 간담회",
+"start": 272.48,
+"end": 298.28
 },
 {
 "group": "domestic",
-"label": "국내 - 가계신용과 KDI 전망",
-"start": 171.28,
-"end": 198.76
+"label": "국내 - 마통 잔액 44조",
+"start": 298.78,
+"end": 322.1
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 199.76,
-"end": 218.27
+"start": 323.1,
+"end": 337.84
 }
 ]
