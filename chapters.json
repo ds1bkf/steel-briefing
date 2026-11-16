@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.48
+"end": 7.17
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.48,
-"end": 44.74
+"start": 8.17,
+"end": 36.75
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 45.24,
-"end": 60.63
+"start": 37.25,
+"end": 52.4
 },
 {
 "group": "global",
-"label": "세계 - 호르무즈·홍해 경색",
-"start": 61.63,
-"end": 92.61
+"label": "세계 - 달러 강세와 원화",
+"start": 53.4,
+"end": 79.58
 },
 {
 "group": "global",
-"label": "세계 - 미중러 정상회담",
-"start": 93.11,
-"end": 120.52
-},
-{
-"group": "global",
-"label": "세계 - 연준 AI 금융위험 경고",
-"start": 121.02,
-"end": 149.53
+"label": "세계 - 일본 역성장",
+"start": 80.08,
+"end": 106.26
 },
 {
 "group": "steel",
-"label": "철강 - 철근 시중가 77만원",
-"start": 150.53,
-"end": 176.38
+"label": "철강 - 유럽 탄소비용 완화",
+"start": 107.26,
+"end": 138.85
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 잠정합의안 부결",
-"start": 176.88,
-"end": 201.96
+"label": "철강 - 고철값 인하와 인천 철근 멈춤",
+"start": 139.35,
+"end": 173.4
 },
 {
 "group": "steel",
-"label": "철강 - 시멘트 수요 부진",
-"start": 202.46,
-"end": 228.12
+"label": "철강 - 수입 철근 재고",
+"start": 173.9,
+"end": 199.51
 },
 {
 "group": "steel",
-"label": "철강 - 중국 시황과 철광석",
-"start": 228.62,
-"end": 250.31
+"label": "철강 - 중국 조강 생산",
+"start": 200.01,
+"end": 228.14
 },
 {
 "group": "steel",
-"label": "철강 - 일본제철 강관 인상",
-"start": 250.81,
-"end": 271.48
+"label": "철강 - 중국 일본발 수입 운임",
+"start": 228.64,
+"end": 251.18
+},
+{
+"group": "steel",
+"label": "철강 - 냉연 도금재 판매",
+"start": 251.68,
+"end": 272.72
 },
 {
 "group": "domestic",
-"label": "국내 - 물가 관리 간담회",
-"start": 272.48,
-"end": 298.28
+"label": "국내 - 코픽스 최고치",
+"start": 273.72,
+"end": 303.56
 },
 {
 "group": "domestic",
-"label": "국내 - 마통 잔액 44조",
-"start": 298.78,
-"end": 322.1
+"label": "국내 - 재건축 부담금",
+"start": 304.06,
+"end": 330.5
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 323.1,
-"end": 337.84
+"start": 331.5,
+"end": 345.02
 }
 ]
