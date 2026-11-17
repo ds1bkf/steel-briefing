@@ -3,84 +3,72 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.17
+"end": 6.52
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.17,
-"end": 36.75
+"start": 7.52,
+"end": 32.22
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 37.25,
-"end": 52.4
+"start": 32.72,
+"end": 49.42
 },
 {
 "group": "global",
-"label": "세계 - 달러 강세와 원화",
-"start": 53.4,
-"end": 79.58
+"label": "세계 - 美 수입물가·주택지수",
+"start": 50.42,
+"end": 78.69
 },
 {
 "group": "global",
-"label": "세계 - 일본 역성장",
-"start": 80.08,
-"end": 106.26
+"label": "세계 - 캐나다·중국 관세 합의",
+"start": 79.19,
+"end": 104.66
 },
 {
 "group": "steel",
-"label": "철강 - 유럽 탄소비용 완화",
-"start": 107.26,
-"end": 138.85
+"label": "철강 - 대한제강 가동·판매 중단",
+"start": 105.66,
+"end": 133.52
 },
 {
 "group": "steel",
-"label": "철강 - 고철값 인하와 인천 철근 멈춤",
-"start": 139.35,
-"end": 173.4
+"label": "철강 - 현대제철 H형강 인상",
+"start": 134.02,
+"end": 158.19
 },
 {
 "group": "steel",
-"label": "철강 - 수입 철근 재고",
-"start": 173.9,
-"end": 199.51
+"label": "철강 - EU 냉연 반덤핑",
+"start": 158.69,
+"end": 183.58
 },
 {
 "group": "steel",
-"label": "철강 - 중국 조강 생산",
-"start": 200.01,
-"end": 228.14
-},
-{
-"group": "steel",
-"label": "철강 - 중국 일본발 수입 운임",
-"start": 228.64,
-"end": 251.18
-},
-{
-"group": "steel",
-"label": "철강 - 냉연 도금재 판매",
-"start": 251.68,
-"end": 272.72
+"label": "철강 - STS 냉연 수입재",
+"start": 184.08,
+"end": 203.9
 },
 {
 "group": "domestic",
-"label": "국내 - 코픽스 최고치",
-"start": 273.72,
-"end": 303.56
+"label": "국내 - IMF 성장률 상향",
+"start": 204.9,
+"end": 229.72
 },
 {
 "group": "domestic",
-"label": "국내 - 재건축 부담금",
-"start": 304.06,
-"end": 330.5
+"label": "국내 - 수출 1조 달러",
+"start": 230.22,
+"end": 255.82
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 331.5,
-"end": 345.02
+"start": 256.82,
+"end": 272.54
 }
 ]
