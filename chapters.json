@@ -3,90 +3,108 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.71
+"end": 6.52
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.71,
-"end": 33.63
+"start": 7.52,
+"end": 36.75
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 34.13,
-"end": 46.61
+"start": 37.25,
+"end": 54.92
 },
 {
 "group": "global",
-"label": "세계 - 미중러 정상회담",
-"start": 47.61,
-"end": 76.46
+"label": "세계 - 미국 301조 조사",
+"start": 55.92,
+"end": 90.09
 },
 {
 "group": "global",
-"label": "세계 - 호르무즈 유조선 공격",
-"start": 76.96,
-"end": 104.63
+"label": "세계 - 중국 증시 안정 조치",
+"start": 90.59,
+"end": 120.74
 },
 {
 "group": "steel",
-"label": "철강 - 동국제강 철근 동결",
-"start": 105.63,
-"end": 136.88
+"label": "철강 - 포스코 노사 재투표",
+"start": 121.74,
+"end": 153.51
 },
 {
 "group": "steel",
-"label": "철강 - 판재 주간 유통가",
-"start": 137.38,
-"end": 165.51
+"label": "철강 - 12월 철강 업황 전망",
+"start": 154.01,
+"end": 184.8
 },
 {
 "group": "steel",
-"label": "철강 - 영국 후판 반덤핑",
-"start": 166.01,
-"end": 193.82
+"label": "철강 - 철근 설비 감축",
+"start": 185.3,
+"end": 216.24
 },
 {
 "group": "steel",
-"label": "철강 - 철광석 4년 최저",
-"start": 194.32,
-"end": 220.51
+"label": "철강 - 도금재 유통가격",
+"start": 216.74,
+"end": 246.04
 },
 {
 "group": "steel",
-"label": "철강 - 케이지스틸 증설",
-"start": 221.01,
-"end": 250.89
+"label": "철강 - 중국산 후판 반덤핑 면제",
+"start": 246.54,
+"end": 273.5
+},
+{
+"group": "steel",
+"label": "철강 - 일본 조강 생산",
+"start": 274.0,
+"end": 303.49
+},
+{
+"group": "steel",
+"label": "철강 - 세계 철강 과잉생산",
+"start": 303.99,
+"end": 332.65
 },
 {
 "group": "domestic",
-"label": "국내 - 엘에이치 착공 단축",
-"start": 251.89,
-"end": 274.57
+"label": "국내 - 26일 금통위",
+"start": 333.65,
+"end": 362.69
 },
 {
 "group": "domestic",
-"label": "국내 - 철도 지하화",
-"start": 275.07,
-"end": 302.48
+"label": "국내 - 증안펀드 가동 준비",
+"start": 363.19,
+"end": 391.0
 },
 {
 "group": "domestic",
-"label": "국내 - 재건축 부담금",
-"start": 302.98,
-"end": 329.54
+"label": "국내 - 대중 자동차 무역적자",
+"start": 391.5,
+"end": 418.86
 },
 {
 "group": "domestic",
-"label": "국내 - 환율 하락 효과",
-"start": 330.04,
-"end": 359.42
+"label": "국내 - 경부선 화물열차 탈선",
+"start": 419.36,
+"end": 449.12
+},
+{
+"group": "domestic",
+"label": "국내 - 한파 취약사업장 점검",
+"start": 449.62,
+"end": 479.0
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 360.42,
-"end": 375.42
+"start": 480.0,
+"end": 493.82
 }
 ]
