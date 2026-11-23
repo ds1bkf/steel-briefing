@@ -3,108 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.71
+"end": 7.36
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.71,
-"end": 35.79
+"start": 8.36,
+"end": 28.42
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 36.29,
-"end": 54.75
+"start": 28.92,
+"end": 48.22
 },
 {
 "group": "global",
-"label": "세계 - 미국 301조 조사",
-"start": 55.75,
-"end": 91.03
+"label": "세계 - 미 연준 12월 인상 기대",
+"start": 49.22,
+"end": 78.4
 },
 {
 "group": "global",
-"label": "세계 - 중국 증시 안정 조치",
-"start": 91.53,
-"end": 120.71
+"label": "세계 - 미 디지털 301조 검토",
+"start": 78.9,
+"end": 106.19
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 노사 재투표",
-"start": 121.71,
-"end": 150.75
+"label": "철강 - 포스코 스크랩 추가 인하",
+"start": 107.19,
+"end": 131.55
 },
 {
 "group": "steel",
-"label": "철강 - 12월 철강 업황 전망",
-"start": 151.25,
-"end": 181.13
+"label": "철강 - 인천항 수입 철근 재고",
+"start": 132.05,
+"end": 153.56
 },
 {
 "group": "steel",
-"label": "철강 - 철근 설비 감축",
-"start": 181.63,
-"end": 212.57
+"label": "철강 - 미 냉연 상계관세 예비판정",
+"start": 154.06,
+"end": 179.66
 },
 {
 "group": "steel",
-"label": "철강 - 도금재 유통가격",
-"start": 213.07,
-"end": 243.67
+"label": "철강 - 베트남 남킴 신공장",
+"start": 180.16,
+"end": 203.8
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 후판 반덤핑 면제",
-"start": 244.17,
-"end": 270.28
-},
-{
-"group": "steel",
-"label": "철강 - 일본 조강 생산",
-"start": 270.78,
-"end": 301.26
-},
-{
-"group": "steel",
-"label": "철강 - 세계 철강 과잉생산",
-"start": 301.76,
-"end": 329.77
+"label": "철강 - 인도네시아 광업 이익 환수",
+"start": 204.3,
+"end": 231.26
 },
 {
 "group": "domestic",
-"label": "국내 - 26일 금통위",
-"start": 330.77,
-"end": 359.16
+"label": "국내 - 산업연 2027 전망",
+"start": 232.26,
+"end": 261.94
 },
 {
 "group": "domestic",
-"label": "국내 - 증안펀드 가동 준비",
-"start": 359.66,
-"end": 387.6
+"label": "국내 - LH 공모 연기와 정비사업 수주",
+"start": 262.44,
+"end": 294.34
 },
 {
 "group": "domestic",
-"label": "국내 - 대중 자동차 무역적자",
-"start": 388.1,
-"end": 415.46
-},
-{
-"group": "domestic",
-"label": "국내 - 경부선 화물열차 탈선",
-"start": 415.96,
-"end": 443.77
-},
-{
-"group": "domestic",
-"label": "국내 - 한파 취약사업장 점검",
-"start": 444.27,
-"end": 476.17
+"label": "국내 - 서울지하철 파업 기로",
+"start": 294.84,
+"end": 319.92
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 477.17,
-"end": 489.65
+"start": 320.92,
+"end": 337.1
 }
 ]
