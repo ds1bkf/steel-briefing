@@ -3,108 +3,108 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.52
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.52,
-"end": 36.75
+"start": 7.71,
+"end": 35.79
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 37.25,
-"end": 54.92
+"start": 36.29,
+"end": 54.75
 },
 {
 "group": "global",
 "label": "세계 - 미국 301조 조사",
-"start": 55.92,
-"end": 90.09
+"start": 55.75,
+"end": 91.03
 },
 {
 "group": "global",
 "label": "세계 - 중국 증시 안정 조치",
-"start": 90.59,
-"end": 120.74
+"start": 91.53,
+"end": 120.71
 },
 {
 "group": "steel",
 "label": "철강 - 포스코 노사 재투표",
-"start": 121.74,
-"end": 153.51
+"start": 121.71,
+"end": 150.75
 },
 {
 "group": "steel",
 "label": "철강 - 12월 철강 업황 전망",
-"start": 154.01,
-"end": 184.8
+"start": 151.25,
+"end": 181.13
 },
 {
 "group": "steel",
 "label": "철강 - 철근 설비 감축",
-"start": 185.3,
-"end": 216.24
+"start": 181.63,
+"end": 212.57
 },
 {
 "group": "steel",
 "label": "철강 - 도금재 유통가격",
-"start": 216.74,
-"end": 246.04
+"start": 213.07,
+"end": 243.67
 },
 {
 "group": "steel",
 "label": "철강 - 중국산 후판 반덤핑 면제",
-"start": 246.54,
-"end": 273.5
+"start": 244.17,
+"end": 270.28
 },
 {
 "group": "steel",
 "label": "철강 - 일본 조강 생산",
-"start": 274.0,
-"end": 303.49
+"start": 270.78,
+"end": 301.26
 },
 {
 "group": "steel",
 "label": "철강 - 세계 철강 과잉생산",
-"start": 303.99,
-"end": 332.65
+"start": 301.76,
+"end": 329.77
 },
 {
 "group": "domestic",
 "label": "국내 - 26일 금통위",
-"start": 333.65,
-"end": 362.69
+"start": 330.77,
+"end": 359.16
 },
 {
 "group": "domestic",
 "label": "국내 - 증안펀드 가동 준비",
-"start": 363.19,
-"end": 391.0
+"start": 359.66,
+"end": 387.6
 },
 {
 "group": "domestic",
 "label": "국내 - 대중 자동차 무역적자",
-"start": 391.5,
-"end": 418.86
+"start": 388.1,
+"end": 415.46
 },
 {
 "group": "domestic",
 "label": "국내 - 경부선 화물열차 탈선",
-"start": 419.36,
-"end": 449.12
+"start": 415.96,
+"end": 443.77
 },
 {
 "group": "domestic",
 "label": "국내 - 한파 취약사업장 점검",
-"start": 449.62,
-"end": 479.0
+"start": 444.27,
+"end": 476.17
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 480.0,
-"end": 493.82
+"start": 477.17,
+"end": 489.65
 }
 ]
