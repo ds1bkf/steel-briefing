@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.36
+"end": 7.02
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.36,
-"end": 28.42
+"start": 8.02,
+"end": 29.14
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 28.92,
-"end": 48.22
+"start": 29.64,
+"end": 50.31
 },
 {
 "group": "global",
 "label": "세계 - 미 연준 12월 인상 기대",
-"start": 49.22,
-"end": 78.4
+"start": 51.31,
+"end": 79.12
 },
 {
 "group": "global",
 "label": "세계 - 미 디지털 301조 검토",
-"start": 78.9,
-"end": 106.19
+"start": 79.62,
+"end": 107.94
 },
 {
 "group": "steel",
 "label": "철강 - 포스코 스크랩 추가 인하",
-"start": 107.19,
-"end": 131.55
+"start": 108.94,
+"end": 134.86
 },
 {
 "group": "steel",
 "label": "철강 - 인천항 수입 철근 재고",
-"start": 132.05,
-"end": 153.56
+"start": 135.36,
+"end": 159.2
 },
 {
 "group": "steel",
 "label": "철강 - 미 냉연 상계관세 예비판정",
-"start": 154.06,
-"end": 179.66
+"start": 159.7,
+"end": 183.48
 },
 {
 "group": "steel",
 "label": "철강 - 베트남 남킴 신공장",
-"start": 180.16,
-"end": 203.8
+"start": 183.98,
+"end": 210.36
 },
 {
 "group": "steel",
 "label": "철강 - 인도네시아 광업 이익 환수",
-"start": 204.3,
-"end": 231.26
+"start": 210.86,
+"end": 236.92
 },
 {
 "group": "domestic",
 "label": "국내 - 산업연 2027 전망",
-"start": 232.26,
-"end": 261.94
+"start": 237.92,
+"end": 266.77
 },
 {
 "group": "domestic",
 "label": "국내 - LH 공모 연기와 정비사업 수주",
-"start": 262.44,
-"end": 294.34
+"start": 267.27,
+"end": 297.8
 },
 {
 "group": "domestic",
 "label": "국내 - 서울지하철 파업 기로",
-"start": 294.84,
-"end": 319.92
+"start": 298.3,
+"end": 322.85
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 320.92,
-"end": 337.1
+"start": 323.85,
+"end": 340.34
 }
 ]
