@@ -3,84 +3,84 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 7.02
+"end": 6.71
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 8.02,
-"end": 29.14
+"start": 7.71,
+"end": 26.43
 },
 {
 "group": "weather",
 "label": "오늘 배차",
-"start": 29.64,
-"end": 50.31
+"start": 26.93,
+"end": 45.77
 },
 {
 "group": "global",
-"label": "세계 - 미 연준 12월 인상 기대",
-"start": 51.31,
-"end": 79.12
+"label": "세계 - 호르무즈 유조선 피격과 유가",
+"start": 46.77,
+"end": 78.09
 },
 {
 "group": "global",
-"label": "세계 - 미 디지털 301조 검토",
-"start": 79.62,
-"end": 107.94
+"label": "세계 - 중국 핵심광물 통제 유예",
+"start": 78.59,
+"end": 97.24
+},
+{
+"group": "global",
+"label": "세계 - EU 하이브리드차 쿼터",
+"start": 97.74,
+"end": 123.13
 },
 {
 "group": "steel",
-"label": "철강 - 포스코 스크랩 추가 인하",
-"start": 108.94,
-"end": 134.86
+"label": "철강 - 중국산 열연 쿼터 소진",
+"start": 124.13,
+"end": 147.77
 },
 {
 "group": "steel",
-"label": "철강 - 인천항 수입 철근 재고",
-"start": 135.36,
-"end": 159.2
+"label": "철강 - 일본 밀 12월 판가",
+"start": 148.27,
+"end": 173.93
 },
 {
 "group": "steel",
-"label": "철강 - 미 냉연 상계관세 예비판정",
-"start": 159.7,
-"end": 183.48
+"label": "철강 - 세계 조강과 중국 반제품 수출",
+"start": 174.43,
+"end": 199.12
 },
 {
 "group": "steel",
-"label": "철강 - 베트남 남킴 신공장",
-"start": 183.98,
-"end": 210.36
-},
-{
-"group": "steel",
-"label": "철강 - 인도네시아 광업 이익 환수",
-"start": 210.86,
-"end": 236.92
+"label": "철강 - 세아베스틸 중처법 판결",
+"start": 199.62,
+"end": 224.25
 },
 {
 "group": "domestic",
-"label": "국내 - 산업연 2027 전망",
-"start": 237.92,
-"end": 266.77
+"label": "국내 - 서울지하철 파업 철회",
+"start": 225.25,
+"end": 253.26
 },
 {
 "group": "domestic",
-"label": "국내 - LH 공모 연기와 정비사업 수주",
-"start": 267.27,
-"end": 297.8
+"label": "국내 - 기촉법 연장과 워크아웃 전환",
+"start": 253.76,
+"end": 284.16
 },
 {
 "group": "domestic",
-"label": "국내 - 서울지하철 파업 기로",
-"start": 298.3,
-"end": 322.85
+"label": "국내 - 11월 소비자심리",
+"start": 284.66,
+"end": 310.13
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 323.85,
-"end": 340.34
+"start": 311.13,
+"end": 326.92
 }
 ]
