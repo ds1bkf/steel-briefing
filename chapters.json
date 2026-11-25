@@ -21,60 +21,60 @@
 "group": "global",
 "label": "세계 - 러시아 휘발유 수출 금지",
 "start": 74.76,
-"end": 105.62
+"end": 104.52
 },
 {
 "group": "steel",
 "label": "철강 - 미국 열연 급등",
-"start": 106.62,
-"end": 143.34
+"start": 105.52,
+"end": 142.24
 },
 {
 "group": "steel",
 "label": "철강 - 중국산 박물 HGI 오퍼 중단",
-"start": 143.84,
-"end": 172.95
+"start": 142.74,
+"end": 171.78
 },
 {
 "group": "steel",
 "label": "철강 - 베트남 도금강판 반덤핑 재검토",
-"start": 173.45,
-"end": 202.88
+"start": 172.28,
+"end": 202.8
 },
 {
 "group": "steel",
 "label": "철강 - 중국 유통재고 감소",
-"start": 203.38,
-"end": 232.42
+"start": 203.3,
+"end": 234.43
 },
 {
 "group": "steel",
 "label": "철강 - 국회철강포럼 수입규제 요구",
-"start": 232.92,
-"end": 265.0
+"start": 234.93,
+"end": 265.87
 },
 {
 "group": "domestic",
 "label": "국내 - LH 공적주택 50만 호 착공",
-"start": 266.0,
-"end": 299.6
+"start": 266.87,
+"end": 300.92
 },
 {
 "group": "domestic",
 "label": "국내 - 가계대출 금리 5퍼센트",
-"start": 300.1,
-"end": 327.13
+"start": 301.42,
+"end": 328.45
 },
 {
 "group": "domestic",
 "label": "국내 - 홈플러스 임시휴업",
-"start": 327.63,
-"end": 353.69
+"start": 328.95,
+"end": 354.87
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 354.69,
-"end": 370.6
+"start": 355.87,
+"end": 371.52
 }
 ]
