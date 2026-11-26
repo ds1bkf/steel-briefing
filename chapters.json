@@ -3,78 +3,102 @@
 "group": "intro",
 "label": "여는 말",
 "start": 1.0,
-"end": 6.38
+"end": 7.17
 },
 {
 "group": "weather",
 "label": "오늘 날씨",
-"start": 7.38,
-"end": 37.14
+"start": 8.17,
+"end": 43.18
+},
+{
+"group": "weather",
+"label": "오늘 배차",
+"start": 43.68,
+"end": 56.67
 },
 {
 "group": "global",
-"label": "세계 - 미국 과잉생산 관세",
-"start": 38.14,
-"end": 74.26
+"label": "세계 - 미국 성장률과 물가",
+"start": 57.67,
+"end": 88.46
 },
 {
 "group": "global",
-"label": "세계 - 러시아 휘발유 수출 금지",
-"start": 74.76,
-"end": 104.52
+"label": "세계 - 차기 유럽중앙은행 총재",
+"start": 88.96,
+"end": 116.7
 },
 {
 "group": "steel",
-"label": "철강 - 미국 열연 급등",
-"start": 105.52,
-"end": 142.24
+"label": "철강 - 현대제철 고철 사급단가",
+"start": 117.7,
+"end": 147.54
 },
 {
 "group": "steel",
-"label": "철강 - 중국산 박물 HGI 오퍼 중단",
-"start": 142.74,
-"end": 171.78
+"label": "철강 - 휴스틸 강관 할인율",
+"start": 148.04,
+"end": 174.15
 },
 {
 "group": "steel",
-"label": "철강 - 베트남 도금강판 반덤핑 재검토",
-"start": 172.28,
-"end": 202.8
+"label": "철강 - 이번 주 유통가격",
+"start": 174.65,
+"end": 207.19
 },
 {
 "group": "steel",
-"label": "철강 - 중국 유통재고 감소",
-"start": 203.3,
-"end": 234.43
+"label": "철강 - 포스코 스테인리스 가격",
+"start": 207.69,
+"end": 233.95
 },
 {
 "group": "steel",
-"label": "철강 - 국회철강포럼 수입규제 요구",
-"start": 234.93,
-"end": 265.87
+"label": "철강 - 전기요금과 철강 3사",
+"start": 234.45,
+"end": 266.99
+},
+{
+"group": "steel",
+"label": "철강 - 유럽 탄소국경조정 일정",
+"start": 267.49,
+"end": 295.81
+},
+{
+"group": "steel",
+"label": "철강 - 발레 철광석 광산 재가동",
+"start": 296.31,
+"end": 325.42
+},
+{
+"group": "steel",
+"label": "철강 - 공장과 데이터센터 건설 수주",
+"start": 325.92,
+"end": 354.89
 },
 {
 "group": "domestic",
-"label": "국내 - LH 공적주택 50만 호 착공",
-"start": 266.87,
-"end": 300.92
+"label": "국내 - 한은 기준금리 인상",
+"start": 355.89,
+"end": 384.81
 },
 {
 "group": "domestic",
-"label": "국내 - 가계대출 금리 5퍼센트",
-"start": 301.42,
-"end": 328.45
+"label": "국내 - 철도노조 준법투쟁",
+"start": 385.31,
+"end": 413.7
 },
 {
 "group": "domestic",
-"label": "국내 - 홈플러스 임시휴업",
-"start": 328.95,
-"end": 354.87
+"label": "국내 - 가계 실질소득 감소",
+"start": 414.2,
+"end": 443.58
 },
 {
 "group": "outro",
 "label": "닫는 말",
-"start": 355.87,
-"end": 371.52
+"start": 444.58,
+"end": 456.92
 }
 ]
